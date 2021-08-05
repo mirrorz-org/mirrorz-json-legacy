@@ -75,7 +75,7 @@ const LIST = {
 const diff = require("./diff");
 
 async function update(site) {
-  filename = '../../static/json/legacy/' + site + '.json';
+  filename = './data/' + site + '.json';
   let o
   try {
     o = JSON.parse(fs.readFileSync(filename));
