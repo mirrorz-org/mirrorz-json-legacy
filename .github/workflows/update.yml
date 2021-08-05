@@ -18,13 +18,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
+      - name: Prepare parser
+        run: |
+          git clone https://github.com/mirrorz-org/mirrorz-parser.git parser
       - name: Update json if there is any change
         env:
           ACTOR: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "Mirrorz Bot"
           git config user.email "bot@mirrorz.org"
-          cd scripts/legacy
           yarn
           printf "legacy: update json\n\n" > commit-msg
           node update.js | tee -a commit-msg | grep -e ': update$' && git commit -aF commit-msg
