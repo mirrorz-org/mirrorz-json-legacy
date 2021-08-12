@@ -69,7 +69,16 @@ const LIST = {
   // "tongji"
   // x "uestc"
   // x "opentuna"
+  // historically, both (mirrorz and status.tuna.wiki) valid source
   "opentuna"  : "https://status.tuna.wiki/mirrorz/static/opentuna.json",
+  // archive! (for mirrorz-legacy fallback)
+  "ustc"      : "https://mirrors.ustc.edu.cn/static/json/mirrorz.json",
+  "siyuan"    : "https://mirror.sjtu.edu.cn/mirrorz/siyuan.json",
+  "zhiyuan"   : "https://mirror.sjtu.edu.cn/mirrorz/zhiyuan.json",
+  "dgut"      : "https://mirrors.dgut.edu.cn/static/mirrorz.json",
+  "sustech"   : "https://mirrors.sustech.edu.cn/mirrorz/mirrorz.json",
+  "nwafu"     : "https://mirrors.nwafu.edu.cn/api/mirrorz/info.json",
+  "wsyu"      : "https://mirrors.wsyu.edu.cn/.mirrorz/mirrorz.json",
 };
 
 const diff = require("./diff");
