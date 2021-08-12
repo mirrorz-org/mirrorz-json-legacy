@@ -29,9 +29,6 @@ jobs:
           printf "legacy: update json\n\n" > commit-msg
           node update.js | tee -a commit-msg | grep -e ': update$' && git commit -aF commit-msg
           rm commit-msg
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          branch: legacy-update-json
-          delete-branch: true
-          title: "Update legacy json"
+      - name: Push to master
+        run: |
+          git push
