@@ -16,9 +16,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Prepare parser
+      - name: Prepare parser and config
         run: |
           git clone https://github.com/mirrorz-org/mirrorz-parser.git parser
+          git clone https://github.com/mirrorz-org/mirrorz-config.git config
+          ln -s config/mirrorz.org.json config/config.json
+          ln -s ../config/config.json parser/config.json
       - name: Update json if there is any change
         env:
           ACTOR: ${{ secrets.GITHUB_TOKEN }}
