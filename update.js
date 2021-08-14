@@ -1,85 +1,15 @@
 const fs = require("fs");
 
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-global.DOMParser = new JSDOM().window.DOMParser;
+const { init, load } = require("./parser/node");
+init(); // global.fetch, global.DOMParser, global.Timeout, global.timeout
+const parsers = require("./parser/parsers");
 
-Timeout = require("await-timeout");
-const timeout = 15000;
-
-fetch_extra = require("node-fetch-extra");
-async function fetchV6First (u, opt) {
-  const promise = fetch_extra(u, {family: 6, ...opt});
-  return await Timeout.wrap(promise, timeout/10, 'Timeout').catch(async (e) => {
-    const promise = fetch_extra(u, opt);
-    return await Timeout.wrap(promise, timeout/3, 'Timeout').catch(() => null);
-  });
-}
-global.fetch = fetchV6First;
-
-lzu = require("./parser/lzu");
-nju = require("./parser/nju");
-neusoft = require("./parser/neusoft");
-hust = require("./parser/hust");
-bfsu = require("./parser/bfsu");
-tuna = require("./parser/tuna");
-hit = require("./parser/hit");
-cqu = require("./parser/cqu");
-xjtu = require("./parser/xjtu");
-zju = require("./parser/zju");
-scau = require("./parser/scau");
-neu = require("./parser/neu");
-nyist = require("./parser/nyist");
-pku = require("./parser/pku");
-byrio = require("./parser/byrio");
-cqupt = require("./parser/cqupt");
-ynuosa = require("./parser/ynuosa");
-xtom = require("./parser/xtom");
-xtom_hk = require("./parser/xtom-hk");
-xtom_de = require("./parser/xtom-de");
-xtom_nl = require("./parser/xtom-nl");
-xtom_ee = require("./parser/xtom-ee");
-njupt = require("./parser/njupt");
+const config = require("./config/config.json");
 
 const LIST = {
-  "lzu"       : lzu,
-  "nju"       : nju,
-  "neusoft"   : neusoft,
-  "hust"      : hust,
-  "bfsu"      : bfsu,
-  "tuna"      : tuna,
-  "hit"       : hit,
-  "cqu"       : cqu,
-  "xjtu"      : xjtu,
-  "zju"       : zju,
-  "scau"      : scau,
-  "neu"       : neu,
-  "nyist"     : nyist,
-  "pku"       : pku,
-  "byrio"     : byrio,
-  "cqupt"     : cqupt,
-  "ynuosa"    : ynuosa,
-  "xtom"      : xtom,
-  "xtom-hk"   : xtom_hk,
-  "xtom-de"   : xtom_de,
-  "xtom-nl"   : xtom_nl,
-  "xtom-ee"   : xtom_ee,
-  "njupt"     : njupt,
-  // "bjtu"
-  // "tongji"
-  // x "uestc"
-  // x "opentuna"
-  // historically, both (mirrorz and status.tuna.wiki) valid source
-  "opentuna"  : "https://status.tuna.wiki/mirrorz/static/opentuna.json",
-  // archive! (for mirrorz-legacy fallback)
-  "ustc"      : "https://mirrors.ustc.edu.cn/static/json/mirrorz.json",
-  "siyuan"    : "https://mirror.sjtu.edu.cn/mirrorz/siyuan.json",
-  "zhiyuan"   : "https://mirror.sjtu.edu.cn/mirrorz/zhiyuan.json",
-  "dgut"      : "https://mirrors.dgut.edu.cn/static/mirrorz.json",
-  "sustech"   : "https://mirrors.sustech.edu.cn/mirrorz/mirrorz.json",
-  "nwafu"     : "https://mirrors.nwafu.edu.cn/api/mirrorz/info.json",
-  "wsyu"      : "https://mirrors.wsyu.edu.cn/.mirrorz/mirrorz.json",
-};
+  ...config.mirrors,
+  ...Object.fromEntries(config.upstream_parser.map((e) => [e, parsers[e]])),
+}
 
 const diff = require("./diff");
 
@@ -92,17 +22,9 @@ async function update(site) {
     // fallback to empty one
     o = { site: {}, info: [], mirrors: [] }
   }
-  let n;
-  if (typeof(LIST[site]) == "string") {
-    const resp = await fetch(LIST[site]);
-    if (resp === null)
-      return `${site}: fetch failed\n`
-    n = await resp.json();
-  } else {
-    n = await Timeout.wrap(LIST[site](), timeout, 'Timeout').catch(() => null);
-    if (n === null)
-      return `${site}: fetch failed\n`
-  }
+  let n = await load(LIST[site]);
+  if (n === null)
+    return `${site}: fetch failed\n`
   d = diff(o, n)
   if (d !== "") {
     fs.writeFileSync(filename, JSON.stringify(n, null, 2));
