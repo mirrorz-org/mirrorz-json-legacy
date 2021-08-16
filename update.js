@@ -38,6 +38,7 @@ async function main() {
     d = await update(site);
     console.log(d)
   }
+  fs.writeFileSync('./data/lastupdate', (new Date).toISOString())
   process.exit(0);
 }
 
