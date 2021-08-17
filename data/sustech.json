@@ -19,11 +19,57 @@
       "public": true,
       "resolve": "mirrors.sustech.edu.cn",
       "range": [
+        "AS134774",
+        "AS138369",
+        "AS24357",
         "AS4134",
         "AS4812",
         "AS4809",
-        "AS134774",
         "AS23910"
+      ],
+      "filter": [
+        "V4",
+        "V6",
+        "SSL",
+        "NOSSL"
+      ]
+    },
+    {
+      "label": "sustech6",
+      "public": true,
+      "resolve": "mirrors.sustech.edu.cn",
+      "range": [
+        "2001:da8:201d::/48",
+        "2001:da8:2d00::/48",
+        "2001:da8:2d01::/48",
+        "2001:250:3c00::/43"
+      ],
+      "filter": [
+        "V6",
+        "SSL",
+        "NOSSL"
+      ]
+    },
+    {
+      "label": "univsz",
+      "public": true,
+      "resolve": "mirrors.sustech.edu.cn",
+      "range": [
+        "AS138369"
+      ],
+      "filter": [
+        "V4",
+        "V6",
+        "SSL",
+        "NOSSL"
+      ]
+    },
+    {
+      "label": "univgd",
+      "public": true,
+      "resolve": "mirrors.sustech.edu.cn",
+      "range": [
+        "AS24357"
       ],
       "filter": [
         "V4",
@@ -49,15 +95,29 @@
       ]
     },
     {
+      "label": "univgd6",
+      "public": true,
+      "resolve": "mirrors.sustech.edu.cn",
+      "range": [
+        "2001:250:3000::/41"
+      ],
+      "filter": [
+        "V6",
+        "SSL",
+        "NOSSL"
+      ]
+    },
+    {
       "label": "sustechcampus",
       "public": false,
-      "resolve": "172.18.6.198",
+      "resolve": "mirrors.cra.moe",
       "range": [
         "116.7.234.0/24",
         "110.65.147.0/24"
       ],
       "filter": [
         "V4",
+        "SSL",
         "NOSSL"
       ]
     }
@@ -75,112 +135,52 @@
       ]
     },
     {
-      "distro": "debian",
+      "distro": "debian non-free",
       "category": "os",
       "urls": [
         {
-          "name": "10.10.0 (amd64, CD installer with xfce)",
-          "url": "/debian-cd/current/amd64/iso-cd/debian-10.10.0-amd64-xfce-CD-1.iso"
+          "name": "11.0.0 (amd64, DVD installer with non-free firmware (Part 1))",
+          "url": "/debian-nonfree/cd-including-firmware/current/amd64/iso-dvd/firmware-11.0.0-amd64-DVD-1.iso"
         },
         {
-          "name": "10.10.0 (amd64, DVD installer (Part 1))",
-          "url": "/debian-cd/current/amd64/iso-dvd/debian-10.10.0-amd64-DVD-1.iso"
+          "name": "11.0.0 (amd64, Live CD with cinnamon and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-cinnamon+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, DVD installer (Part 2))",
-          "url": "/debian-cd/current/amd64/iso-dvd/debian-10.10.0-amd64-DVD-2.iso"
+          "name": "11.0.0 (amd64, Live CD with gnome and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-gnome+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, DVD installer (Part 3))",
-          "url": "/debian-cd/current/amd64/iso-dvd/debian-10.10.0-amd64-DVD-3.iso"
+          "name": "11.0.0 (amd64, Live CD with kde and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-kde+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, Live CD with cinnamon)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-cinnamon.iso"
+          "name": "11.0.0 (amd64, Live CD with lxde and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-lxde+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, Live CD with gnome)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-gnome.iso"
+          "name": "11.0.0 (amd64, Live CD with lxqt and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-lxqt+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, Live CD with kde)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-kde.iso"
+          "name": "11.0.0 (amd64, Live CD with mate and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-mate+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, Live CD with lxde)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-lxde.iso"
+          "name": "11.0.0 (amd64, Live CD with standard and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-standard+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, Live CD with lxqt)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-lxqt.iso"
+          "name": "11.0.0 (amd64, Live CD with xfce and non-free firmware)",
+          "url": "/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.0.0-amd64-xfce+nonfree.iso"
         },
         {
-          "name": "10.10.0 (amd64, Live CD with mate)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-mate.iso"
+          "name": "11.0.0 (amd64, Network installer with non-free firmware)",
+          "url": "/debian-nonfree/cd-including-firmware/current/amd64/iso-cd/firmware-11.0.0-amd64-netinst.iso"
         },
         {
-          "name": "10.10.0 (amd64, Live CD with standard)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-standard.iso"
-        },
-        {
-          "name": "10.10.0 (amd64, Live CD with xfce)",
-          "url": "/debian-cd/current-live/amd64/iso-hybrid/debian-live-10.10.0-amd64-xfce.iso"
-        },
-        {
-          "name": "10.10.0 (amd64, Network installer)",
-          "url": "/debian-cd/current/amd64/iso-cd/debian-10.10.0-amd64-netinst.iso"
-        },
-        {
-          "name": "10.10.0 (i386, CD installer with xfce)",
-          "url": "/debian-cd/current/i386/iso-cd/debian-10.10.0-i386-xfce-CD-1.iso"
-        },
-        {
-          "name": "10.10.0 (i386, DVD installer (Part 1))",
-          "url": "/debian-cd/current/i386/iso-dvd/debian-10.10.0-i386-DVD-1.iso"
-        },
-        {
-          "name": "10.10.0 (i386, DVD installer (Part 2))",
-          "url": "/debian-cd/current/i386/iso-dvd/debian-10.10.0-i386-DVD-2.iso"
-        },
-        {
-          "name": "10.10.0 (i386, DVD installer (Part 3))",
-          "url": "/debian-cd/current/i386/iso-dvd/debian-10.10.0-i386-DVD-3.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with cinnamon)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-cinnamon.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with gnome)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-gnome.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with kde)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-kde.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with lxde)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-lxde.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with lxqt)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-lxqt.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with mate)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-mate.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with standard)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-standard.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Live CD with xfce)",
-          "url": "/debian-cd/current-live/i386/iso-hybrid/debian-live-10.10.0-i386-xfce.iso"
-        },
-        {
-          "name": "10.10.0 (i386, Network installer)",
-          "url": "/debian-cd/current/i386/iso-cd/debian-10.10.0-i386-netinst.iso"
+          "name": "11.0.0 (i386, Network installer with non-free firmware)",
+          "url": "/debian-nonfree/cd-including-firmware/current/i386/iso-cd/firmware-11.0.0-i386-netinst.iso"
         }
       ]
     },
@@ -3092,25 +3092,25 @@
       "cname": "CRAN",
       "desc": "R 语言的可执行文件、源代码和说明文件，也收录了各种用户撰写的软件包",
       "url": "/CRAN",
-      "status": "S1629106473X1629149733",
+      "status": "S1629150060X1629193320",
       "help": "/help/CRAN.html",
       "upstream": "cran-rsync@cran-acc-us.r-project.org:./",
-      "size": "340.52G"
+      "size": "340.55G"
     },
     {
       "cname": "CTAN",
       "desc": "TeX 的各种发行版、软件包和文档",
       "url": "/CTAN",
-      "status": "S1629089305X1629132565",
+      "status": "S1629176075X1629219335",
       "help": "/help/CTAN.html",
       "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
-      "size": "47.90G"
+      "size": "47.91G"
     },
     {
       "cname": "adobe-fonts",
       "desc": "Adobe 公司的开源字体",
       "url": "/adobe-fonts",
-      "status": "S1629084442X1629170902",
+      "status": "S1629170909X1629257369",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/",
       "size": "48.80G"
@@ -3128,7 +3128,7 @@
       "cname": "anaconda",
       "desc": "用于科学计算的 Python 发行版",
       "url": "/anaconda",
-      "status": "S1629117307X1629160567",
+      "status": "S1629160793X1629204053",
       "help": "/help/anaconda.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/anaconda/",
       "size": "5.32T"
@@ -3146,19 +3146,19 @@
       "cname": "archlinux",
       "desc": "Arch Linux 的安装镜像和官方软件包仓库",
       "url": "/archlinux",
-      "status": "S1629084524X1629170984",
+      "status": "S1629171091X1629257551",
       "help": "/help/archlinux.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
-      "size": "73.39G"
+      "size": "78.17G"
     },
     {
       "cname": "archlinuxcn",
       "desc": "由 Arch Linux 中文社区驱动的非官方用户仓库，包含中文用户常用软件、工具、字体/美化包等",
       "url": "/archlinuxcn",
-      "status": "S1629084652X1629171112",
+      "status": "S1629173316X1629216576",
       "help": "/help/archlinuxcn.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/",
-      "size": "75.30G"
+      "size": "74.87G"
     },
     {
       "cname": "armbian",
@@ -3173,10 +3173,10 @@
       "cname": "centos",
       "desc": "CentOS 的安装镜像和官方软件包仓库",
       "url": "/centos",
-      "status": "S1629086977X1629173437",
+      "status": "S1629173604X1629260064",
       "help": "/help/centos.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/",
-      "size": "522.13G"
+      "size": "522.78G"
     },
     {
       "cname": "cygwin",
@@ -3191,37 +3191,37 @@
       "cname": "debian-cd",
       "desc": "Debian Linux 的安装镜像",
       "url": "/debian-cd",
-      "status": "S1629114664X1629157924",
+      "status": "S1629160963X1629204223",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd/",
-      "size": "233.06G"
+      "size": "217.81G"
     },
     {
       "cname": "debian-nonfree",
       "desc": "Debian Linux 的非自由软件包仓库",
       "url": "/debian-nonfree",
-      "status": "S1629086099X1629172559",
+      "status": "S1629172576X1629259036",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-nonfree/",
-      "size": "129.15G"
+      "size": "129.49G"
     },
     {
       "cname": "debian-security",
       "desc": "Debian Linux 的安全更新",
       "url": "/debian-security",
-      "status": "S1629101174X1629122774",
+      "status": "S1629166123X1629187723",
       "help": "",
       "upstream": "rsync://mirrors.bfsu.edu.cn/debian-security/",
-      "size": "190.22G"
+      "size": "192.41G"
     },
     {
       "cname": "debian",
       "desc": "Debian Linux 的官方软件包仓库",
       "url": "/debian",
-      "status": "S1629115247X1629158507",
+      "status": "S1629159848X1629203108",
       "help": "/help/debian.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian/",
-      "size": "1.51T"
+      "size": "1.52T"
     },
     {
       "cname": "deepin-cd",
@@ -3254,10 +3254,10 @@
       "cname": "epel",
       "desc": "企业版 Linux 附加软件包",
       "url": "/epel",
-      "status": "S1629086144X1629172604",
+      "status": "S1629172763X1629259223",
       "help": "/help/epel.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/epel/",
-      "size": "311.55G"
+      "size": "313.33G"
     },
     {
       "cname": "fedora-altarch",
@@ -3272,7 +3272,7 @@
       "cname": "fedora",
       "desc": "Fedora Linux 的安装镜像和官方软件包仓库",
       "url": "/fedora",
-      "status": "S1629087224X1629173684",
+      "status": "S1629174123X1629260583",
       "help": "/help/fedora.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
       "size": "1.65T"
@@ -3281,7 +3281,7 @@
       "cname": "github-release",
       "desc": "一些项目的 Github Release 镜像",
       "url": "/github-release",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/",
       "size": "6.48G"
@@ -3290,7 +3290,7 @@
       "cname": "homebrew-bottles",
       "desc": "预编译的 Homebrew 软件包",
       "url": "/homebrew-bottles",
-      "status": "S1629085152X1629171612",
+      "status": "S1629171619X1629258079",
       "help": "/help/homebrew-bottles.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/",
       "size": "451.02G"
@@ -3308,7 +3308,7 @@
       "cname": "julia-releases",
       "desc": "Julia 二进制程序镜像",
       "url": "/julia-releases",
-      "status": "S1629084242X1629170702",
+      "status": "S1629170707X1629257167",
       "help": "/help/julia-releases.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/julia-releases/",
       "size": "72.51G"
@@ -3452,7 +3452,7 @@
       "cname": "ubuntu",
       "desc": "流行的 Linux 发行版 Ubuntu 的安装镜像和官方软件包仓库",
       "url": "/ubuntu",
-      "status": "S1629108255X1629122655",
+      "status": "S1629168455X1629182855",
       "help": "/help/ubuntu.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/",
       "size": "1.61T"
@@ -3478,7 +3478,7 @@
       "cname": "prometheus",
       "desc": "一个系统与服务监控系统",
       "url": "/github-release/prometheus/prometheus/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3486,7 +3486,7 @@
       "cname": "iina",
       "desc": "macOS 上的现代化开源视频播放器",
       "url": "/github-release/iina/iina/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3494,7 +3494,7 @@
       "cname": "VSCodium",
       "desc": "VS Code 的社区编译版本",
       "url": "/github-release/VSCodium/vscodium/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3502,7 +3502,7 @@
       "cname": "FreeCAD",
       "desc": "基于 Qt 的计算机辅助设计程序",
       "url": "/github-release/FreeCAD/FreeCAD/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3510,7 +3510,7 @@
       "cname": "git-for-windows",
       "desc": "Git 工具的 Windows 系统版本",
       "url": "/github-release/git-for-windows/git/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3518,7 +3518,7 @@
       "cname": "llvm-binary",
       "desc": "LLVM 编译器套件可执行文件",
       "url": "/github-release/llvm/llvm-project/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3526,7 +3526,7 @@
       "cname": "miniforge",
       "desc": "适用于 conda-forge 的最小化 conda 安装器",
       "url": "/github-release/conda-forge/miniforge/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3534,7 +3534,7 @@
       "cname": "stellarium",
       "desc": "自由的模拟天文台软件",
       "url": "/github-release/Stellarium/stellarium/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3542,7 +3542,7 @@
       "cname": "cmder",
       "desc": "Windows 下的终端模拟器套件",
       "url": "/github-release/cmderdev/cmder/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3550,7 +3550,7 @@
       "cname": "googlefonts",
       "desc": "Google 设计的 Noto 系列开源字体",
       "url": "/github-release/googlefonts/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3558,7 +3558,7 @@
       "cname": "minikube",
       "desc": "在本地运行的单节点 Kubernetes 集群安装工具",
       "url": "/github-release/kubernetes/minikube/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3566,7 +3566,7 @@
       "cname": "obs-studio",
       "desc": "自由的流媒体与视频录制程序（Open Broadcast Software）",
       "url": "/github-release/obsproject/obs-studio/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3574,7 +3574,7 @@
       "cname": "orchestrator",
       "desc": "MySQL 高可用与复制管理工具",
       "url": "/github-release/openark/orchestrator/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3582,7 +3582,7 @@
       "cname": "texstudio",
       "desc": "使用 Qt 编写的自由的 LaTeX 套件",
       "url": "/github-release/texstudio-org/texstudio/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3590,7 +3590,7 @@
       "cname": "rust-analyzer",
       "desc": "Rust 语言的模块化编译器前端",
       "url": "/github-release/rust-analyzer/rust-analyzer/",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3598,7 +3598,7 @@
       "cname": "thuthesis",
       "desc": "清华大学学位论文 LaTeX 模板",
       "url": "/github-release/tuna/thuthesis",
-      "status": "S1629084211X1629170671",
+      "status": "S1629170676X1629257136",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     }
