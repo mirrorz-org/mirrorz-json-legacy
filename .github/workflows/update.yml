@@ -34,7 +34,5 @@ jobs:
           node update.js | tee -a commit-msg | grep -e ': update$' && (git add data/ ; git commit -aF commit-msg)
           rm commit-msg
       - name: Push to master
-        with:
-          token: ${{ secrets.MIRRORZ_JSON_LEGACY_PAT }}
         run: |
           git push
