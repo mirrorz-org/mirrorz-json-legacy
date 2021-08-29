@@ -63,12 +63,12 @@
           "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso"
         },
         {
-          "name": "8-stream-aarch64 CentOS-Stream-8-aarch64-20210819-dvd1.iso",
-          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210819-dvd1.iso"
+          "name": "8-stream-aarch64 CentOS-Stream-8-aarch64-20210827-dvd1.iso",
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210827-dvd1.iso"
         },
         {
-          "name": "8-stream-aarch64 CentOS-Stream-8-aarch64-20210819-boot.iso",
-          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210819-boot.iso"
+          "name": "8-stream-aarch64 CentOS-Stream-8-aarch64-20210827-boot.iso",
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210827-boot.iso"
         },
         {
           "name": "8-stream-ppc64le CentOS-Stream-8-ppc64le-latest-boot.iso",
@@ -79,12 +79,12 @@
           "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso"
         },
         {
-          "name": "8-stream-ppc64le CentOS-Stream-8-ppc64le-20210819-dvd1.iso",
-          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210819-dvd1.iso"
+          "name": "8-stream-ppc64le CentOS-Stream-8-ppc64le-20210827-dvd1.iso",
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210827-dvd1.iso"
         },
         {
-          "name": "8-stream-ppc64le CentOS-Stream-8-ppc64le-20210819-boot.iso",
-          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210819-boot.iso"
+          "name": "8-stream-ppc64le CentOS-Stream-8-ppc64le-20210827-boot.iso",
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210827-boot.iso"
         },
         {
           "name": "8-stream-x86_64 CentOS-Stream-8-x86_64-latest-boot.iso",
@@ -95,12 +95,12 @@
           "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso"
         },
         {
-          "name": "8-stream-x86_64 CentOS-Stream-8-x86_64-20210819-boot.iso",
-          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210819-boot.iso"
+          "name": "8-stream-x86_64 CentOS-Stream-8-x86_64-20210827-dvd1.iso",
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210827-dvd1.iso"
         },
         {
-          "name": "8-stream-x86_64 CentOS-Stream-8-x86_64-20210819-dvd1.iso",
-          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210819-dvd1.iso"
+          "name": "8-stream-x86_64 CentOS-Stream-8-x86_64-20210827-boot.iso",
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210827-boot.iso"
         },
         {
           "name": "8.3.2011-aarch64 CentOS-8.3.2011-aarch64-boot.iso",
@@ -699,37 +699,190 @@
   ],
   "mirrors": [
     {
-      "cname": "termux",
+      "cname": "kali-images",
       "desc": "",
-      "url": "/termux",
-      "status": "S1630038449X1630124849",
-      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/termux/",
-      "size": "12.13G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/termux"
+      "url": "/kali-images",
+      "status": "Y1630231765O1630145362",
+      "upstream": "rsync://mirrors.ocf.berkeley.edu/kali-images/",
+      "size": "128.23G"
     },
     {
-      "cname": "archlinux",
-      "desc": "一款基於 x86-64 架構的以 KISS原則（保持簡單和愚蠢）為總體指導原則，注重代碼正確、優雅和極簡主義的滾動Linux發行版",
-      "url": "/archlinux",
-      "status": "S1630069979X1630070699",
-      "upstream": "rsync://mirrors.neusoft.edu.cn/archlinux/",
-      "size": "74.33G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/archlinux"
+      "cname": "raspbian",
+      "desc": "為樹莓派基於 Debian 開發的作業系統的軟體源",
+      "url": "/raspbian",
+      "status": "S1630222833X1630309233",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/raspbian/",
+      "size": "488.85G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/raspbian"
+    },
+    {
+      "cname": "ubuntu-releases",
+      "desc": "包含近几年发行的 Ubuntu 的镜像。过时的版本请移步 old-releases.ubuntu.com",
+      "url": "/ubuntu-releases",
+      "status": "S1630184605X1630271005",
+      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
+      "size": "24.68G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/ubuntu-releases"
     },
     {
       "cname": "archlinuxcn",
       "desc": "Arch Linux 中文社区驱动的非官方软件仓库，包含许多官方仓库未提供的额外的软件包，以及已有软件的 git 版本等变种",
       "url": "/archlinuxcn",
-      "status": "S1630069393X1630071193",
+      "status": "S1630242925X1630244725",
       "upstream": "rsync://sync.repo.archlinuxcn.org/repo/",
       "size": "unknown",
       "help": "https://mirrors.dgut.edu.cn/help/mirrors/archlinuxcn"
     },
     {
+      "cname": "debian-security",
+      "desc": "Debian Linux 的安全更新",
+      "url": "/debian-security",
+      "status": "S1630222079X1630308479",
+      "upstream": "rsync://rsync.security.debian.org/debian-security/",
+      "size": "189.64G"
+    },
+    {
+      "cname": "epel",
+      "desc": "",
+      "url": "/epel",
+      "status": "S1630236192X1630322592",
+      "upstream": "rsync://download-ib01.fedoraproject.org/fedora-epel/",
+      "size": "320.07G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/epel"
+    },
+    {
+      "cname": "kali",
+      "desc": "基于 Debian 的 Linux 发行版的軟體倉庫，發行版设计用于數位鑑識和渗透测试。!!!请注意我们未同步 ARM 架构的内容。",
+      "url": "/kali",
+      "status": "S1630225934X1630312334",
+      "upstream": "rsync://mirrors.neusoft.edu.cn/kali/",
+      "size": "767.63G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/kali"
+    },
+    {
+      "cname": "manjaro",
+      "desc": "基於 Arch Linux 的 Linux 發行版的軟體倉庫，採用滾動更新, 目標是提供易於使用的自由的作業系統",
+      "url": "/manjaro",
+      "status": "S1630192843X1630279243",
+      "upstream": "rsync://ftp.halifax.rwth-aachen.de/manjaro/",
+      "size": "103.98G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/manjaro"
+    },
+    {
+      "cname": "raspberrypi",
+      "desc": "",
+      "url": "/raspberrypi",
+      "status": "S1630175581X1630261981",
+      "upstream": "rsync://apt-repo.raspberrypi.org/archive/debian/",
+      "size": "135.74G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/raspberrypi"
+    },
+    {
+      "cname": "termux",
+      "desc": "",
+      "url": "/termux",
+      "status": "S1630211311X1630297711",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/termux/",
+      "size": "12.20G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/termux"
+    },
+    {
+      "cname": "ubuntu",
+      "desc": "由 Canonical 公司發布並提供商業支持以桌面應用為主的 Linux 發行版軟體倉庫",
+      "url": "/ubuntu",
+      "status": "S1630186626X1630273026",
+      "upstream": "rsync://archive.ubuntu.com/ubuntu/",
+      "size": "1.61T",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/ubuntu"
+    },
+    {
+      "cname": "archlinux",
+      "desc": "一款基於 x86-64 架構的以 KISS原則（保持簡單和愚蠢）為總體指導原則，注重代碼正確、優雅和極簡主義的滾動Linux發行版",
+      "url": "/archlinux",
+      "status": "S1630242659X1630243379",
+      "upstream": "rsync://mirrors.neusoft.edu.cn/archlinux/",
+      "size": "74.10G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/archlinux"
+    },
+    {
+      "cname": "debian",
+      "desc": "一款完全由自由軟體組成的类UNIX作業系統的軟體仓库。请注意，我们仅同步了 amd64、i386、arm64 和 armhf 架构。",
+      "url": "/debian",
+      "status": "S1630225448X1630311848",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/debian/",
+      "size": "1.06T",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/debian"
+    },
+    {
+      "cname": "ubuntukylin-cd",
+      "desc": "优麒麟的安装镜像(仅含开源软件)",
+      "url": "/ubuntukylin-cd",
+      "status": "S1630176901X1630263301",
+      "upstream": "rsync://cdimage.ubuntukylin.com/releases/basic/",
+      "size": "8.20G"
+    },
+    {
+      "cname": "ubuntukylin",
+      "desc": "优麒麟的软件仓库",
+      "url": "/ubuntukylin",
+      "status": "S1630176905X1630263305",
+      "upstream": "rsync://archive.ubuntukylin.com/ubuntukylin/",
+      "size": "2.00G"
+    },
+    {
+      "cname": "deepin-cd",
+      "desc": "Deepin OS 的安装镜像",
+      "url": "/deepin-cd",
+      "status": "S1630236856X1630323256",
+      "upstream": "rsync://rsync.deepin.com/releases/",
+      "size": "21.05G"
+    },
+    {
+      "cname": "deepin",
+      "desc": "因其美观和易用性而广受赞誉的源自中国的 Linux 发行版的软件仓库。!!!请注意由于授权问题，我们未同步非自由部分。",
+      "url": "/deepin",
+      "status": "S1630210982X1630297382",
+      "upstream": "rsync://rsync.deepin.com/deepin/",
+      "size": "272.09G"
+    },
+    {
+      "cname": "nixos-images",
+      "desc": "基于Nix软件包管理器构建的Linux发行版的NixOS的安装镜像",
+      "url": "/nixos-images",
+      "status": "S1630230303X1630316703",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/nixos-images/",
+      "size": "16.29G"
+    },
+    {
+      "cname": "CTAN",
+      "desc": "CTAN 是 “Comprehensive TeX Archive Network” 的首字缩写，搜集了关于 TeX 的各种文件与软件等",
+      "url": "/CTAN",
+      "status": "S1630238424X1630260024",
+      "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
+      "size": "47.94G"
+    },
+    {
+      "cname": "centos",
+      "desc": "",
+      "url": "/centos",
+      "status": "S1630236452X1630250852",
+      "upstream": "rsync://hkg.mirror.rackspace.com/centos/",
+      "size": "534.22G",
+      "help": "https://mirrors.dgut.edu.cn/help/mirrors/centos"
+    },
+    {
+      "cname": "php",
+      "desc": "PHP是一种开源的通用计算机脚本语言",
+      "url": "/php",
+      "status": "S1630204495X1630290895",
+      "upstream": "rsync://mirrors.cogentco.com/PHP/",
+      "size": "11.58G"
+    },
+    {
       "cname": "debian-cd",
       "desc": "Debian Linux 的安装镜像。过时的版本请移步 https://cdimage.debian.org/mirror/cdimage/archive",
       "url": "/debian-cd",
-      "status": "S1630028413X1630114813",
+      "status": "S1630201237X1630287637",
       "upstream": "rsync://cdimage.debian.org/debian-cd/",
       "size": "217.81G",
       "help": "https://mirrors.dgut.edu.cn/help/mirrors/debian-cd"
@@ -738,162 +891,9 @@
       "cname": "kicad",
       "desc": "是一款用于印刷电路板设计的自由软件",
       "url": "/kicad",
-      "status": "S1630045703X1630132103",
+      "status": "S1630219443X1630305843",
       "upstream": "s3://kicad-downloads/",
       "size": "unknown"
-    },
-    {
-      "cname": "kali",
-      "desc": "基于 Debian 的 Linux 发行版的軟體倉庫，發行版设计用于數位鑑識和渗透测试。!!!请注意我们未同步 ARM 架构的内容。",
-      "url": "/kali",
-      "status": "S1630051454X1630137854",
-      "upstream": "rsync://mirrors.neusoft.edu.cn/kali/",
-      "size": "754.03G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/kali"
-    },
-    {
-      "cname": "manjaro",
-      "desc": "基於 Arch Linux 的 Linux 發行版的軟體倉庫，採用滾動更新, 目標是提供易於使用的自由的作業系統",
-      "url": "/manjaro",
-      "status": "S1630017588X1630103988",
-      "upstream": "rsync://ftp.halifax.rwth-aachen.de/manjaro/",
-      "size": "108.58G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/manjaro"
-    },
-    {
-      "cname": "raspberrypi",
-      "desc": "",
-      "url": "/raspberrypi",
-      "status": "S1630002601X1630089001",
-      "upstream": "rsync://apt-repo.raspberrypi.org/archive/debian/",
-      "size": "135.30G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/raspberrypi"
-    },
-    {
-      "cname": "ubuntu-releases",
-      "desc": "包含近几年发行的 Ubuntu 的镜像。过时的版本请移步 old-releases.ubuntu.com",
-      "url": "/ubuntu-releases",
-      "status": "S1630011791X1630098191",
-      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
-      "size": "24.68G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/ubuntu-releases"
-    },
-    {
-      "cname": "centos",
-      "desc": "",
-      "url": "/centos",
-      "status": "S1630067612X1630082012",
-      "upstream": "rsync://hkg.mirror.rackspace.com/centos/",
-      "size": "525.37G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/centos"
-    },
-    {
-      "cname": "debian",
-      "desc": "一款完全由自由軟體組成的类UNIX作業系統的軟體仓库。请注意，我们仅同步了 amd64、i386、arm64 和 armhf 架构。",
-      "url": "/debian",
-      "status": "S1630050208X1630136608",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian/",
-      "size": "1.06T",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/debian"
-    },
-    {
-      "cname": "deepin-cd",
-      "desc": "Deepin OS 的安装镜像",
-      "url": "/deepin-cd",
-      "status": "S1630064045X1630150445",
-      "upstream": "rsync://rsync.deepin.com/releases/",
-      "size": "21.05G"
-    },
-    {
-      "cname": "deepin",
-      "desc": "因其美观和易用性而广受赞誉的源自中国的 Linux 发行版的软件仓库。!!!请注意由于授权问题，我们未同步非自由部分。",
-      "url": "/deepin",
-      "status": "S1630037920X1630124320",
-      "upstream": "rsync://rsync.deepin.com/deepin/",
-      "size": "272.09G"
-    },
-    {
-      "cname": "CTAN",
-      "desc": "CTAN 是 “Comprehensive TeX Archive Network” 的首字缩写，搜集了关于 TeX 的各种文件与软件等",
-      "url": "/CTAN",
-      "status": "S1630064614X1630086214",
-      "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
-      "size": "47.93G"
-    },
-    {
-      "cname": "ubuntukylin",
-      "desc": "优麒麟的软件仓库",
-      "url": "/ubuntukylin",
-      "status": "S1630004099X1630090499",
-      "upstream": "rsync://archive.ubuntukylin.com/ubuntukylin/",
-      "size": "2.00G"
-    },
-    {
-      "cname": "php",
-      "desc": "PHP是一种开源的通用计算机脚本语言",
-      "url": "/php",
-      "status": "S1630031670X1630118070",
-      "upstream": "rsync://mirrors.cogentco.com/PHP/",
-      "size": "11.58G"
-    },
-    {
-      "cname": "raspbian",
-      "desc": "為樹莓派基於 Debian 開發的作業系統的軟體源",
-      "url": "/raspbian",
-      "status": "S1630049474X1630135875",
-      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/raspbian/",
-      "size": "497.18G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/raspbian"
-    },
-    {
-      "cname": "ubuntu",
-      "desc": "由 Canonical 公司發布並提供商業支持以桌面應用為主的 Linux 發行版軟體倉庫",
-      "url": "/ubuntu",
-      "status": "S1630008468X1630094868",
-      "upstream": "rsync://archive.ubuntu.com/ubuntu/",
-      "size": "1.61T",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/ubuntu"
-    },
-    {
-      "cname": "ubuntukylin-cd",
-      "desc": "优麒麟的安装镜像(仅含开源软件)",
-      "url": "/ubuntukylin-cd",
-      "status": "S1630004094X1630090494",
-      "upstream": "rsync://cdimage.ubuntukylin.com/releases/basic/",
-      "size": "8.20G"
-    },
-    {
-      "cname": "debian-security",
-      "desc": "Debian Linux 的安全更新",
-      "url": "/debian-security",
-      "status": "S1630049152X1630135552",
-      "upstream": "rsync://rsync.security.debian.org/debian-security/",
-      "size": "189.72G"
-    },
-    {
-      "cname": "epel",
-      "desc": "",
-      "url": "/epel",
-      "status": "S1630062825X1630149225",
-      "upstream": "rsync://download-ib01.fedoraproject.org/fedora-epel/",
-      "size": "319.02G",
-      "help": "https://mirrors.dgut.edu.cn/help/mirrors/epel"
-    },
-    {
-      "cname": "kali-images",
-      "desc": "",
-      "url": "/kali-images",
-      "status": "S1630058950X1630145350",
-      "upstream": "rsync://mirrors.ocf.berkeley.edu/kali-images/",
-      "size": "128.23G"
-    },
-    {
-      "cname": "nixos-images",
-      "desc": "基于Nix软件包管理器构建的Linux发行版的NixOS的安装镜像",
-      "url": "/nixos-images",
-      "status": "S1630057340X1630143740",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/nixos-images/",
-      "size": "16.29G"
     }
   ]
 }
