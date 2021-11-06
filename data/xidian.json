@@ -1,15 +1,74 @@
 {
+  "version": 1.5,
   "site": {
     "url": "https://linux.xidian.edu.cn/mirrors",
     "logo": "https://linux.xidian.edu.cn/img/xdosc.svg",
+    "logo_darkmode": "https://linux.xidian.edu.cn/img/xdosc.svg",
     "abbr": "Xidian",
     "name": "西电开源软件镜像站",
     "homepage": "https://linux.xidian.edu.cn",
     "issue": "https://linux.xidian.edu.cn/git/xdlinux/issues",
-    "request": "https://linux.xidian.edu.cn/git/xdlinux/issues",
-    "group": "https://t.me/xdosc",
-    "note": "仅对校内提供服务"
+    "group": "Telegram: https://t.me/xdosc",
+    "note": "仅面向校内使用"
   },
+  "mirrors": [
+    {
+      "cname": "archlinux",
+      "desc": "",
+      "url": "/archlinux",
+      "status": "S1636197846"
+    },
+    {
+      "cname": "archlinuxcn",
+      "desc": "",
+      "url": "/archlinuxcn",
+      "status": "F1636205036"
+    },
+    {
+      "cname": "debian",
+      "desc": "",
+      "url": "/debian",
+      "status": "Y1636205036"
+    },
+    {
+      "cname": "deepin",
+      "desc": "",
+      "url": "/deepin",
+      "status": "Y1636204966"
+    },
+    {
+      "cname": "raspbian",
+      "desc": "",
+      "url": "/raspbian",
+      "status": "S1636179802"
+    },
+    {
+      "cname": "ubuntu",
+      "desc": "",
+      "url": "/ubuntu",
+      "status": "S1636180090"
+    }
+  ],
   "info": [],
-  "mirrors": []
+  "extension": "D",
+  "endpoints": [
+    {
+      "label": "xidian",
+      "public": false,
+      "resolve": "linux.xidian.edu.cn/mirrors",
+      "filter": [
+        "V4",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": [
+        "219.245.64.0/18",
+        "222.25.128.0/18",
+        "115.155.0.0/18",
+        "219.244.112.0/20",
+        "210.27.0.0/20",
+        "202.117.112.0/20"
+      ]
+    }
+  ]
 }
