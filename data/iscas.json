@@ -1,1293 +1,1379 @@
 {
-  "version": 1.5,
   "site": {
     "url": "https://mirror.iscas.ac.cn",
     "logo": "https://isrc.iscas.ac.cn/images/iscas-logo.jpg",
     "logo_darkmode": "https://isrc.iscas.ac.cn/images/iscas-logo.jpg",
     "abbr": "ISRC-ISCAS",
-    "name": "ISRC 镜像站",
+    "name": "ISCAS 镜像站",
     "homepage": "https://isrc.iscas.ac.cn",
     "request": "https://isrc.iscas.ac.cn/gitlab/platforms/h3cs/mirror-requests",
-    "email": "isrc@iscas.ac.cn",
-    "disk": "101T / 149T (67%)",
-    "note": "中国科技网镜像站点，由中国科学院软件研究所智能软件研究中心提供支持。CSTNET 出口网络，科技网内不限速，其他网络闲时 1Gbps、忙时 100Mbps 动态调整",
+    "email": "jiayi@iscas.ac.cn",
+    "disk": "175T",
+    "note": "中国科技网镜像站点，由中国科学院软件研究所智能软件研究中心提供支持。",
     "big": "https://mirror.iscas.ac.cn/mirror-speedtest/1000mb.bin"
   },
   "info": [],
   "mirrors": [
     {
-      "cname": "adobe-fonts",
-      "desc": "adobe-fonts",
-      "url": "/adobe-fonts",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/adobe-fonts"
-    },
-    {
-      "cname": "AdoptOpenJDK",
-      "desc": "AdoptOpenJDK",
-      "url": "/AdoptOpenJDK",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK"
-    },
-    {
-      "cname": "almalinux",
-      "desc": "almalinux",
-      "url": "/almalinux",
-      "status": "U",
-      "upstream": "rsync://rsync.repo.almalinux.org/almalinux"
-    },
-    {
-      "cname": "alpine",
-      "desc": "alpine",
-      "url": "/alpine",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/alpine"
+      "cname": "armbian",
+      "desc": "Armbian（面向 ARM 单板机的发行版）的软件源",
+      "url": "/armbian",
+      "status": "S1642403855X1642475855",
+      "help": "",
+      "upstream": "rsync://rsync.armbian.com/apt/",
+      "size": "113.02G"
     },
     {
       "cname": "anthon",
-      "desc": "anthon",
+      "desc": "Anthon Linux（安同 Linux）的安装镜像和官方软件包仓库",
       "url": "/anthon",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/anthon"
-    },
-    {
-      "cname": "aosp-monthly",
-      "desc": "aosp-monthly",
-      "url": "/aosp-monthly",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/aosp-monthly"
-    },
-    {
-      "cname": "apache",
-      "desc": "apache",
-      "url": "/apache",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/apache"
-    },
-    {
-      "cname": "arch4edu",
-      "desc": "arch4edu",
-      "url": "/arch4edu",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/arch4edu"
-    },
-    {
-      "cname": "archlinux",
-      "desc": "archlinux",
-      "url": "/archlinux",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux"
-    },
-    {
-      "cname": "archlinuxarm",
-      "desc": "archlinuxarm",
-      "url": "/archlinuxarm",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxarm"
-    },
-    {
-      "cname": "archlinuxcn",
-      "desc": "archlinuxcn",
-      "url": "/archlinuxcn",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/archlinuxcn"
-    },
-    {
-      "cname": "armbian",
-      "desc": "armbian",
-      "url": "/armbian",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/armbian"
-    },
-    {
-      "cname": "armbian-releases",
-      "desc": "armbian-releases",
-      "url": "/armbian-releases",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/armbian-releases"
-    },
-    {
-      "cname": "artixlinux",
-      "desc": "artixlinux",
-      "url": "/artixlinux",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/artixlinux"
-    },
-    {
-      "cname": "artixlinux-iso",
-      "desc": "artixlinux-iso",
-      "url": "/artixlinux-iso",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/artixlinux-iso"
-    },
-    {
-      "cname": "bananian",
-      "desc": "bananian",
-      "url": "/bananian",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/bananian"
-    },
-    {
-      "cname": "bioconductor",
-      "desc": "bioconductor",
-      "url": "/bioconductor",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/bioconductor"
-    },
-    {
-      "cname": "bjlx",
-      "desc": "bjlx",
-      "url": "/bjlx",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/bjlx"
-    },
-    {
-      "cname": "blackarch",
-      "desc": "blackarch",
-      "url": "/blackarch",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/blackarch"
-    },
-    {
-      "cname": "blender",
-      "desc": "blender",
-      "url": "/blender",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/blender"
-    },
-    {
-      "cname": "cc",
-      "desc": "cc",
-      "url": "/cc",
-      "status": "U",
-      "upstream": "rsync://linuxsoft.cern.ch/cc"
-    },
-    {
-      "cname": "centos",
-      "desc": "centos",
-      "url": "/centos",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/"
-    },
-    {
-      "cname": "centos-altarch",
-      "desc": "centos-altarch",
-      "url": "/centos-altarch",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos-altarch"
-    },
-    {
-      "cname": "centos-vault",
-      "desc": "centos-vault",
-      "url": "/centos-vault",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos-vault"
-    },
-    {
-      "cname": "ceph",
-      "desc": "ceph",
-      "url": "/ceph",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ceph"
-    },
-    {
-      "cname": "chakra",
-      "desc": "chakra",
-      "url": "/chakra",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/chakra"
-    },
-    {
-      "cname": "chakra-releases",
-      "desc": "chakra-releases",
-      "url": "/chakra-releases",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/chakra-releases"
-    },
-    {
-      "cname": "chef",
-      "desc": "chef",
-      "url": "/chef",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/chef"
-    },
-    {
-      "cname": "clickhouse",
-      "desc": "clickhouse",
-      "url": "/clickhouse",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/clickhouse"
-    },
-    {
-      "cname": "clojars",
-      "desc": "clojars",
-      "url": "/clojars",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/clojars"
-    },
-    {
-      "cname": "CPAN",
-      "desc": "CPAN",
-      "url": "/CPAN",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CPAN"
-    },
-    {
-      "cname": "CRAN",
-      "desc": "CRAN",
-      "url": "/CRAN",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CRAN"
-    },
-    {
-      "cname": "CTAN",
-      "desc": "CTAN",
-      "url": "/CTAN",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/CTAN"
-    },
-    {
-      "cname": "ctex",
-      "desc": "ctex",
-      "url": "/ctex",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ctex"
+      "status": "S1642403808X1642475808",
+      "help": "/help/anthon/",
+      "upstream": "rsync://mirror.anthonos.org/anthon/",
+      "size": "1.33T"
     },
     {
       "cname": "cygwin",
-      "desc": "cygwin",
+      "desc": "Cygwin 官方软件包仓库",
       "url": "/cygwin",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/cygwin"
-    },
-    {
-      "cname": "dart-pub",
-      "desc": "dart-pub",
-      "url": "/dart-pub",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/dart-pub"
-    },
-    {
-      "cname": "debian",
-      "desc": "debian",
-      "url": "/debian",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian/"
-    },
-    {
-      "cname": "debian-archive",
-      "desc": "debian-archive",
-      "url": "/debian-archive",
-      "status": "U",
-      "upstream": "rsync://archive.debian.org/debian-archive/"
-    },
-    {
-      "cname": "debian-cd",
-      "desc": "debian-cd",
-      "url": "/debian-cd",
-      "status": "U",
-      "upstream": "rsync://mirrors.kernel.org/debian-cd/"
-    },
-    {
-      "cname": "debiancn",
-      "desc": "debiancn",
-      "url": "/debiancn",
-      "status": "U",
-      "upstream": "rsync://repo.debiancn.org/debiancn/"
-    },
-    {
-      "cname": "debian-multimedia",
-      "desc": "debian-multimedia",
-      "url": "/debian-multimedia",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-multimedia"
-    },
-    {
-      "cname": "debian-nonfree",
-      "desc": "debian-nonfree",
-      "url": "/debian-nonfree",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-nonfree"
-    },
-    {
-      "cname": "debian-security",
-      "desc": "debian-security",
-      "url": "/debian-security",
-      "status": "U",
-      "upstream": "rsync://ftp.sjtu.edu.cn/debian-security"
-    },
-    {
-      "cname": "deepin",
-      "desc": "deepin",
-      "url": "/deepin",
-      "status": "U",
-      "upstream": "rsync://rsync.deepin.com/deepin/"
-    },
-    {
-      "cname": "deepin-cd",
-      "desc": "deepin-cd",
-      "url": "/deepin-cd",
-      "status": "U",
-      "upstream": "rsync://rsync.deepin.com/releases/"
-    },
-    {
-      "cname": "dell",
-      "desc": "dell",
-      "url": "/dell",
-      "status": "U",
-      "upstream": "rsync://linux.dell.com/repo/"
-    },
-    {
-      "cname": "docker-ce",
-      "desc": "docker-ce",
-      "url": "/docker-ce",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/docker-ce/"
-    },
-    {
-      "cname": "dotdeb",
-      "desc": "dotdeb",
-      "url": "/dotdeb",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/dotdeb"
-    },
-    {
-      "cname": "eclipse",
-      "desc": "eclipse",
-      "url": "/eclipse",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/eclipse"
-    },
-    {
-      "cname": "elasticstack",
-      "desc": "elasticstack",
-      "url": "/elasticstack",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elasticstack"
-    },
-    {
-      "cname": "ELK",
-      "desc": "ELK",
-      "url": "/ELK",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ELK"
-    },
-    {
-      "cname": "elpa",
-      "desc": "elpa",
-      "url": "/elpa",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elpa"
-    },
-    {
-      "cname": "elrepo",
-      "desc": "elrepo",
-      "url": "/elrepo",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elrepo"
-    },
-    {
-      "cname": "elvish",
-      "desc": "elvish",
-      "url": "/elvish",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elvish"
-    },
-    {
-      "cname": "endeavouros",
-      "desc": "endeavouros",
-      "url": "/endeavouros",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/endeavouros"
-    },
-    {
-      "cname": "epel",
-      "desc": "epel",
-      "url": "/epel",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/epel"
-    },
-    {
-      "cname": "erlang-solutions",
-      "desc": "erlang-solutions",
-      "url": "/erlang-solutions",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/erlang-solutions"
-    },
-    {
-      "cname": "fdroid",
-      "desc": "fdroid",
-      "url": "/fdroid",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fdroid"
-    },
-    {
-      "cname": "fedora",
-      "desc": "fedora",
-      "url": "/fedora",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/"
-    },
-    {
-      "cname": "fedora-altarch",
-      "desc": "fedora-altarch",
-      "url": "/fedora-altarch",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora-altarch"
-    },
-    {
-      "cname": "fedora-secondary",
-      "desc": "fedora-secondary",
-      "url": "/fedora-secondary",
-      "status": "U",
-      "upstream": "rsync://mirrors.kernel.org/fedora-secondary/"
-    },
-    {
-      "cname": "flightgear",
-      "desc": "flightgear",
-      "url": "/flightgear",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/flightgear"
-    },
-    {
-      "cname": "flutter",
-      "desc": "flutter",
-      "url": "/flutter",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/flutter"
-    },
-    {
-      "cname": "freebsd",
-      "desc": "freebsd",
-      "url": "/freebsd",
-      "status": "U",
-      "upstream": "rsync://ftp.tw.freebsd.org/FreeBSD/"
-    },
-    {
-      "cname": "fzug",
-      "desc": "fzug",
-      "url": "/fzug",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/fzug"
-    },
-    {
-      "cname": "gentoo",
-      "desc": "gentoo",
-      "url": "/gentoo",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gentoo"
-    },
-    {
-      "cname": "gentoo-portage",
-      "desc": "gentoo-portage",
-      "url": "/gentoo-portage",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gentoo-portage"
-    },
-    {
-      "cname": "gentoo-portage-prefix",
-      "desc": "gentoo-portage-prefix",
-      "url": "/gentoo-portage-prefix",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gentoo-portage-prefix"
-    },
-    {
-      "cname": "gitlab-ce",
-      "desc": "gitlab-ce",
-      "url": "/gitlab-ce",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gitlab-ce"
-    },
-    {
-      "cname": "gitlab-ee",
-      "desc": "gitlab-ee",
-      "url": "/gitlab-ee",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gitlab-ee"
-    },
-    {
-      "cname": "gitlab-runner",
-      "desc": "gitlab-runner",
-      "url": "/gitlab-runner",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gitlab-runner"
-    },
-    {
-      "cname": "gmt",
-      "desc": "gmt",
-      "url": "/gmt",
-      "status": "U",
-      "upstream": "rsync://gmt.mirror.ac.za/gmt/"
-    },
-    {
-      "cname": "gnu",
-      "desc": "gnu",
-      "url": "/gnu",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/gnu"
-    },
-    {
-      "cname": "gnu-alpha",
-      "desc": "gnu-alpha",
-      "url": "/gnu-alpha",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/gnu-alpha"
-    },
-    {
-      "cname": "grafana",
-      "desc": "grafana",
-      "url": "/grafana",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/grafana"
-    },
-    {
-      "cname": "hackage",
-      "desc": "hackage",
-      "url": "/hackage",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/hackage"
-    },
-    {
-      "cname": "hbcd",
-      "desc": "hbcd",
-      "url": "/hbcd",
-      "status": "U",
-      "upstream": "rsync://rsync.hirensbootcd.org/mirror/"
-    },
-    {
-      "cname": "homebrew-bottles",
-      "desc": "homebrew-bottles",
-      "url": "/homebrew-bottles",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
-    },
-    {
-      "cname": "iina",
-      "desc": "iina",
-      "url": "/iina",
-      "status": "U",
-      "upstream": "rsync://link-start.iina.io/iina/"
-    },
-    {
-      "cname": "influxdata",
-      "desc": "influxdata",
-      "url": "/influxdata",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/influxdata"
-    },
-    {
-      "cname": "ius",
-      "desc": "ius",
-      "url": "/ius",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ius"
-    },
-    {
-      "cname": "jenkins",
-      "desc": "jenkins",
-      "url": "/jenkins",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/jenkins"
-    },
-    {
-      "cname": "julia",
-      "desc": "julia",
-      "url": "/julia",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/julia"
-    },
-    {
-      "cname": "julia-releases",
-      "desc": "julia-releases",
-      "url": "/julia-releases",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/julia-releases"
-    },
-    {
-      "cname": "kali",
-      "desc": "kali",
-      "url": "/kali",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali"
-    },
-    {
-      "cname": "kali-images",
-      "desc": "kali-images",
-      "url": "/kali-images",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali-images"
-    },
-    {
-      "cname": "kaos",
-      "desc": "kaos",
-      "url": "/kaos",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kaos"
-    },
-    {
-      "cname": "kde",
-      "desc": "kde",
-      "url": "/kde",
-      "status": "U",
-      "upstream": "rsync://rsync.kde.org/kdeftp/"
-    },
-    {
-      "cname": "kde-neon",
-      "desc": "kde-neon",
-      "url": "/kde-neon",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/kde-neon/"
-    },
-    {
-      "cname": "kernel",
-      "desc": "kernel",
-      "url": "/kernel",
-      "status": "U",
-      "upstream": "rsync://rsync.kernel.org/pub/linux/kernel/"
-    },
-    {
-      "cname": "kernel.org",
-      "desc": "kernel.org",
-      "url": "/kernel.org",
-      "status": "U",
-      "upstream": "rsync://rsync.kernel.org/pub/"
-    },
-    {
-      "cname": "kicad",
-      "desc": "kicad",
-      "url": "/kicad",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kicad"
-    },
-    {
-      "cname": "knoppix",
-      "desc": "knoppix",
-      "url": "/knoppix",
-      "status": "U",
-      "upstream": "rsync://ftp.uni-kl.de/knoppix/"
-    },
-    {
-      "cname": "kodi",
-      "desc": "kodi",
-      "url": "/kodi",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kodi"
-    },
-    {
-      "cname": "kubernetes",
-      "desc": "kubernetes",
-      "url": "/kubernetes",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kubernetes"
-    },
-    {
-      "cname": "lfs",
-      "desc": "lfs",
-      "url": "/lfs",
-      "status": "U",
-      "upstream": "rsync://ftp.osuosl.org/lfs/"
-    },
-    {
-      "cname": "lfs-livecd",
-      "desc": "lfs-livecd",
-      "url": "/lfs-livecd",
-      "status": "U",
-      "upstream": "rsync://ftp.osuosl.org/lfs-livecd/"
-    },
-    {
-      "cname": "libreoffice",
-      "desc": "libreoffice",
-      "url": "/libreoffice",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/libreoffice"
-    },
-    {
-      "cname": "lineage-rom",
-      "desc": "lineage-rom",
-      "url": "/lineage-rom",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/lineage-rom"
-    },
-    {
-      "cname": "linuxbrew-bottles",
-      "desc": "linuxbrew-bottles",
-      "url": "/linuxbrew-bottles",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/linuxbrew-bottles"
-    },
-    {
-      "cname": "linuxmint",
-      "desc": "linuxmint",
-      "url": "/linuxmint",
-      "status": "U",
-      "upstream": "rsync://mirrors.kernel.org/linuxmint-packages/"
-    },
-    {
-      "cname": "linuxmint-cd",
-      "desc": "linuxmint-cd",
-      "url": "/linuxmint-cd",
-      "status": "U",
-      "upstream": "rsync://mirrors.kernel.org/linuxmint/"
-    },
-    {
-      "cname": "llvm-apt",
-      "desc": "llvm-apt",
-      "url": "/llvm-apt",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/llvm-apt"
-    },
-    {
-      "cname": "loongson",
-      "desc": "loongson",
-      "url": "/loongson",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/loongson"
-    },
-    {
-      "cname": "lxc-images",
-      "desc": "lxc-images",
-      "url": "/lxc-images",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/lxc-images"
-    },
-    {
-      "cname": "lyx",
-      "desc": "lyx",
-      "url": "/lyx",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/lyx"
+      "status": "S1642404478X1642476478",
+      "help": "/help/cygwin/",
+      "upstream": "rsync://mirrors.kernel.org/sourceware/cygwin/",
+      "size": "172.85G"
     },
     {
       "cname": "macports",
-      "desc": "macports",
+      "desc": "macOS 的一个开源软件包管理系统",
       "url": "/macports",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/macports"
-    },
-    {
-      "cname": "mageia",
-      "desc": "mageia",
-      "url": "/mageia",
-      "status": "U",
-      "upstream": "rsync://mirrors.kernel.org/mageia/"
-    },
-    {
-      "cname": "manjaro",
-      "desc": "manjaro",
-      "url": "/manjaro",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/manjaro"
-    },
-    {
-      "cname": "manjaro-arm",
-      "desc": "manjaro-arm",
-      "url": "/manjaro-arm",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/manjaro-arm"
-    },
-    {
-      "cname": "mariadb",
-      "desc": "mariadb",
-      "url": "/mariadb",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/mariadb"
-    },
-    {
-      "cname": "mongodb",
-      "desc": "mongodb",
-      "url": "/mongodb",
-      "status": "U",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/mongodb"
-    },
-    {
-      "cname": "msys2",
-      "desc": "msys2",
-      "url": "/msys2",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/msys2"
-    },
-    {
-      "cname": "mxlinux",
-      "desc": "mxlinux",
-      "url": "/mxlinux",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/mxlinux"
-    },
-    {
-      "cname": "mysql",
-      "desc": "mysql",
-      "url": "/mysql",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/mysql"
-    },
-    {
-      "cname": "NetBSD",
-      "desc": "NetBSD",
-      "url": "/NetBSD",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/NetBSD"
-    },
-    {
-      "cname": "neurodebian",
-      "desc": "neurodebian",
-      "url": "/neurodebian",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/neurodebian"
-    },
-    {
-      "cname": "nix",
-      "desc": "nix",
-      "url": "/nix",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/nix"
-    },
-    {
-      "cname": "nixos-images",
-      "desc": "nixos-images",
-      "url": "/nixos-images",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/nixos-images"
-    },
-    {
-      "cname": "nodejs-release",
-      "desc": "nodejs-release",
-      "url": "/nodejs-release",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/nodejs-release"
-    },
-    {
-      "cname": "OpenBSD",
-      "desc": "OpenBSD",
-      "url": "/OpenBSD",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/OpenBSD"
-    },
-    {
-      "cname": "openeuler",
-      "desc": "openeuler",
-      "url": "/openeuler",
-      "status": "U",
-      "upstream": "rsync://121.36.97.194/openeuler/"
-    },
-    {
-      "cname": "OpenMediaVault",
-      "desc": "OpenMediaVault",
-      "url": "/OpenMediaVault",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/OpenMediaVault"
-    },
-    {
-      "cname": "openresty",
-      "desc": "openresty",
-      "url": "/openresty",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openresty"
-    },
-    {
-      "cname": "opensuse",
-      "desc": "opensuse",
-      "url": "/opensuse",
-      "status": "U",
-      "upstream": "rsync://ftp.sjtu.edu.cn/opensuse"
-    },
-    {
-      "cname": "openthos",
-      "desc": "openthos",
-      "url": "/openthos",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openthos"
-    },
-    {
-      "cname": "openvz",
-      "desc": "openvz",
-      "url": "/openvz",
-      "status": "U",
-      "upstream": "rsync://download.openvz.org/openvz-download/"
-    },
-    {
-      "cname": "openwrt",
-      "desc": "openwrt",
-      "url": "/openwrt",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openwrt"
-    },
-    {
-      "cname": "opnsense",
-      "desc": "opnsense",
-      "url": "/opnsense",
-      "status": "U",
-      "upstream": "rsync://mirror.leaseweb.com/opnsense"
-    },
-    {
-      "cname": "osdn",
-      "desc": "osdn",
-      "url": "/osdn",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/osdn"
-    },
-    {
-      "cname": "osmc",
-      "desc": "osmc",
-      "url": "/osmc",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/osmc"
-    },
-    {
-      "cname": "ovirt",
-      "desc": "ovirt",
-      "url": "/ovirt",
-      "status": "U",
-      "upstream": "rsync://mirror.rackspace.com/ovirt/"
-    },
-    {
-      "cname": "packman",
-      "desc": "packman",
-      "url": "/packman",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/packman"
-    },
-    {
-      "cname": "parrot",
-      "desc": "parrot",
-      "url": "/parrot",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/parrot"
-    },
-    {
-      "cname": "percona",
-      "desc": "percona",
-      "url": "/percona",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/percona"
-    },
-    {
-      "cname": "pkgsrc",
-      "desc": "pkgsrc",
-      "url": "/pkgsrc",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/pkgsrc"
-    },
-    {
-      "cname": "postgresql",
-      "desc": "postgresql",
-      "url": "/postgresql",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/postgresql"
-    },
-    {
-      "cname": "postmarketOS",
-      "desc": "postmarketOS",
-      "url": "/postmarketOS",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/postmarketOS"
-    },
-    {
-      "cname": "postmarketOS-images",
-      "desc": "postmarketOS-images",
-      "url": "/postmarketOS-images",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/postmarketOS-images"
-    },
-    {
-      "cname": "proxmox",
-      "desc": "proxmox",
-      "url": "/proxmox",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/proxmox"
-    },
-    {
-      "cname": "puppy",
-      "desc": "puppy",
-      "url": "/puppy",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/puppy"
-    },
-    {
-      "cname": "putty",
-      "desc": "putty",
-      "url": "/putty",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/putty"
-    },
-    {
-      "cname": "qt",
-      "desc": "qt",
-      "url": "/qt",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/qt"
-    },
-    {
-      "cname": "qubes",
-      "desc": "qubes",
-      "url": "/qubes",
-      "status": "U",
-      "upstream": "rsync://rsync.qubes-os.org/qubes-mirror/"
-    },
-    {
-      "cname": "qubesos",
-      "desc": "qubesos",
-      "url": "/qubesos",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/qubesos"
-    },
-    {
-      "cname": "racket-installers",
-      "desc": "racket-installers",
-      "url": "/racket-installers",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/racket-installers"
+      "status": "S1642413540X1642485540",
+      "help": "",
+      "upstream": "rsync://rsync-origin.macports.org/macports/",
+      "size": "1.57T"
     },
     {
       "cname": "raspberrypi",
-      "desc": "raspberrypi",
+      "desc": "一些专为树莓派提供的 Debian 软件包",
       "url": "/raspberrypi",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspberrypi"
-    },
-    {
-      "cname": "raspberry-pi-os-images",
-      "desc": "raspberry-pi-os-images",
-      "url": "/raspberry-pi-os-images",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os-images"
-    },
-    {
-      "cname": "raspbian",
-      "desc": "raspbian",
-      "url": "/raspbian",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspbian"
-    },
-    {
-      "cname": "redhat",
-      "desc": "redhat",
-      "url": "/redhat",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/redhat"
-    },
-    {
-      "cname": "remi",
-      "desc": "remi",
-      "url": "/remi",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/remi"
-    },
-    {
-      "cname": "remi",
-      "desc": "remi",
-      "url": "/remi",
-      "status": "U",
-      "upstream": "rsync://rpms.remirepo.net"
+      "status": "S1642396249X1642468249",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/raspberrypi/",
+      "size": "178.71G"
     },
     {
       "cname": "repo-ck",
-      "desc": "repo-ck",
+      "desc": "repo-ck 是 Arch 的非官方仓库，内有包含 ck 补丁、BFS 调度器等",
       "url": "/repo-ck",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/repo-ck"
+      "status": "S1642420294X1642492294",
+      "help": "/help/repo-ck/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/repo-ck/",
+      "size": "531.29M"
     },
     {
-      "cname": "rocky",
-      "desc": "rocky",
-      "url": "/rocky",
-      "status": "U",
-      "upstream": "rsync://msync.rockylinux.org/rocky/mirror/pub/rocky/"
-    },
-    {
-      "cname": "ros",
-      "desc": "ros",
-      "url": "/ros",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros"
-    },
-    {
-      "cname": "ros2",
-      "desc": "ros2",
-      "url": "/ros2",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros2"
-    },
-    {
-      "cname": "rpmfusion",
-      "desc": "rpmfusion",
-      "url": "/rpmfusion",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rpmfusion"
-    },
-    {
-      "cname": "rudder",
-      "desc": "rudder",
-      "url": "/rudder",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rudder"
-    },
-    {
-      "cname": "rustup",
-      "desc": "rustup",
-      "url": "/rustup",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rustup"
-    },
-    {
-      "cname": "sagemath",
-      "desc": "sagemath",
-      "url": "/sagemath",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/sagemath"
-    },
-    {
-      "cname": "saltstack",
-      "desc": "saltstack",
-      "url": "/saltstack",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/saltstack"
-    },
-    {
-      "cname": "scientific",
-      "desc": "scientific",
-      "url": "/scientific",
-      "status": "U",
-      "upstream": "rsync://ftp.sjtu.edu.cn/scientific"
-    },
-    {
-      "cname": "slackware",
-      "desc": "slackware",
-      "url": "/slackware",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/slackware"
-    },
-    {
-      "cname": "slackwarearm",
-      "desc": "slackwarearm",
-      "url": "/slackwarearm",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/slackwarearm"
-    },
-    {
-      "cname": "solus",
-      "desc": "solus",
-      "url": "/solus",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/solus"
-    },
-    {
-      "cname": "stackage",
-      "desc": "stackage",
-      "url": "/stackage",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/stackage"
-    },
-    {
-      "cname": "steamos",
-      "desc": "steamos",
-      "url": "/steamos",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/steamos"
-    },
-    {
-      "cname": "termux",
-      "desc": "termux",
-      "url": "/termux",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/termux"
-    },
-    {
-      "cname": "tinycorelinux",
-      "desc": "tinycorelinux",
-      "url": "/tinycorelinux",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/tinycorelinux"
-    },
-    {
-      "cname": "tlpretest",
-      "desc": "tlpretest",
-      "url": "/tlpretest",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/tlpretest"
-    },
-    {
-      "cname": "trisquel",
-      "desc": "trisquel",
-      "url": "/trisquel",
-      "status": "U",
-      "upstream": "rsync://rsync.trisquel.info/trisquel.packages/"
-    },
-    {
-      "cname": "ubuntu",
-      "desc": "ubuntu",
-      "url": "/ubuntu",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu"
-    },
-    {
-      "cname": "ubuntu-cd",
-      "desc": "ubuntu-cd",
-      "url": "/ubuntu-cd",
-      "status": "U",
-      "upstream": "rsync://ftp.sjtu.edu.cn/ubuntu-cd"
-    },
-    {
-      "cname": "ubuntu-cloud-images",
-      "desc": "ubuntu-cloud-images",
-      "url": "/ubuntu-cloud-images",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images"
-    },
-    {
-      "cname": "ubuntukylin",
-      "desc": "ubuntukylin",
-      "url": "/ubuntukylin",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntukylin"
-    },
-    {
-      "cname": "ubuntu-ports",
-      "desc": "ubuntu-ports",
-      "url": "/ubuntu-ports",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports"
-    },
-    {
-      "cname": "ubuntu-releases",
-      "desc": "ubuntu-releases",
-      "url": "/ubuntu-releases",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases"
+      "cname": "kali",
+      "desc": "Kali Linux 的官方软件包仓库",
+      "url": "/kali",
+      "status": "S1642403227X1642475227",
+      "help": "",
+      "upstream": "rsync://ftp.nluug.nl/kali/",
+      "size": "1.33T"
     },
     {
       "cname": "videolan-ftp",
-      "desc": "videolan-ftp",
+      "desc": "简称VLC，是一款自由、开源的跨平台多媒体播放器及框架，可播放大多数多媒体文件",
       "url": "/videolan-ftp",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/videolan-ftp"
+      "status": "S1642403676X1642475676",
+      "help": "",
+      "upstream": "rsync://rsync.videolan.org/videolan-ftp/",
+      "size": "94.78G"
     },
     {
-      "cname": "virtualbox",
-      "desc": "virtualbox",
-      "url": "/virtualbox",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/virtualbox"
+      "cname": "ctex",
+      "desc": "旧版 CTEX 安装镜像存档",
+      "url": "/ctex",
+      "status": "S1642398014X1642470014",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ctex/",
+      "size": "4.35G"
     },
     {
-      "cname": "voidlinux",
-      "desc": "voidlinux",
-      "url": "/voidlinux",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/voidlinux"
+      "cname": "ubuntu-releases",
+      "desc": "包含近几年发行的 Ubuntu 的镜像",
+      "url": "/ubuntu-releases",
+      "status": "S1642398907X1642470907",
+      "help": "",
+      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
+      "size": "25.42G"
+    },
+    {
+      "cname": "centos-vault",
+      "desc": "为旧版本 CentOS 提供服务的软件包仓库",
+      "url": "/centos-vault",
+      "status": "S1642418443X1642490443",
+      "help": "/help/centos-vault/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos-vault/",
+      "size": "5.93T"
+    },
+    {
+      "cname": "packman",
+      "desc": "为 Debian、Fedora、openSUSE、Ubuntu 提供额外和过期软件包的仓库",
+      "url": "/packman",
+      "status": "S1642395827X1642467827",
+      "help": "",
+      "upstream": "rsync://mirror.karneval.cz/packman/",
+      "size": "154.19G"
+    },
+    {
+      "cname": "FreeBSD",
+      "desc": "",
+      "url": "/FreeBSD",
+      "status": "S1642395543X1642467543",
+      "help": "",
+      "upstream": "rsync://ftp.tw.freebsd.org/FreeBSD/",
+      "size": "908.88G"
+    },
+    {
+      "cname": "ius",
+      "desc": "为企业版 Linux 提供最新软件包的镜像源",
+      "url": "/ius",
+      "status": "S1642396091X1642468091",
+      "help": "",
+      "upstream": "rsync://origin.repo.ius.io/ius/",
+      "size": "35.73G"
+    },
+    {
+      "cname": "manjaro-arm",
+      "desc": "Manjaro ARM Linux 的官方软件源",
+      "url": "/manjaro-arm",
+      "status": "S1642395456X1642467456",
+      "help": "",
+      "upstream": "rsync://ftp.osuosl.org/manjaro-arm/repo/",
+      "size": "22.11G"
+    },
+    {
+      "cname": "elasticstack",
+      "desc": "ELK 系列数据分析工具，5.x 之后改名为 Elastic Stack",
+      "url": "/elasticstack",
+      "status": "S1642397597X1642469597",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elasticstack/",
+      "size": "234.79G"
+    },
+    {
+      "cname": "lfs",
+      "desc": "",
+      "url": "/lfs",
+      "status": "S1642394937X1642466937",
+      "help": "",
+      "upstream": "rsync://ftp.osuosl.org/lfs/",
+      "size": "28.76G"
+    },
+    {
+      "cname": "nixos-images",
+      "desc": "NixOS 的安装镜像和虚拟机镜像",
+      "url": "/nixos-images",
+      "status": "S1642402327X1642474327",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/nixos-images/",
+      "size": "21.93G"
+    },
+    {
+      "cname": "ubuntu-ports",
+      "desc": "armhf, arm64 以及 powerpc 等平台的 Ubuntu 软件仓库",
+      "url": "/ubuntu-ports",
+      "status": "S1642411704X1642483704",
+      "help": "/help/ubuntu-ports/",
+      "upstream": "rsync://ports.ubuntu.com/ubuntu-ports/",
+      "size": "2.16T"
+    },
+    {
+      "cname": "redhat",
+      "desc": "Red Hat Enterprise Linux 源码包（SRPM）仓库",
+      "url": "/redhat",
+      "status": "S1642403531X1642475531",
+      "help": "",
+      "upstream": "rsync://ftp.redhat.com/redhat/",
+      "size": "6.22T"
+    },
+    {
+      "cname": "dotdeb",
+      "desc": "用于 Debian 服务器的额外镜像源",
+      "url": "/dotdeb",
+      "status": "S1642396447X1642468447",
+      "help": "",
+      "upstream": "rsync://mirror.us.leaseweb.net/dotdeb/",
+      "size": "25.22G"
+    },
+    {
+      "cname": "tinycorelinux",
+      "desc": "为嵌入式开发的微型 Linux 发行版",
+      "url": "/tinycorelinux",
+      "status": "S1642403719X1642475719",
+      "help": "",
+      "upstream": "rsync://www.tinycorelinux.net/tc/",
+      "size": "275.98G"
+    },
+    {
+      "cname": "ubuntu",
+      "desc": "流行的 Linux 发行版 Ubuntu 的安装镜像和官方软件包仓库",
+      "url": "/ubuntu",
+      "status": "S1642412425X1642484425",
+      "help": "/help/ubuntu/",
+      "upstream": "rsync://releases.ubuntu.com/ubuntu/",
+      "size": "1.70T"
+    },
+    {
+      "cname": "raspbian",
+      "desc": "为树莓派编译的 Debian 系统软件源",
+      "url": "/raspbian",
+      "status": "S1642420274X1642492274",
+      "help": "/help/raspbian/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/raspbian/",
+      "size": "517.14G"
+    },
+    {
+      "cname": "steamos",
+      "desc": "Valve 开发的基于 Debian 的操作系统，包含安装镜像和官方软件包仓库",
+      "url": "/steamos",
+      "status": "S1642420614X1642492614",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/steamos/",
+      "size": "445.39G"
+    },
+    {
+      "cname": "loongson",
+      "desc": "用于龙芯电脑的软件包",
+      "url": "/loongson",
+      "status": "S1642394895X1642466895",
+      "help": "",
+      "upstream": "rsync://rsync.anheng.com.cn/loongson/",
+      "size": "18.61G"
+    },
+    {
+      "cname": "lfs-livecd",
+      "desc": "",
+      "url": "/lfs-livecd",
+      "status": "S1642398573X1642470573",
+      "help": "",
+      "upstream": "rsync://ftp.osuosl.org/lfs-livecd/",
+      "size": "11.44G"
+    },
+    {
+      "cname": "postmarketOS",
+      "desc": "",
+      "url": "/postmarketOS",
+      "status": "S1642394958NX1642466958",
+      "help": "",
+      "upstream": "rsync://mirror.postmarketos.org/postmarketos/",
+      "size": "21.15G"
+    },
+    {
+      "cname": "fzug",
+      "desc": "Fedora 中文用户组的软件包仓库",
+      "url": "/fzug",
+      "status": "S1642417334X1642489334",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/fzug/",
+      "size": "2.34G"
+    },
+    {
+      "cname": "gentoo-portage-prefix",
+      "desc": "Gentoo/Prefix 的 Portage 包管理器镜像源（仅适用于 macOS）",
+      "url": "/gentoo-portage-prefix",
+      "status": "S1642396081X1642468081",
+      "help": "/help/gentoo-prefix/",
+      "upstream": "rsync://rsync.prefix.bitzolder.nl/gentoo-portage-prefix/",
+      "size": "239.28M"
+    },
+    {
+      "cname": "mageia",
+      "desc": "Mageia Linux（衍生于 Mandriva Linux）的安装镜像和官方软件包仓库",
+      "url": "/mageia",
+      "status": "S1642411289X1642483289",
+      "help": "",
+      "upstream": "rsync://mirrors.kernel.org/mageia/",
+      "size": "2.37T"
+    },
+    {
+      "cname": "ubuntu-cloud-images",
+      "desc": "适用于公有云的 Ubuntu 安装镜像",
+      "url": "/ubuntu-cloud-images",
+      "status": "S1642406627X1642478627",
+      "help": "",
+      "upstream": "rsync://cloud-images.ubuntu.com/cloud-images/",
+      "size": "1.12T"
+    },
+    {
+      "cname": "putty",
+      "desc": "",
+      "url": "/putty",
+      "status": "S1642394880NX1642466880",
+      "help": "",
+      "upstream": "rsync://rsync.chiark.greenend.org.uk/ftp/users/sgtatham/putty-website-mirror/",
+      "size": "63.14M"
+    },
+    {
+      "cname": "lxc-images",
+      "desc": "Linux 容器的镜像",
+      "url": "/lxc-images",
+      "status": "Y1642404300",
+      "help": "/help/lxc-images/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/lxc-images/",
+      "size": "unknown"
     },
     {
       "cname": "winehq",
-      "desc": "winehq",
+      "desc": "Wine （允许类 Unix 操作系统运行 Windows 程序）",
       "url": "/winehq",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/winehq"
+      "status": "S1642396675X1642468675",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/winehq/",
+      "size": "40.06G"
+    },
+    {
+      "cname": "gentoo",
+      "desc": "Gentoo Linux 的 Stage 3 镜像",
+      "url": "/gentoo",
+      "status": "S1642405028X1642477028",
+      "help": "",
+      "upstream": "rsync://mirror.us.leaseweb.net/gentoo/",
+      "size": "467.71G"
+    },
+    {
+      "cname": "elpa",
+      "desc": "Emacs 内建包管理器 package.el 的软件源",
+      "url": "/elpa",
+      "status": "S1642412596X1642484596",
+      "help": "/help/elpa/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/elpa/",
+      "size": "2.09G"
+    },
+    {
+      "cname": "percona",
+      "desc": "开源的数据库解决方案，详见 http://www.percona.com",
+      "url": "/percona",
+      "status": "S1642395983X1642467983",
+      "help": "",
+      "upstream": "rsync://rsync.percona.com/rsync/",
+      "size": "2.69T"
+    },
+    {
+      "cname": "homebrew-bottles",
+      "desc": "预编译的 Homebrew 软件包",
+      "url": "/homebrew-bottles",
+      "status": "S1642404300X1642476300",
+      "help": "/help/homebrew-bottles/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/",
+      "size": "317.14G"
+    },
+    {
+      "cname": "deepin",
+      "desc": "Deepin Linux 的官方软件包仓库",
+      "url": "/deepin",
+      "status": "S1642397137X1642469137",
+      "help": "",
+      "upstream": "rsync://rsync.deepin.com/deepin/",
+      "size": "298.99G"
+    },
+    {
+      "cname": "fedora",
+      "desc": "Fedora Linux 的安装镜像和官方软件包仓库",
+      "url": "/fedora",
+      "status": "S1642411776X1642483776",
+      "help": "/help/fedora/",
+      "upstream": "rsync://download-ib01.fedoraproject.org/fedora-enchilada/linux/",
+      "size": "6.80T"
+    },
+    {
+      "cname": "jenkins",
+      "desc": "用 Java 编写的持续集成框架",
+      "url": "/jenkins",
+      "status": "S1642399065X1642471065",
+      "help": "",
+      "upstream": "rsync://rsync.osuosl.org/jenkins/",
+      "size": "137.15G"
+    },
+    {
+      "cname": "CTAN",
+      "desc": "TeX 的各种发行版、软件包和文档",
+      "url": "/CTAN",
+      "status": "S1642403571X1642475571",
+      "help": "/help/CTAN/",
+      "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
+      "size": "49.32G"
+    },
+    {
+      "cname": "blackarch",
+      "desc": "用于安全评估的基于 Arch Linux 的轻量级发行版",
+      "url": "/blackarch",
+      "status": "S1642396370X1642468370",
+      "help": "",
+      "upstream": "rsync://www.blackarch.org/blackarch/",
+      "size": "76.66G"
+    },
+    {
+      "cname": "gnu-alpha",
+      "desc": "一些尚未达到生产质量的 GNU 项目的软件包",
+      "url": "/gnu-alpha",
+      "status": "S1642396319X1642468319",
+      "help": "",
+      "upstream": "rsync://ftp.gnu.org/alpha/",
+      "size": "58.74G"
+    },
+    {
+      "cname": "CPAN",
+      "desc": "Perl 语言软件库",
+      "url": "/CPAN",
+      "status": "S1642401167X1642473167",
+      "help": "/help/CPAN/",
+      "upstream": "rsync://cpan-rsync.perl.org/CPAN/",
+      "size": "29.17G"
+    },
+    {
+      "cname": "openresty",
+      "desc": "基于 Nginx 与 Lua 的高性能 Web 平台",
+      "url": "/openresty",
+      "status": "S1642399499X1642471499",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openresty/",
+      "size": "35.37G"
+    },
+    {
+      "cname": "alpine",
+      "desc": "Alpine Linux 的安装镜像和官方软件包仓库",
+      "url": "/alpine",
+      "status": "S1642402781X1642474781",
+      "help": "/help/alpine/",
+      "upstream": "rsync://rsync.alpinelinux.org/alpine/",
+      "size": "1.66T"
+    },
+    {
+      "cname": "linuxmint-cd",
+      "desc": "Linux Mint 的安装镜像",
+      "url": "/linuxmint-cd",
+      "status": "S1642394880X1642466880",
+      "help": "",
+      "upstream": "rsync://mirrors.kernel.org/linuxmint/",
+      "size": "366.84G"
+    },
+    {
+      "cname": "rocky",
+      "desc": "",
+      "url": "/rocky",
+      "status": "S1642404947X1642476947",
+      "help": "",
+      "upstream": "rsync://msync.rockylinux.org/rocky/mirror/pub/rocky/",
+      "size": "788.05G"
+    },
+    {
+      "cname": "rustup",
+      "desc": "Rust 的官方安装工具",
+      "url": "/rustup",
+      "status": "S1642415711X1642487711",
+      "help": "/help/rustup/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rustup/",
+      "size": "1.28T"
+    },
+    {
+      "cname": "pkgsrc",
+      "desc": "NetBSD 的第三方软件源",
+      "url": "/pkgsrc",
+      "status": "S1642418549X1642490549",
+      "help": "",
+      "upstream": "rsync://rsync3.jp.NetBSD.org/pub/pkgsrc/",
+      "size": "2.57T"
+    },
+    {
+      "cname": "kubernetes",
+      "desc": "Kubernetes 是用于集群自动部署和管理的开源系统",
+      "url": "/kubernetes",
+      "status": "S1642399592X1642471592",
+      "help": "/help/kubernetes/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kubernetes/",
+      "size": "58.83G"
+    },
+    {
+      "cname": "qt",
+      "desc": "跨平台软件开发库 Qt 的源码、开发工具、文档等",
+      "url": "/qt",
+      "status": "Y1642394882",
+      "help": "",
+      "upstream": "rsync://master.qt-project.org/qt-all/",
+      "size": "unknown"
+    },
+    {
+      "cname": "termux",
+      "desc": "运行在 Android 上的终端模拟器 Termux 的官方软件包仓库",
+      "url": "/termux",
+      "status": "S1642420686X1642492686",
+      "help": "/help/termux/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/termux/",
+      "size": "13.83G"
+    },
+    {
+      "cname": "ovirt",
+      "desc": "",
+      "url": "/ovirt",
+      "status": "F1642398992X1642470992",
+      "help": "",
+      "upstream": "rsync://mirror.rackspace.com/ovirt/",
+      "size": "unknown"
+    },
+    {
+      "cname": "julia",
+      "desc": "Julia 编程语言的包管理器镜像",
+      "url": "/julia",
+      "status": "S1642397939X1642469939",
+      "help": "/help/julia/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/julia/",
+      "size": "2.10T"
+    },
+    {
+      "cname": "neurodebian",
+      "desc": "用于神经科学研究的 Debian 软件包源",
+      "url": "/neurodebian",
+      "status": "S1642398675X1642470675",
+      "help": "",
+      "upstream": "rsync://neuro.debian.net/neurodebian/",
+      "size": "78.07G"
+    },
+    {
+      "cname": "saltstack",
+      "desc": "基于 python 的配置管理与运维自动化工具",
+      "url": "/saltstack",
+      "status": "S1642395953X1642467953",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/saltstack/",
+      "size": "88.70G"
+    },
+    {
+      "cname": "flightgear",
+      "desc": "多平台的飞行模拟器",
+      "url": "/flightgear",
+      "status": "S1642403260X1642475260",
+      "help": "",
+      "upstream": "rsync://mirrors.ibiblio.org/flightgear/",
+      "size": "320.52G"
+    },
+    {
+      "cname": "KaOS",
+      "desc": "一个基于 KDE 的独立发行版",
+      "url": "/KaOS",
+      "status": "S1642394867X1642466867",
+      "help": "",
+      "upstream": "rsync://kaosx.tk/kaos/",
+      "size": "16.40G"
+    },
+    {
+      "cname": "dart-pub",
+      "desc": "Dart 语言的软件包仓库",
+      "url": "/dart-pub",
+      "status": "Y1642424005",
+      "help": "/help/dart-pub/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/dart-pub/",
+      "size": "unknown"
+    },
+    {
+      "cname": "mariadb",
+      "desc": "衍生于 MySQL 的开源关系数据库",
+      "url": "/mariadb",
+      "status": "S1642395674X1642467674",
+      "help": "/help/mariadb/",
+      "upstream": "rsync://rsync.osuosl.org/mariadb/",
+      "size": "556.15G"
+    },
+    {
+      "cname": "kernel.org",
+      "desc": "",
+      "url": "/kernel.org",
+      "status": "S1642398547X1642470547",
+      "help": "",
+      "upstream": "rsync://rsync.kernel.org/pub/",
+      "size": "956.78G"
+    },
+    {
+      "cname": "ubuntukylin",
+      "desc": "",
+      "url": "/ubuntukylin",
+      "status": "S1642394869NX1642466869",
+      "help": "",
+      "upstream": "rsync://archive.ubuntukylin.com/ubuntukylin/",
+      "size": "16.39G"
     },
     {
       "cname": "zabbix",
-      "desc": "zabbix",
+      "desc": "著名的网络监视、管理系统",
       "url": "/zabbix",
-      "status": "U",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/zabbix"
+      "status": "S1642395660X1642467660",
+      "help": "",
+      "upstream": "rsync://repo.zabbix.com/mirror/",
+      "size": "83.25G"
+    },
+    {
+      "cname": "blender",
+      "desc": "专业的三维计算机图形软件",
+      "url": "/blender",
+      "status": "S1642401807X1642473807",
+      "help": "",
+      "upstream": "rsync://mirrors.dotsrc.org/blender/",
+      "size": "138.36G"
+    },
+    {
+      "cname": "postgresql",
+      "desc": "著名的开源关系型数据库 PostgreSQL 的镜像",
+      "url": "/postgresql",
+      "status": "S1642412491X1642484491",
+      "help": "",
+      "upstream": "rsync://ftp.postgresql.org/pgsql-ftp/",
+      "size": "330.00G"
+    },
+    {
+      "cname": "artixlinux",
+      "desc": "Artix Linux 的官方软件包仓库（基于 Arch Linux 的不使用 systemd 的发行版）",
+      "url": "/artixlinux",
+      "status": "S1642395194X1642467194",
+      "help": "",
+      "upstream": "rsync://mirror1.artixlinux.org/artix-linux/",
+      "size": "17.50G"
+    },
+    {
+      "cname": "linuxmint",
+      "desc": "Linux Mint 的官方软件源",
+      "url": "/linuxmint",
+      "status": "S1642397394X1642469394",
+      "help": "/help/linuxmint/",
+      "upstream": "rsync://mirrors.kernel.org/linuxmint-packages/",
+      "size": "36.21G"
+    },
+    {
+      "cname": "parrot",
+      "desc": "Parrot Linux（专注于安全审计的 Linux 发行版）的安装映像和官方软件源",
+      "url": "/parrot",
+      "status": "S1642397880X1642469880",
+      "help": "",
+      "upstream": "rsync://archive.parrotsec.org/parrot/",
+      "size": "382.98G"
+    },
+    {
+      "cname": "rpmfusion",
+      "desc": "RPM Fusion 提供了一些 Fedora Project 和 Red Hat 不包含的软件",
+      "url": "/rpmfusion",
+      "status": "S1642398991X1642470991",
+      "help": "/help/rpmfusion/",
+      "upstream": "rsync://download1.rpmfusion.org/rpmfusion/",
+      "size": "223.83G"
+    },
+    {
+      "cname": "racket-installers",
+      "desc": "Racket 语言环境安装包",
+      "url": "/racket-installers",
+      "status": "S1642395874X1642467874",
+      "help": "",
+      "upstream": "rsync://mirror.csclub.uwaterloo.ca/racket/racket-installers/",
+      "size": "65.75G"
+    },
+    {
+      "cname": "debian-cd",
+      "desc": "Debian Linux 的安装镜像",
+      "url": "/debian-cd",
+      "status": "S1642394941X1642466941",
+      "help": "",
+      "upstream": "rsync://mirrors.kernel.org/debian-cd/",
+      "size": "220.71G"
+    },
+    {
+      "cname": "voidlinux",
+      "desc": "基于 xbps 包管理器的独立 Linux 发行版",
+      "url": "/voidlinux",
+      "status": "S1642409497X1642481497",
+      "help": "/help/voidlinux/",
+      "upstream": "rsync://mirror.clarkson.edu/voidlinux/",
+      "size": "1.18T"
+    },
+    {
+      "cname": "epel",
+      "desc": "企业版 Linux 附加软件包",
+      "url": "/epel",
+      "status": "S1642396776X1642468776",
+      "help": "/help/epel/",
+      "upstream": "rsync://mirrors.kernel.org/fedora-epel/",
+      "size": "331.31G"
+    },
+    {
+      "cname": "elrepo",
+      "desc": "RHEL 及其变体的 RPM 软件包仓库",
+      "url": "/elrepo",
+      "status": "S1642403246X1642475246",
+      "help": "/help/elrepo/",
+      "upstream": "rsync://ftp.yz.yamagata-u.ac.jp/pub/linux/RPMS/elrepo/",
+      "size": "69.52G"
+    },
+    {
+      "cname": "rudder",
+      "desc": "自动化 IT 基础设施配置与审计工具",
+      "url": "/rudder",
+      "status": "S1642394839X1642466839",
+      "help": "/help/rudder/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rudder/",
+      "size": "2.86G"
+    },
+    {
+      "cname": "kernel",
+      "desc": "各个版本的 Linux 内核源代码压缩包和补丁",
+      "url": "/kernel",
+      "status": "S1642397011X1642469011",
+      "help": "",
+      "upstream": "rsync://rsync.kernel.org/pub/linux/kernel/",
+      "size": "836.99G"
+    },
+    {
+      "cname": "almalinux",
+      "desc": "",
+      "url": "/almalinux",
+      "status": "S1642395865X1642467865",
+      "help": "",
+      "upstream": "rsync://rsync.repo.almalinux.org/almalinux/",
+      "size": "573.16G"
+    },
+    {
+      "cname": "nodejs-release",
+      "desc": "预编译的 Node.js 二进制程序",
+      "url": "/nodejs-release",
+      "status": "S1642395983X1642467983",
+      "help": "/help/nodejs-release/",
+      "upstream": "rsync://unencrypted.nodejs.org/nodejs/release/",
+      "size": "273.94G"
+    },
+    {
+      "cname": "bjlx",
+      "desc": "北京龙芯 & Debian 俱乐部 的公开软件源",
+      "url": "/bjlx",
+      "status": "S1642402800X1642474800",
+      "help": "",
+      "upstream": "rsync://rsync.anheng.com.cn/bjlx/",
+      "size": "3.89G"
+    },
+    {
+      "cname": "qubesos",
+      "desc": "一个面向安全的桌面操作系统，利用虚拟化技术隔离应用来提供安全保障",
+      "url": "/qubesos",
+      "status": "S1642398900X1642470900",
+      "help": "/help/qubesos/",
+      "upstream": "rsync://rsync.qubes-os.org/qubes-mirror/",
+      "size": "333.88G"
+    },
+    {
+      "cname": "openvz",
+      "desc": "",
+      "url": "/openvz",
+      "status": "S1642395237X1642467237",
+      "help": "",
+      "upstream": "rsync://download.openvz.org/openvz-download/",
+      "size": "349.34G"
+    },
+    {
+      "cname": "archlinux",
+      "desc": "Arch Linux 的安装镜像和官方软件包仓库",
+      "url": "/archlinux",
+      "status": "S1642418152X1642490152",
+      "help": "/help/archlinux/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/archlinux/",
+      "size": "70.03G"
+    },
+    {
+      "cname": "raspberry-pi-os-images",
+      "desc": "Raspberry Pi OS （原 Raspbian）的安装镜像",
+      "url": "/raspberry-pi-os-images",
+      "status": "S1642418673X1642490673",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/raspberry-pi-os-images/",
+      "size": "430.32G"
+    },
+    {
+      "cname": "erlang-solutions",
+      "desc": "为各大 Linux 发行版提供的 Erlang 软件包",
+      "url": "/erlang-solutions",
+      "status": "S1642395286X1642467286",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/erlang-solutions/",
+      "size": "107.85G"
+    },
+    {
+      "cname": "manjaro",
+      "desc": "Manjaro Linux 的官方软件源",
+      "url": "/manjaro",
+      "status": "S1642403047X1642475047",
+      "help": "",
+      "upstream": "rsync://mirror.yandex.ru/mirrors/manjaro/",
+      "size": "132.56G"
+    },
+    {
+      "cname": "openwrt",
+      "desc": "OpenWrt/LEDE 软件包镜像源",
+      "url": "/openwrt",
+      "status": "Y1642396332",
+      "help": "/help/openwrt/",
+      "upstream": "rsync://downloads.openwrt.org/downloads/",
+      "size": "unknown"
+    },
+    {
+      "cname": "trisquel",
+      "desc": "",
+      "url": "/trisquel",
+      "status": "S1642398800X1642470800",
+      "help": "",
+      "upstream": "rsync://rsync.trisquel.info/trisquel.packages/",
+      "size": "621.61G"
+    },
+    {
+      "cname": "NetBSD",
+      "desc": "NetBSD 的安装镜像和部分系统源码",
+      "url": "/NetBSD",
+      "status": "S1642417977X1642489977",
+      "help": "",
+      "upstream": "rsync://rsync.NetBSD.org/NetBSD/",
+      "size": "722.03G"
+    },
+    {
+      "cname": "mongodb",
+      "desc": "开源的跨平台 NoSQL 文档型数据库",
+      "url": "/mongodb",
+      "status": "S1642414489X1642486489",
+      "help": "/help/mongodb/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/mongodb/",
+      "size": "114.20G"
+    },
+    {
+      "cname": "docker-ce",
+      "desc": "Docker Community Edition 的安装包",
+      "url": "/docker-ce",
+      "status": "S1642398002X1642470002",
+      "help": "/help/docker-ce/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/docker-ce/",
+      "size": "603.87G"
+    },
+    {
+      "cname": "debiancn",
+      "desc": "",
+      "url": "/debiancn",
+      "status": "S1642403591X1642475591",
+      "help": "",
+      "upstream": "rsync://repo.debiancn.org/debiancn/",
+      "size": "31.99G"
+    },
+    {
+      "cname": "fdroid",
+      "desc": "F-Droid 是 Android 上的自由与开源软件应用商店",
+      "url": "/fdroid",
+      "status": "S1642401754X1642473754",
+      "help": "/help/fdroid/",
+      "upstream": "rsync://ftp.lysator.liu.se/pub/fdroid/",
+      "size": "881.55G"
+    },
+    {
+      "cname": "debian-archive",
+      "desc": "",
+      "url": "/debian-archive",
+      "status": "S1642406477X1642478477",
+      "help": "",
+      "upstream": "rsync://archive.debian.org/debian-archive/",
+      "size": "1.52T"
+    },
+    {
+      "cname": "kodi",
+      "desc": "开源的多媒体播放器，原名 XBMC",
+      "url": "/kodi",
+      "status": "S1642397973X1642469973",
+      "help": "",
+      "upstream": "rsync://mirror.yandex.ru/mirrors/xbmc/",
+      "size": "170.54G"
+    },
+    {
+      "cname": "libreoffice",
+      "desc": "自由的办公软件套件",
+      "url": "/libreoffice",
+      "status": "Y1642394897",
+      "help": "",
+      "upstream": "rsync://rsync.documentfoundation.org/tdf-pub/",
+      "size": "unknown"
+    },
+    {
+      "cname": "artixlinux-iso",
+      "desc": "Artix Linux 的安装镜像",
+      "url": "/artixlinux-iso",
+      "status": "S1642394855X1642466855",
+      "help": "",
+      "upstream": "rsync://download.artixlinux.org/iso/",
+      "size": "46.46G"
+    },
+    {
+      "cname": "iina",
+      "desc": "macOS 上的现代化开源视频播放器",
+      "url": "/iina",
+      "status": "S1642396102X1642468102",
+      "help": "",
+      "upstream": "rsync://link-start.iina.io/iina/",
+      "size": "1.58G"
+    },
+    {
+      "cname": "debian-security",
+      "desc": "Debian Linux 的安全更新",
+      "url": "/debian-security",
+      "status": "S1642397160X1642469160",
+      "help": "",
+      "upstream": "rsync://rsync.security.debian.org/debian-security/",
+      "size": "240.26G"
+    },
+    {
+      "cname": "deepin-cd",
+      "desc": "Deepin Linux 的安装镜像",
+      "url": "/deepin-cd",
+      "status": "S1642403592X1642475592",
+      "help": "",
+      "upstream": "rsync://rsync.deepin.com/releases/",
+      "size": "30.85G"
+    },
+    {
+      "cname": "solus",
+      "desc": "Solus 的软件仓库，致力于制作对新手友好的发行版",
+      "url": "/solus",
+      "status": "S1642399540X1642471540",
+      "help": "/help/solus/",
+      "upstream": "rsync://mirrors.rit.edu/solus/",
+      "size": "2.03T"
+    },
+    {
+      "cname": "adobe-fonts",
+      "desc": "Adobe 公司的开源字体",
+      "url": "/adobe-fonts",
+      "status": "S1642417354X1642489354",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/adobe-fonts/",
+      "size": "54.83G"
+    },
+    {
+      "cname": "bananian",
+      "desc": "用于 Banana Pi 的 Debian 操作系统",
+      "url": "/bananian",
+      "status": "S1642397605X1642469605",
+      "help": "/help/bananian/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/bananian/",
+      "size": "2.98G"
+    },
+    {
+      "cname": "llvm-apt",
+      "desc": "LLVM 编译器套件的 APT 安装源",
+      "url": "/llvm-apt",
+      "status": "S1642399379X1642471379",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/llvm-apt/",
+      "size": "8.03G"
+    },
+    {
+      "cname": "mysql",
+      "desc": "MySQL 数据库的安装包及各种工具下载",
+      "url": "/mysql",
+      "status": "S1642403341X1642475341",
+      "help": "/help/mysql/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/mysql/",
+      "size": "829.60G"
+    },
+    {
+      "cname": "elvish",
+      "desc": "TUNA 前会长 xiaq 开发的革命性 Shell",
+      "url": "/elvish",
+      "status": "S1642394909X1642466909",
+      "help": "",
+      "upstream": "rsync://rsync.elv.sh/elvish/",
+      "size": "4.98G"
+    },
+    {
+      "cname": "proxmox",
+      "desc": "服务器虚拟化环境 Linux 发行版 Proxmox VE",
+      "url": "/proxmox",
+      "status": "S1642418636X1642490636",
+      "help": "/help/proxmox/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/proxmox/",
+      "size": "92.42G"
+    },
+    {
+      "cname": "sagemath",
+      "desc": "构建在 NumPy, SciPy 等工具之上的开源数学软件系统",
+      "url": "/sagemath",
+      "status": "S1642399877X1642471877",
+      "help": "",
+      "upstream": "rsync://files.sagemath.org/sage/",
+      "size": "473.22G"
+    },
+    {
+      "cname": "endeavouros",
+      "desc": "",
+      "url": "/endeavouros",
+      "status": "S1642394843NX1642466843",
+      "help": "",
+      "upstream": "rsync://mirror.alpix.eu/endeavouros/",
+      "size": "27.28G"
+    },
+    {
+      "cname": "opnsense",
+      "desc": "OPNsense 是基于 FreeBSD 的防火墙和路由软件",
+      "url": "/opnsense",
+      "status": "S1642396263X1642468263",
+      "help": "",
+      "upstream": "rsync://rsync.opnsense.org/opnsense-dist/",
+      "size": "111.24G"
+    },
+    {
+      "cname": "ceph",
+      "desc": "高性能对象存储和文件系统",
+      "url": "/ceph",
+      "status": "S1642404031X1642476031",
+      "help": "/help/ceph/",
+      "upstream": "rsync://download.ceph.com/ceph/",
+      "size": "2.11T"
+    },
+    {
+      "cname": "kde",
+      "desc": "KDE主源码镜像",
+      "url": "/kde",
+      "status": "S1642398517X1642470517",
+      "help": "",
+      "upstream": "rsync://rsync.kde.org/kdeftp/",
+      "size": "661.64G"
+    },
+    {
+      "cname": "ros2",
+      "desc": "ROS (Robot Operating System) 2.0 版本",
+      "url": "/ros2",
+      "status": "S1642396462X1642468462",
+      "help": "/help/ros2/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/ros2/",
+      "size": "43.51G"
+    },
+    {
+      "cname": "apache",
+      "desc": "Apache 基金会赞助的各个项目",
+      "url": "/apache",
+      "status": "S1642395053X1642467053",
+      "help": "",
+      "upstream": "rsync://rsync.apache.org/apache-dist/",
+      "size": "169.92G"
+    },
+    {
+      "cname": "virtualbox",
+      "desc": "Oracle 的开源的 x86 架构虚拟机",
+      "url": "/virtualbox",
+      "status": "S1642394855X1642466855",
+      "help": "/help/virtualbox/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/virtualbox/",
+      "size": "117.36G"
+    },
+    {
+      "cname": "ros",
+      "desc": "ROS提供一系列程序库和工具以帮助软件开发者创建机器人应用软件",
+      "url": "/ros",
+      "status": "S1642395478X1642467478",
+      "help": "/help/ros/",
+      "upstream": "rsync://mirror.umd.edu/packages.ros.org/ros/",
+      "size": "90.03G"
+    },
+    {
+      "cname": "armbian-releases",
+      "desc": "Armbian 的安装镜像",
+      "url": "/armbian-releases",
+      "status": "S1642396200X1642468200",
+      "help": "",
+      "upstream": "rsync://rsync.armbian.com/dl/",
+      "size": "480.18G"
+    },
+    {
+      "cname": "aosp-monthly",
+      "desc": "AOSP （Android 系统源码）镜像每月打包",
+      "url": "/aosp-monthly",
+      "status": "S1642417335X1642489335",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/aosp-monthly/",
+      "size": "1.75T"
+    },
+    {
+      "cname": "gmt",
+      "desc": "",
+      "url": "/gmt",
+      "status": "S1642395161X1642467161",
+      "help": "",
+      "upstream": "rsync://gmt.mirror.ac.za/gmt/",
+      "size": "85.45G"
+    },
+    {
+      "cname": "nix",
+      "desc": "Nix 软件包管理器",
+      "url": "/nix",
+      "status": "S1642399600X1642471600",
+      "help": "/help/nix/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/nix/",
+      "size": "3.51G"
+    },
+    {
+      "cname": "kali-images",
+      "desc": "Kali Linux 的安装镜像",
+      "url": "/kali-images",
+      "status": "S1642396332X1642468332",
+      "help": "",
+      "upstream": "rsync://ftp.nluug.nl/kali-images/",
+      "size": "178.55G"
+    },
+    {
+      "cname": "flutter",
+      "desc": "Flutter 框架 SDK 镜像",
+      "url": "/flutter",
+      "status": "S1642417332X1642489332",
+      "help": "/help/flutter/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/flutter/",
+      "size": "1.21T"
+    },
+    {
+      "cname": "hbcd",
+      "desc": "",
+      "url": "/hbcd",
+      "status": "S1642398560X1642470560",
+      "help": "",
+      "upstream": "rsync://rsync.hirensbootcd.org/mirror/",
+      "size": "4.19G"
+    },
+    {
+      "cname": "gnu",
+      "desc": "GNU 项目的软件包（源代码、文档和部分平台的二进制文件）",
+      "url": "/gnu",
+      "status": "S1642395099X1642467099",
+      "help": "",
+      "upstream": "rsync://ftp.gnu.org/gnu/",
+      "size": "130.08G"
+    },
+    {
+      "cname": "lineage-rom",
+      "desc": "最大的社区Android发行版之一Lineage的ROM",
+      "url": "/lineage-rom",
+      "status": "S1642414378X1642486378",
+      "help": "/help/lineage-rom/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/lineage-rom/",
+      "size": "608.51G"
+    },
+    {
+      "cname": "postmarketOS-images",
+      "desc": "",
+      "url": "/postmarketOS-images",
+      "status": "S1642414437NX1642486437",
+      "help": "",
+      "upstream": "rsync://mirror.postmarketos.org/images/",
+      "size": "512.19G"
+    },
+    {
+      "cname": "slackware",
+      "desc": "Linux 发行版 Slackware 的源代码和官方软件包仓库",
+      "url": "/slackware",
+      "status": "S1642399378X1642471378",
+      "help": "",
+      "upstream": "rsync://ftp.slackware.com/slackware/",
+      "size": "144.28G"
+    },
+    {
+      "cname": "osmc",
+      "desc": "免费、开源的媒体中心解决方案",
+      "url": "/osmc",
+      "status": "S1642399150X1642471150",
+      "help": "",
+      "upstream": "rsync://rsync.samnazarko.co.uk/cdn/",
+      "size": "100.63G"
+    },
+    {
+      "cname": "stackag",
+      "desc": "",
+      "url": "/stackag",
+      "status": "S1642396627X1642468627",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/stackage/",
+      "size": "80.29G"
+    },
+    {
+      "cname": "arch4edu",
+      "desc": "用于 Arch Linux 和 Arch Linux ARM 的非官方软件仓库，主要包含科研、教学所需的各种常用软件",
+      "url": "/arch4edu",
+      "status": "S1642394852X1642466852",
+      "help": "/help/arch4edu/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/arch4edu/",
+      "size": "33.59G"
+    },
+    {
+      "cname": "gentoo-portage",
+      "desc": "Gentoo Linux 的 Portage 包管理器镜像源（HTTP / rsync 访问）",
+      "url": "/gentoo-portage",
+      "status": "S1642396353X1642468353",
+      "help": "/help/gentoo-portage/",
+      "upstream": "rsync://rsync.jp.gentoo.org/gentoo-portage/",
+      "size": "238.18M"
+    },
+    {
+      "cname": "knoppix",
+      "desc": "",
+      "url": "/knoppix",
+      "status": "S1642395106X1642467106",
+      "help": "",
+      "upstream": "rsync://ftp.uni-kl.de/knoppix/",
+      "size": "7.35G"
+    },
+    {
+      "cname": "bioconductor",
+      "desc": "开源的基因数据分析处理工具",
+      "url": "/bioconductor",
+      "status": "S1642407157X1642479157",
+      "help": "/help/bioconductor/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/bioconductor/",
+      "size": "2.06T"
+    },
+    {
+      "cname": "osdn",
+      "desc": "OSDN 网站提供的开源软件下载",
+      "url": "/osdn",
+      "status": "S1642418605X1642490605",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/osdn/",
+      "size": "9.73T"
+    },
+    {
+      "cname": "fedora-altarch",
+      "desc": "Fedora Linux 额外平台的安装镜像和官方软件包仓库",
+      "url": "/fedora-altarch",
+      "status": "S1642410798X1642482798",
+      "help": "",
+      "upstream": "rsync://download-ib01.fedoraproject.org/fedora-secondary/",
+      "size": "2.81T"
+    },
+    {
+      "cname": "clojars",
+      "desc": "Clojure 语言的第三方软件包仓库",
+      "url": "/clojars",
+      "status": "S1642424005X1642496005",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/clojars/",
+      "size": "87.71G"
+    },
+    {
+      "cname": "eclipse",
+      "desc": "著名的集成开发环境 Eclipse",
+      "url": "/eclipse",
+      "status": "S1642420049X1642492049",
+      "help": "",
+      "upstream": "rsync://rsync.osuosl.org/eclipse/",
+      "size": "967.06G"
+    },
+    {
+      "cname": "slackwarearm",
+      "desc": "用于 ARM 设备的 Slackware 发行版源代码和官方软件包仓库",
+      "url": "/slackwarearm",
+      "status": "S1642399592X1642471592",
+      "help": "",
+      "upstream": "rsync://ftp.arm.slackware.com/slackwarearm/",
+      "size": "30.31G"
+    },
+    {
+      "cname": "archlinuxcn",
+      "desc": "由 Arch Linux 中文社区驱动的非官方用户仓库，包含中文用户常用软件、工具、字体/美化包等",
+      "url": "/archlinuxcn",
+      "status": "S1642417812X1642489812",
+      "help": "/help/archlinuxcn/",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/archlinuxcn/",
+      "size": "67.98G"
+    },
+    {
+      "cname": "openeuler",
+      "desc": "华为公司开源的服务器操作系统",
+      "url": "/openeuler",
+      "status": "S1642398299X1642470299",
+      "help": "",
+      "upstream": "rsync://121.36.97.194/openeuler/",
+      "size": "1.55T"
+    },
+    {
+      "cname": "dell",
+      "desc": "Dell 服务器管理工具",
+      "url": "/dell",
+      "status": "S1642403140X1642475140",
+      "help": "",
+      "upstream": "rsync://linux.dell.com/repo/",
+      "size": "2.83T"
+    },
+    {
+      "cname": "AdoptOpenJDK",
+      "desc": "社区维护的 OpenJDK 二进制包",
+      "url": "/AdoptOpenJDK",
+      "status": "S1642394858X1642466858",
+      "help": "/help/adoptopenjdk/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/",
+      "size": "171.13G"
+    },
+    {
+      "cname": "kde-neon",
+      "desc": "KDE社区维护的一个基于Ubuntu LTS的Linux发行版",
+      "url": "/kde-neon",
+      "status": "S1642398309X1642470309",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/kde-neon/",
+      "size": "223.12G"
+    },
+    {
+      "cname": "AUR",
+      "desc": "Arch Linux 用户软件库",
+      "url": "https://aur.tuna.tsinghua.edu.cn/",
+      "status": "S",
+      "help": "/help/AUR/",
+      "upstream": "https://aur.archlinux.org/"
+    },
+    {
+      "cname": "manjaro-cd",
+      "desc": "Manjanro Linux 的安装镜像",
+      "url": "/osdn/storage/g/m/ma/manjaro/",
+      "status": "S1642418605X1642490605",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/osdn/"
+    },
+    {
+      "cname": "manjaro-arm-cd",
+      "desc": "Manjanro ARM Linux 的安装镜像",
+      "url": "/osdn/storage/g/m/ma/manjaro-arm/",
+      "status": "S1642418605X1642490605",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/osdn/"
+    },
+    {
+      "cname": "mxlinux-isos",
+      "desc": "MX Linux 的安装镜像",
+      "url": "/osdn/storage/g/m/mx/mx-linux/ISOs/",
+      "status": "S1642418605X1642490605",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/osdn/"
+    },
+    {
+      "cname": "garuda-linux",
+      "desc": "Garuda Linux是基于Arch Linux操作系统的滚动式发行版",
+      "url": "/osdn/storage/g/g/ga/garuda-linux/",
+      "status": "S1642418605X1642490605",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/osdn/"
+    },
+    {
+      "cname": "linuxlite-cd",
+      "desc": "基于 Ubuntu 长期支持版本（LTS）的 Linux 发行版 Linux Lite 的安装镜像",
+      "url": "/osdn/storage/g/l/li/linuxlite/",
+      "status": "S1642418605X1642490605",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/osdn/"
+    },
+    {
+      "cname": "wireshark",
+      "desc": "一个免费开源的网络数据包分析软件",
+      "url": "/osdn/storage/g/w/wi/wireshark/",
+      "status": "S1642418605X1642490605",
+      "help": "",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/osdn/"
     }
   ]
 }
