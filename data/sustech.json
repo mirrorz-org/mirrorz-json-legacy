@@ -129,8 +129,8 @@
       "category": "os",
       "urls": [
         {
-          "name": "2022.01.01 (x86_64, CLI-only)",
-          "url": "/archlinux/iso/latest/archlinux-2022.01.01-x86_64.iso"
+          "name": "2022.02.01 (x86_64, CLI-only)",
+          "url": "/archlinux/iso/latest/archlinux-2022.02.01-x86_64.iso"
         }
       ]
     },
@@ -3259,136 +3259,64 @@
   ],
   "mirrors": [
     {
-      "cname": "alpine",
-      "desc": "Alpine Linux 的安装镜像和官方软件包仓库",
-      "url": "/alpine",
-      "status": "S1643702905X1643832565",
-      "help": "/help/alpine.html",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/alpine/",
-      "size": "1.67T"
+      "cname": "archlinux",
+      "desc": "Arch Linux 的安装镜像和官方软件包仓库",
+      "url": "/archlinux",
+      "status": "S1643885944X1643972404",
+      "help": "/help/archlinux.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
+      "size": "71.13G"
     },
     {
-      "cname": "archlinuxcn",
-      "desc": "由 Arch Linux 中文社区驱动的非官方用户仓库，包含中文用户常用软件、工具、字体/美化包等",
-      "url": "/archlinuxcn",
-      "status": "S1643786433X1643829693",
-      "help": "/help/archlinuxcn.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/",
-      "size": "71.61G"
-    },
-    {
-      "cname": "openwrt",
-      "desc": "OpenWrt/LEDE 软件包镜像源",
-      "url": "/openwrt",
-      "status": "S1643746499X1643876159",
-      "help": "/help/openwrt.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openwrt/",
-      "size": "964.62G"
-    },
-    {
-      "cname": "ubuntu-releases",
-      "desc": "包含近几年发行的 Ubuntu 的镜像",
-      "url": "/ubuntu-releases",
-      "status": "S1643768177X1643897837",
+      "cname": "debian-cd",
+      "desc": "Debian Linux 的安装镜像",
+      "url": "/debian-cd",
+      "status": "S1643872099X1643915359",
       "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/",
-      "size": "25.42G"
-    },
-    {
-      "cname": "apache",
-      "desc": "Apache 基金会赞助的各个项目",
-      "url": "/apache",
-      "status": "S1643774726X1643904386",
-      "help": "",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/apache/",
-      "size": "159.43G"
-    },
-    {
-      "cname": "epel",
-      "desc": "企业版 Linux 附加软件包",
-      "url": "/epel",
-      "status": "S1643726206X1643812666",
-      "help": "/help/epel.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/epel/",
-      "size": "332.46G"
-    },
-    {
-      "cname": "fedora",
-      "desc": "Fedora Linux 的安装镜像和官方软件包仓库",
-      "url": "/fedora",
-      "status": "S1643789288X1643875748",
-      "help": "/help/fedora.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
-      "size": "2.28T"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd/",
+      "size": "220.71G"
     },
     {
       "cname": "github-release",
       "desc": "一些项目的 Github Release 镜像",
       "url": "/github-release",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/",
       "size": "7.08G"
     },
     {
-      "cname": "manjaro",
-      "desc": "Manjaro Linux 的官方软件源",
-      "url": "/manjaro",
-      "status": "S1643755150X1643884810",
+      "cname": "julia",
+      "desc": "Julia 编程语言的包管理器镜像",
+      "url": "/julia",
+      "status": "S1643836152X1643922612",
+      "help": "/help/julia.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/julia/",
+      "size": "2.16T"
+    },
+    {
+      "cname": "kali-images",
+      "desc": "Kali Linux 的安装镜像",
+      "url": "/kali-images",
+      "status": "S1643884341X1644014001",
       "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/manjaro/",
-      "size": "121.21G"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali-images/",
+      "size": "167.15G"
     },
     {
-      "cname": "zerotier",
-      "desc": "",
-      "url": "/zerotier",
-      "status": "S1643638860X1643898060",
-      "help": "",
-      "upstream": "https://download.zerotier.com/",
-      "size": "unknown"
-    },
-    {
-      "cname": "AOSP",
-      "desc": "Android 操作系统源代码",
-      "url": "/help/AOSP.html",
-      "status": "Y1643806536O1643201735",
-      "help": "/help/AOSP.html",
-      "upstream": "https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/mirror/manifest",
-      "size": "674G"
-    },
-    {
-      "cname": "AdoptOpenJDK",
-      "desc": "社区维护的 OpenJDK 二进制包",
-      "url": "/AdoptOpenJDK",
-      "status": "S1643599573X1643858773",
-      "help": "/help/adoptopenjdk.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/",
-      "size": "169.15G"
-    },
-    {
-      "cname": "opensuse",
-      "desc": "openSUSE 的安装镜像和官方软件包仓库",
-      "url": "/opensuse",
-      "status": "S1643751005X1643880665",
-      "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/opensuse/",
-      "size": "1.95T"
-    },
-    {
-      "cname": "ubuntu",
-      "desc": "流行的 Linux 发行版 Ubuntu 的安装镜像和官方软件包仓库",
-      "url": "/ubuntu",
-      "status": "S1643807939X1643822339",
-      "help": "/help/ubuntu.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/",
-      "size": "1.71T"
+      "cname": "openwrt",
+      "desc": "OpenWrt/LEDE 软件包镜像源",
+      "url": "/openwrt",
+      "status": "S1643880676X1644010336",
+      "help": "/help/openwrt.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openwrt/",
+      "size": "964.62G"
     },
     {
       "cname": "adobe-fonts",
       "desc": "Adobe 公司的开源字体",
       "url": "/adobe-fonts",
-      "status": "S1643785591X1643872051",
+      "status": "S1643872062X1643958522",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/",
       "size": "56.81G"
@@ -3397,46 +3325,28 @@
       "cname": "anaconda",
       "desc": "用于科学计算的 Python 发行版",
       "url": "/anaconda",
-      "status": "S1643769243X1643812503",
+      "status": "S1643856143X1643899403",
       "help": "/help/anaconda.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/anaconda/",
-      "size": "7.02T"
+      "size": "7.04T"
     },
     {
-      "cname": "debian-cd",
-      "desc": "Debian Linux 的安装镜像",
-      "url": "/debian-cd",
-      "status": "S1643785567X1643828827",
-      "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd/",
-      "size": "220.71G"
+      "cname": "raspbian",
+      "desc": "为树莓派编译的 Debian 系统软件源",
+      "url": "/raspbian",
+      "status": "S1643836762X1643966422",
+      "help": "/help/raspbian.html",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/raspbian/",
+      "size": "521.08G"
     },
     {
-      "cname": "docker-ce",
-      "desc": "Docker Community Edition 的安装包",
-      "url": "/docker-ce",
-      "status": "S1643775565X1643905225",
-      "help": "/help/docker-ce.html",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/docker-ce/",
-      "size": "603.75G"
-    },
-    {
-      "cname": "kali",
-      "desc": "Kali Linux 的官方软件包仓库",
-      "url": "/kali",
-      "status": "S1643721720X1643851380",
-      "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali/",
-      "size": "1.38T"
-    },
-    {
-      "cname": "kicad",
-      "desc": "开源的电路原理图与 PCB 设计工具",
-      "url": "/kicad",
-      "status": "S1643792505X1643922165",
-      "help": "/help/kicad.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kicad/",
-      "size": "401.78G"
+      "cname": "homebrew-bottles",
+      "desc": "预编译的 Homebrew 软件包",
+      "url": "/homebrew-bottles",
+      "status": "S1643888365X1643974825",
+      "help": "/help/homebrew-bottles.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/",
+      "size": "318.09G"
     },
     {
       "cname": "linuxmint",
@@ -3448,6 +3358,24 @@
       "size": "36.38G"
     },
     {
+      "cname": "pypi",
+      "desc": "Python 软件包索引源",
+      "url": "/pypi",
+      "status": "Y1643847706O1643718104",
+      "help": "/help/pypi.html",
+      "upstream": "https://pypi.org/",
+      "size": "unknown"
+    },
+    {
+      "cname": "ubuntu",
+      "desc": "流行的 Linux 发行版 Ubuntu 的安装镜像和官方软件包仓库",
+      "url": "/ubuntu",
+      "status": "S1643883656X1643898056",
+      "help": "/help/ubuntu.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/",
+      "size": "1.72T"
+    },
+    {
       "cname": "armbian",
       "desc": "Armbian（面向 ARM 单板机的发行版）的软件源",
       "url": "/armbian",
@@ -3455,24 +3383,6 @@
       "help": "",
       "upstream": "rsync://mirrors.bfsu.edu.cn/armbian/",
       "size": "27.36G"
-    },
-    {
-      "cname": "debian-security",
-      "desc": "Debian Linux 的安全更新",
-      "url": "/debian-security",
-      "status": "S1643807705X1643829305",
-      "help": "",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-security/",
-      "size": "252.06G"
-    },
-    {
-      "cname": "debian",
-      "desc": "Debian Linux 的官方软件包仓库",
-      "url": "/debian",
-      "status": "S1643787830X1643831091",
-      "help": "/help/debian.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian/",
-      "size": "1.79T"
     },
     {
       "cname": "deepin-cd",
@@ -3484,85 +3394,148 @@
       "size": "34.74G"
     },
     {
-      "cname": "deepin",
-      "desc": "Deepin Linux 的官方软件包仓库",
-      "url": "/deepin",
-      "status": "S1643792579X1643922239",
+      "cname": "debian-nonfree",
+      "desc": "Debian Linux 的非自由软件包仓库",
+      "url": "/debian-nonfree",
+      "status": "S1643885269X1643971729",
       "help": "",
-      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/deepin/",
-      "size": "306.52G"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-nonfree/",
+      "size": "158.42G"
     },
     {
-      "cname": "homebrew-bottles",
-      "desc": "预编译的 Homebrew 软件包",
-      "url": "/homebrew-bottles",
-      "status": "S1643801844X1643888304",
-      "help": "/help/homebrew-bottles.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/",
-      "size": "317.70G"
+      "cname": "debian",
+      "desc": "Debian Linux 的官方软件包仓库",
+      "url": "/debian",
+      "status": "S1643876548X1643919808",
+      "help": "/help/debian.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian/",
+      "size": "1.80T"
+    },
+    {
+      "cname": "fedora",
+      "desc": "Fedora Linux 的安装镜像和官方软件包仓库",
+      "url": "/fedora",
+      "status": "S1643876081X1643962541",
+      "help": "/help/fedora.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
+      "size": "2.28T"
     },
     {
       "cname": "julia-releases",
       "desc": "Julia 二进制程序镜像",
       "url": "/julia-releases",
-      "status": "S1643785103X1643871563",
+      "status": "S1643871569X1643958029",
       "help": "/help/julia-releases.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/julia-releases/",
       "size": "89.57G"
     },
     {
-      "cname": "pypi",
-      "desc": "Python 软件包索引源",
-      "url": "/pypi",
-      "status": "S1643718104X1643847704",
-      "help": "/help/pypi.html",
-      "upstream": "https://pypi.org/",
-      "size": "unknown"
-    },
-    {
-      "cname": "CTAN",
-      "desc": "TeX 的各种发行版、软件包和文档",
-      "url": "/CTAN",
-      "status": "S1643773367X1643816627",
-      "help": "/help/CTAN.html",
-      "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
-      "size": "49.68G"
-    },
-    {
-      "cname": "carla",
-      "desc": "",
-      "url": "/carla",
-      "status": "S1643804386X1643890846",
+      "cname": "manjaro",
+      "desc": "Manjaro Linux 的官方软件源",
+      "url": "/manjaro",
+      "status": "S1643884852X1644014512",
       "help": "",
-      "upstream": "cra@nas.isus.tech::Seafile/h5ai_cdn/carla/",
-      "size": "118.58G"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/manjaro/",
+      "size": "121.21G"
+    },
+    {
+      "cname": "AOSP",
+      "desc": "Android 操作系统源代码",
+      "url": "/help/AOSP.html",
+      "status": "S1643824940X1644429740",
+      "help": "/help/AOSP.html",
+      "upstream": "https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/mirror/manifest",
+      "size": "674G"
+    },
+    {
+      "cname": "CRAN",
+      "desc": "R 语言的可执行文件、源代码和说明文件，也收录了各种用户撰写的软件包",
+      "url": "/CRAN",
+      "status": "S1643866494X1643909754",
+      "help": "/help/CRAN.html",
+      "upstream": "cran-rsync@cran-acc-us.r-project.org:./",
+      "size": "369.84G"
     },
     {
       "cname": "cygwin",
       "desc": "Cygwin 官方软件包仓库",
       "url": "/cygwin",
-      "status": "S1643761836X1643891496",
+      "status": "S1643891656X1644021316",
       "help": "/help/cygwin.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/cygwin/",
-      "size": "166.85G"
+      "size": "166.87G"
     },
     {
-      "cname": "fedora-altarch",
-      "desc": "Fedora Linux 额外平台的安装镜像和官方软件包仓库",
-      "url": "/fedora-altarch",
-      "status": "S1643768163X1643897823",
+      "cname": "ubuntu-releases",
+      "desc": "包含近几年发行的 Ubuntu 的镜像",
+      "url": "/ubuntu-releases",
+      "status": "S1643768177X1643897837",
       "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora-altarch/",
-      "size": "22.20G"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/",
+      "size": "25.42G"
     },
     {
-      "cname": "kali-images",
-      "desc": "Kali Linux 的安装镜像",
-      "url": "/kali-images",
-      "status": "S1643754387X1643884047",
+      "cname": "centos",
+      "desc": "CentOS 的安装镜像和官方软件包仓库",
+      "url": "/centos",
+      "status": "S1643823409X1643909869",
+      "help": "/help/centos.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/",
+      "size": "363.02G"
+    },
+    {
+      "cname": "debian-security",
+      "desc": "Debian Linux 的安全更新",
+      "url": "/debian-security",
+      "status": "S1643894194X1643915794",
       "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali-images/",
-      "size": "175.85G"
+      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-security/",
+      "size": "252.06G"
+    },
+    {
+      "cname": "homebrew",
+      "desc": "Homebrew/Linuxbrew 的 taps（软件包描述文件 Git 仓库）",
+      "url": "/help/homebrew.html",
+      "status": "S1643859794X1643946254",
+      "help": "/help/homebrew.html",
+      "upstream": "https://github.com/Homebrew",
+      "size": "2.1G"
+    },
+    {
+      "cname": "kali",
+      "desc": "Kali Linux 的官方软件包仓库",
+      "url": "/kali",
+      "status": "S1643851844X1643981504",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali/",
+      "size": "1.40T"
+    },
+    {
+      "cname": "ros2",
+      "desc": "ROS (Robot Operating System) 2.0 版本",
+      "url": "/ros2",
+      "status": "S1643882448X1644012108",
+      "help": "/help/ros2.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros2/",
+      "size": "43.55G"
+    },
+    {
+      "cname": "AdoptOpenJDK",
+      "desc": "社区维护的 OpenJDK 二进制包",
+      "url": "/AdoptOpenJDK",
+      "status": "S1643858801X1644118001",
+      "help": "/help/adoptopenjdk.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/",
+      "size": "169.15G"
+    },
+    {
+      "cname": "carla",
+      "desc": "",
+      "url": "/carla",
+      "status": "S1643890851X1643977311",
+      "help": "",
+      "upstream": "cra@nas.isus.tech::Seafile/h5ai_cdn/carla/",
+      "size": "118.58G"
     },
     {
       "cname": "raspberrypi",
@@ -3574,58 +3547,112 @@
       "size": "187.78G"
     },
     {
-      "cname": "ros2",
-      "desc": "ROS (Robot Operating System) 2.0 版本",
-      "url": "/ros2",
-      "status": "S1643752672X1643882332",
-      "help": "/help/ros2.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros2/",
-      "size": "43.55G"
+      "cname": "alpine",
+      "desc": "Alpine Linux 的安装镜像和官方软件包仓库",
+      "url": "/alpine",
+      "status": "S1643832876X1643962536",
+      "help": "/help/alpine.html",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/alpine/",
+      "size": "1.67T"
     },
     {
-      "cname": "CRAN",
-      "desc": "R 语言的可执行文件、源代码和说明文件，也收录了各种用户撰写的软件包",
-      "url": "/CRAN",
-      "status": "S1643778218X1643821478",
-      "help": "/help/CRAN.html",
-      "upstream": "cran-rsync@cran-acc-us.r-project.org:./",
-      "size": "369.69G"
-    },
-    {
-      "cname": "archlinux",
-      "desc": "Arch Linux 的安装镜像和官方软件包仓库",
-      "url": "/archlinux",
-      "status": "S1643799398X1643885858",
-      "help": "/help/archlinux.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
-      "size": "74.28G"
-    },
-    {
-      "cname": "centos",
-      "desc": "CentOS 的安装镜像和官方软件包仓库",
-      "url": "/centos",
-      "status": "S1643736293X1643822753",
-      "help": "/help/centos.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/",
-      "size": "487.54G"
-    },
-    {
-      "cname": "debian-nonfree",
-      "desc": "Debian Linux 的非自由软件包仓库",
-      "url": "/debian-nonfree",
-      "status": "S1643798804X1643885264",
+      "cname": "apache",
+      "desc": "Apache 基金会赞助的各个项目",
+      "url": "/apache",
+      "status": "S1643774726X1643904386",
       "help": "",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-nonfree/",
-      "size": "158.42G"
+      "upstream": "rsync://mirrors.bfsu.edu.cn/apache/",
+      "size": "159.43G"
     },
     {
-      "cname": "raspbian",
-      "desc": "为树莓派编译的 Debian 系统软件源",
-      "url": "/raspbian",
-      "status": "S1643706198X1643835858",
-      "help": "/help/raspbian.html",
-      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/raspbian/",
-      "size": "523.95G"
+      "cname": "deepin",
+      "desc": "Deepin Linux 的官方软件包仓库",
+      "url": "/deepin",
+      "status": "S1643792579X1643922239",
+      "help": "",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/repo/deepin/",
+      "size": "306.52G"
+    },
+    {
+      "cname": "docker-ce",
+      "desc": "Docker Community Edition 的安装包",
+      "url": "/docker-ce",
+      "status": "S1643775565X1643905225",
+      "help": "/help/docker-ce.html",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/docker-ce/",
+      "size": "603.75G"
+    },
+    {
+      "cname": "epel",
+      "desc": "企业版 Linux 附加软件包",
+      "url": "/epel",
+      "status": "S1643812748X1643899208",
+      "help": "/help/epel.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/epel/",
+      "size": "333.34G"
+    },
+    {
+      "cname": "kicad",
+      "desc": "开源的电路原理图与 PCB 设计工具",
+      "url": "/kicad",
+      "status": "S1643792505X1643922165",
+      "help": "/help/kicad.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kicad/",
+      "size": "401.78G"
+    },
+    {
+      "cname": "opensuse",
+      "desc": "openSUSE 的安装镜像和官方软件包仓库",
+      "url": "/opensuse",
+      "status": "S1643882272X1644011933",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/opensuse/",
+      "size": "1.99T"
+    },
+    {
+      "cname": "ubuntu-ports",
+      "desc": "armhf, arm64 以及 powerpc 等平台的 Ubuntu 软件仓库",
+      "url": "/ubuntu-ports",
+      "status": "S1643867918X1643997578",
+      "help": "/help/ubuntu-ports.html",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/ubuntu-ports/",
+      "size": "2.17T"
+    },
+    {
+      "cname": "CTAN",
+      "desc": "TeX 的各种发行版、软件包和文档",
+      "url": "/CTAN",
+      "status": "S1643860044X1643903304",
+      "help": "/help/CTAN.html",
+      "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
+      "size": "49.68G"
+    },
+    {
+      "cname": "archlinuxcn",
+      "desc": "由 Arch Linux 中文社区驱动的非官方用户仓库，包含中文用户常用软件、工具、字体/美化包等",
+      "url": "/archlinuxcn",
+      "status": "S1643873021X1643916281",
+      "help": "/help/archlinuxcn.html",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/",
+      "size": "71.41G"
+    },
+    {
+      "cname": "zerotier",
+      "desc": "",
+      "url": "/zerotier",
+      "status": "S1643638860X1643898060",
+      "help": "",
+      "upstream": "https://download.zerotier.com/",
+      "size": "unknown"
+    },
+    {
+      "cname": "fedora-altarch",
+      "desc": "Fedora Linux 额外平台的安装镜像和官方软件包仓库",
+      "url": "/fedora-altarch",
+      "status": "S1643768163X1643897823",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora-altarch/",
+      "size": "22.20G"
     },
     {
       "cname": "ros",
@@ -3635,33 +3662,6 @@
       "help": "/help/ros.html",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros/",
       "size": "90.90G"
-    },
-    {
-      "cname": "ubuntu-ports",
-      "desc": "armhf, arm64 以及 powerpc 等平台的 Ubuntu 软件仓库",
-      "url": "/ubuntu-ports",
-      "status": "S1643736094X1643865754",
-      "help": "/help/ubuntu-ports.html",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/ubuntu-ports/",
-      "size": "2.17T"
-    },
-    {
-      "cname": "homebrew",
-      "desc": "Homebrew/Linuxbrew 的 taps（软件包描述文件 Git 仓库）",
-      "url": "/help/homebrew.html",
-      "status": "S1643771242X1643857702",
-      "help": "/help/homebrew.html",
-      "upstream": "https://github.com/Homebrew",
-      "size": "2.1G"
-    },
-    {
-      "cname": "julia",
-      "desc": "Julia 编程语言的包管理器镜像",
-      "url": "/julia",
-      "status": "S1643749544X1643836004",
-      "help": "/help/julia.html",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/julia/",
-      "size": "2.15T"
     },
     {
       "cname": "AUR",
@@ -3675,7 +3675,7 @@
       "cname": "prometheus",
       "desc": "一个系统与服务监控系统",
       "url": "/github-release/prometheus/prometheus/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3683,7 +3683,7 @@
       "cname": "iina",
       "desc": "macOS 上的现代化开源视频播放器",
       "url": "/github-release/iina/iina/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3691,7 +3691,7 @@
       "cname": "VSCodium",
       "desc": "VS Code 的社区编译版本",
       "url": "/github-release/VSCodium/vscodium/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3699,7 +3699,7 @@
       "cname": "FreeCAD",
       "desc": "基于 Qt 的计算机辅助设计程序",
       "url": "/github-release/FreeCAD/FreeCAD/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3707,7 +3707,7 @@
       "cname": "git-for-windows",
       "desc": "Git 工具的 Windows 系统版本",
       "url": "/github-release/git-for-windows/git/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3715,7 +3715,7 @@
       "cname": "llvm-binary",
       "desc": "LLVM 编译器套件可执行文件",
       "url": "/github-release/llvm/llvm-project/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3723,7 +3723,7 @@
       "cname": "miniforge",
       "desc": "适用于 conda-forge 的最小化 conda 安装器",
       "url": "/github-release/conda-forge/miniforge/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3731,7 +3731,7 @@
       "cname": "stellarium",
       "desc": "自由的模拟天文台软件",
       "url": "/github-release/Stellarium/stellarium/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3739,7 +3739,7 @@
       "cname": "cmder",
       "desc": "Windows 下的终端模拟器套件",
       "url": "/github-release/cmderdev/cmder/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3747,7 +3747,7 @@
       "cname": "googlefonts",
       "desc": "Google 设计的 Noto 系列开源字体",
       "url": "/github-release/googlefonts/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3755,7 +3755,7 @@
       "cname": "minikube",
       "desc": "在本地运行的单节点 Kubernetes 集群安装工具",
       "url": "/github-release/kubernetes/minikube/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3763,7 +3763,7 @@
       "cname": "obs-studio",
       "desc": "自由的流媒体与视频录制程序（Open Broadcast Software）",
       "url": "/github-release/obsproject/obs-studio/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3771,7 +3771,7 @@
       "cname": "orchestrator",
       "desc": "MySQL 高可用与复制管理工具",
       "url": "/github-release/openark/orchestrator/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3779,7 +3779,7 @@
       "cname": "texstudio",
       "desc": "使用 Qt 编写的自由的 LaTeX 套件",
       "url": "/github-release/texstudio-org/texstudio/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3787,7 +3787,7 @@
       "cname": "rust-analyzer",
       "desc": "Rust 语言的模块化编译器前端",
       "url": "/github-release/rust-analyzer/rust-analyzer/",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     },
@@ -3795,7 +3795,7 @@
       "cname": "thuthesis",
       "desc": "清华大学学位论文 LaTeX 模板",
       "url": "/github-release/tuna/thuthesis",
-      "status": "S1643786043X1643872503",
+      "status": "S1643888693X1643975153",
       "help": "",
       "upstream": "https://api.github.com/repos/"
     }

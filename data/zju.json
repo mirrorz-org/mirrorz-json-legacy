@@ -1,11 +1,759 @@
 {
+  "version": 1.5,
   "site": {
     "url": "https://mirrors.zju.edu.cn",
     "abbr": "ZJU",
-    "name": "浙江大学开源镜像站",
-    "issue": "https://github.com/zjulug/mirrors-issue-tracker",
-    "request": "https://github.com/zjulug/mirrors-issue-tracker"
+    "name": "浙江大学开源软件镜像站",
+    "homepage": "https://www.zjusct.io",
+    "disk": "10T/120T",
+    "note": "Currently new mirror frontend is in trial run phase."
   },
-  "info": [],
-  "mirrors": []
+  "info": [
+    {
+      "distro": "archlinux",
+      "category": "os",
+      "urls": [
+        {
+          "name": "archlinux-2022.02.01-x86_64.iso",
+          "url": "/archlinux/iso/latest/archlinux-2022.02.01-x86_64.iso"
+        }
+      ]
+    },
+    {
+      "distro": "centos",
+      "category": "os",
+      "urls": [
+        {
+          "name": "CentOS-8.5.2111-aarch64-boot.iso",
+          "url": "/centos/8/isos/aarch64/CentOS-8.5.2111-aarch64-boot.iso"
+        },
+        {
+          "name": "CentOS-8.5.2111-aarch64-dvd1.iso",
+          "url": "/centos/8/isos/aarch64/CentOS-8.5.2111-aarch64-dvd1.iso"
+        },
+        {
+          "name": "CentOS-8.5.2111-ppc64le-boot.iso",
+          "url": "/centos/8/isos/ppc64le/CentOS-8.5.2111-ppc64le-boot.iso"
+        },
+        {
+          "name": "CentOS-8.5.2111-ppc64le-dvd1.iso",
+          "url": "/centos/8/isos/ppc64le/CentOS-8.5.2111-ppc64le-dvd1.iso"
+        },
+        {
+          "name": "CentOS-8.5.2111-x86_64-boot.iso",
+          "url": "/centos/8/isos/x86_64/CentOS-8.5.2111-x86_64-boot.iso"
+        },
+        {
+          "name": "CentOS-8.5.2111-x86_64-dvd1.iso",
+          "url": "/centos/8/isos/x86_64/CentOS-8.5.2111-x86_64-dvd1.iso"
+        }
+      ]
+    },
+    {
+      "distro": "debian-cd",
+      "category": "os",
+      "urls": [
+        {
+          "name": "debian-11.2.0-amd64-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/amd64/iso-dvd/debian-11.2.0-amd64-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-arm64-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/arm64/iso-dvd/debian-11.2.0-arm64-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-armel-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/armel/iso-dvd/debian-11.2.0-armel-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-armhf-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/armhf/iso-dvd/debian-11.2.0-armhf-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-i386-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/i386/iso-dvd/debian-11.2.0-i386-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-mips64el-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/mips64el/iso-dvd/debian-11.2.0-mips64el-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-mipsel-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/mipsel/iso-dvd/debian-11.2.0-mipsel-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-ppc64el-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/ppc64el/iso-dvd/debian-11.2.0-ppc64el-DVD-1.iso"
+        },
+        {
+          "name": "debian-11.2.0-source-DVD-1.iso",
+          "url": "/debian-cd/11.2.0/source/iso-dvd/debian-11.2.0-source-DVD-1.iso"
+        }
+      ]
+    },
+    {
+      "distro": "deepin-cd",
+      "category": "os",
+      "urls": [
+        {
+          "name": "deepin-15.1.1-amd64.iso",
+          "url": "/deepin-cd/15.1.1/deepin-15.1.1-amd64.iso"
+        },
+        {
+          "name": "deepin-15.1.1-i386.iso",
+          "url": "/deepin-cd/15.1.1/deepin-15.1.1-i386.iso"
+        },
+        {
+          "name": "deepin-15.1-amd64.iso",
+          "url": "/deepin-cd/15.1/deepin-15.1-amd64.iso"
+        },
+        {
+          "name": "deepin-15.1-i386.iso",
+          "url": "/deepin-cd/15.1/deepin-15.1-i386.iso"
+        },
+        {
+          "name": "deepin-15-rc1-amd64.iso",
+          "url": "/deepin-cd/15/alpha1/deepin-15-rc1-amd64.iso"
+        },
+        {
+          "name": "deepin-15-alpha2-amd64.iso",
+          "url": "/deepin-cd/15/alpha2/deepin-15-alpha2-amd64.iso"
+        },
+        {
+          "name": "deepin-15-alpha2-i386.iso",
+          "url": "/deepin-cd/15/alpha2/deepin-15-alpha2-i386.iso"
+        },
+        {
+          "name": "deepin-15-beta-amd64.iso",
+          "url": "/deepin-cd/15/beta/deepin-15-beta-amd64.iso"
+        },
+        {
+          "name": "deepin-15-beta-i386.iso",
+          "url": "/deepin-cd/15/beta/deepin-15-beta-i386.iso"
+        },
+        {
+          "name": "deepin-15-amd64.iso",
+          "url": "/deepin-cd/15/final/deepin-15-amd64.iso"
+        },
+        {
+          "name": "deepin-15-i386.iso",
+          "url": "/deepin-cd/15/final/deepin-15-i386.iso"
+        },
+        {
+          "name": "deepin-2015-rc-amd64.iso",
+          "url": "/deepin-cd/15/rc/deepin-2015-rc-amd64.iso"
+        },
+        {
+          "name": "deepin-2015-rc-i386.iso",
+          "url": "/deepin-cd/15/rc/deepin-2015-rc-i386.iso"
+        }
+      ]
+    },
+    {
+      "distro": "fedora",
+      "category": "os",
+      "urls": [
+        {
+          "name": "Fedora-Everything-netinst-aarch64-32-1.6.iso",
+          "url": "/fedora/releases/32/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-armhfp-32-1.6.iso",
+          "url": "/fedora/releases/32/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-aarch64-32-1.6.iso",
+          "url": "/fedora/releases/32/Server/aarch64/iso/Fedora-Server-dvd-aarch64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-aarch64-32-1.6.iso",
+          "url": "/fedora/releases/32/Server/aarch64/iso/Fedora-Server-netinst-aarch64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-armhfp-32-1.6.iso",
+          "url": "/fedora/releases/32/Server/armhfp/iso/Fedora-Server-dvd-armhfp-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-armhfp-32-1.6.iso",
+          "url": "/fedora/releases/32/Server/armhfp/iso/Fedora-Server-netinst-armhfp-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Server/x86_64/iso/Fedora-Server-dvd-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Server/x86_64/iso/Fedora-Server-netinst-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-aarch64-32-1.6.iso",
+          "url": "/fedora/releases/32/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Cinnamon-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-KDE-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-LXDE-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-LXQt-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-MATE_Compiz-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-SoaS-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Xfce-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Workstation-Live-x86_64-32-1.6.iso",
+          "url": "/fedora/releases/32/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-32-1.6.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-aarch64-33-1.2.iso",
+          "url": "/fedora/releases/33/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-aarch64-33-1.3.iso",
+          "url": "/fedora/releases/33/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-33-1.3.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-armhfp-33-1.2.iso",
+          "url": "/fedora/releases/33/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-armhfp-33-1.3.iso",
+          "url": "/fedora/releases/33/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-33-1.3.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-aarch64-33-1.2.iso",
+          "url": "/fedora/releases/33/Server/aarch64/iso/Fedora-Server-dvd-aarch64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-aarch64-33-1.3.iso",
+          "url": "/fedora/releases/33/Server/aarch64/iso/Fedora-Server-dvd-aarch64-33-1.3.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-aarch64-33-1.2.iso",
+          "url": "/fedora/releases/33/Server/aarch64/iso/Fedora-Server-netinst-aarch64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-aarch64-33-1.3.iso",
+          "url": "/fedora/releases/33/Server/aarch64/iso/Fedora-Server-netinst-aarch64-33-1.3.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-armhfp-33-1.2.iso",
+          "url": "/fedora/releases/33/Server/armhfp/iso/Fedora-Server-dvd-armhfp-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-armhfp-33-1.3.iso",
+          "url": "/fedora/releases/33/Server/armhfp/iso/Fedora-Server-dvd-armhfp-33-1.3.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-armhfp-33-1.2.iso",
+          "url": "/fedora/releases/33/Server/armhfp/iso/Fedora-Server-netinst-armhfp-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-armhfp-33-1.3.iso",
+          "url": "/fedora/releases/33/Server/armhfp/iso/Fedora-Server-netinst-armhfp-33-1.3.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Server/x86_64/iso/Fedora-Server-dvd-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Server/x86_64/iso/Fedora-Server-netinst-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-aarch64-33-1.2.iso",
+          "url": "/fedora/releases/33/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Cinnamon-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-KDE-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-LXDE-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-LXQt-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-MATE_Compiz-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-SoaS-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Xfce-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Workstation-Live-aarch64-33-1.2.iso",
+          "url": "/fedora/releases/33/Workstation/aarch64/iso/Fedora-Workstation-Live-aarch64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Workstation-Live-x86_64-33-1.2.iso",
+          "url": "/fedora/releases/33/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-33-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-aarch64-34-1.2.iso",
+          "url": "/fedora/releases/34/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-armhfp-34-1.2.iso",
+          "url": "/fedora/releases/34/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-aarch64-34-1.2.iso",
+          "url": "/fedora/releases/34/Server/aarch64/iso/Fedora-Server-dvd-aarch64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-aarch64-34-1.2.iso",
+          "url": "/fedora/releases/34/Server/aarch64/iso/Fedora-Server-netinst-aarch64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-armhfp-34-1.2.iso",
+          "url": "/fedora/releases/34/Server/armhfp/iso/Fedora-Server-dvd-armhfp-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-armhfp-34-1.2.iso",
+          "url": "/fedora/releases/34/Server/armhfp/iso/Fedora-Server-netinst-armhfp-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Server/x86_64/iso/Fedora-Server-netinst-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-aarch64-34-1.2.iso",
+          "url": "/fedora/releases/34/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-i3-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Spins/x86_64/iso/Fedora-i3-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-KDE-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-LXDE-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-LXQt-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-MATE_Compiz-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-SoaS-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Xfce-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Workstation-Live-aarch64-34-1.2.iso",
+          "url": "/fedora/releases/34/Workstation/aarch64/iso/Fedora-Workstation-Live-aarch64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Workstation-Live-x86_64-34-1.2.iso",
+          "url": "/fedora/releases/34/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-34-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-aarch64-35-1.2.iso",
+          "url": "/fedora/releases/35/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-armhfp-35-1.2.iso",
+          "url": "/fedora/releases/35/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Everything-netinst-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Kinoite-ostree-aarch64-35-1.2.iso",
+          "url": "/fedora/releases/35/Kinoite/aarch64/iso/Fedora-Kinoite-ostree-aarch64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Kinoite-ostree-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Kinoite/x86_64/iso/Fedora-Kinoite-ostree-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-aarch64-35-1.2.iso",
+          "url": "/fedora/releases/35/Server/aarch64/iso/Fedora-Server-dvd-aarch64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-aarch64-35-1.2.iso",
+          "url": "/fedora/releases/35/Server/aarch64/iso/Fedora-Server-netinst-aarch64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-armhfp-35-1.2.iso",
+          "url": "/fedora/releases/35/Server/armhfp/iso/Fedora-Server-dvd-armhfp-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-armhfp-35-1.2.iso",
+          "url": "/fedora/releases/35/Server/armhfp/iso/Fedora-Server-netinst-armhfp-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-dvd-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Server/x86_64/iso/Fedora-Server-dvd-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Server-netinst-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Server/x86_64/iso/Fedora-Server-netinst-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-aarch64-35-1.2.iso",
+          "url": "/fedora/releases/35/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Silverblue-ostree-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Cinnamon-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-i3-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-i3-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-KDE-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-LXDE-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-LXQt-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-MATE_Compiz-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-SoaS-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Xfce-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Workstation-Live-aarch64-35-1.2.iso",
+          "url": "/fedora/releases/35/Workstation/aarch64/iso/Fedora-Workstation-Live-aarch64-35-1.2.iso"
+        },
+        {
+          "name": "Fedora-Workstation-Live-x86_64-35-1.2.iso",
+          "url": "/fedora/releases/35/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-35-1.2.iso"
+        }
+      ]
+    },
+    {
+      "distro": "ubuntu-releases",
+      "category": "os",
+      "urls": [
+        {
+          "name": "ubuntu-14.04.6-desktop-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-14.04.6-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-14.04.6-desktop-i386.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-14.04.6-desktop-i386.iso"
+        },
+        {
+          "name": "ubuntu-14.04.6-server-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-14.04.6-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-14.04.6-server-i386.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-14.04.6-server-i386.iso"
+        },
+        {
+          "name": "ubuntu-16.04.6-desktop-i386.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-16.04.6-desktop-i386.iso"
+        },
+        {
+          "name": "ubuntu-16.04.6-server-i386.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-16.04.6-server-i386.iso"
+        },
+        {
+          "name": "ubuntu-16.04.7-desktop-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-16.04.7-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-16.04.7-server-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-16.04.7-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-18.04.6-desktop-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-18.04.6-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-18.04.6-live-server-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-18.04.6-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-20.04.3-desktop-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-20.04.3-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-20.04.3-live-server-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-20.04.3-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.04-desktop-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-21.04-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.04-live-server-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-21.04-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.10-desktop-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-21.10-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.10-live-server-amd64.iso",
+          "url": "/ubuntu-releases/.pool/ubuntu-21.10-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-18.04.6-desktop-amd64.iso",
+          "url": "/ubuntu-releases/bionic/ubuntu-18.04.6-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-18.04.6-live-server-amd64.iso",
+          "url": "/ubuntu-releases/bionic/ubuntu-18.04.6-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-20.04.3-desktop-amd64.iso",
+          "url": "/ubuntu-releases/focal/ubuntu-20.04.3-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-20.04.3-live-server-amd64.iso",
+          "url": "/ubuntu-releases/focal/ubuntu-20.04.3-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.04-desktop-amd64.iso",
+          "url": "/ubuntu-releases/hirsute/ubuntu-21.04-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.04-live-server-amd64.iso",
+          "url": "/ubuntu-releases/hirsute/ubuntu-21.04-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.10-desktop-amd64.iso",
+          "url": "/ubuntu-releases/impish/ubuntu-21.10-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-21.10-live-server-amd64.iso",
+          "url": "/ubuntu-releases/impish/ubuntu-21.10-live-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-14.04.6-desktop-amd64.iso",
+          "url": "/ubuntu-releases/trusty/ubuntu-14.04.6-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-14.04.6-desktop-i386.iso",
+          "url": "/ubuntu-releases/trusty/ubuntu-14.04.6-desktop-i386.iso"
+        },
+        {
+          "name": "ubuntu-14.04.6-server-amd64.iso",
+          "url": "/ubuntu-releases/trusty/ubuntu-14.04.6-server-amd64.iso"
+        },
+        {
+          "name": "ubuntu-14.04.6-server-i386.iso",
+          "url": "/ubuntu-releases/trusty/ubuntu-14.04.6-server-i386.iso"
+        },
+        {
+          "name": "ubuntu-16.04.6-desktop-i386.iso",
+          "url": "/ubuntu-releases/xenial/ubuntu-16.04.6-desktop-i386.iso"
+        },
+        {
+          "name": "ubuntu-16.04.6-server-i386.iso",
+          "url": "/ubuntu-releases/xenial/ubuntu-16.04.6-server-i386.iso"
+        },
+        {
+          "name": "ubuntu-16.04.7-desktop-amd64.iso",
+          "url": "/ubuntu-releases/xenial/ubuntu-16.04.7-desktop-amd64.iso"
+        },
+        {
+          "name": "ubuntu-16.04.7-server-amd64.iso",
+          "url": "/ubuntu-releases/xenial/ubuntu-16.04.7-server-amd64.iso"
+        }
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "cname": "debian",
+      "desc": "Debian packages",
+      "url": "/debian",
+      "status": "Y1643894401",
+      "help": "/help/debian",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian"
+    },
+    {
+      "cname": "fedora",
+      "desc": "Fedora packages",
+      "url": "/fedora",
+      "status": "S1643828683",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora"
+    },
+    {
+      "cname": "kali",
+      "desc": "Kali packages",
+      "url": "/kali",
+      "status": "C",
+      "help": "",
+      "upstream": "http://mirrors.ustc.edu.cn/kali/"
+    },
+    {
+      "cname": "npm",
+      "desc": "NPM packages",
+      "url": "/npm",
+      "status": "C",
+      "help": "",
+      "upstream": "https://registry.npmjs.org/"
+    },
+    {
+      "cname": "openwrt",
+      "desc": "OpenWRT packages",
+      "url": "/openwrt",
+      "status": "C",
+      "help": "",
+      "upstream": "https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/"
+    },
+    {
+      "cname": "pypi",
+      "desc": "Pypi packages",
+      "url": "/pypi",
+      "status": "C",
+      "help": "/help/pypi",
+      "upstream": "https://pypi.tuna.tsinghua.edu.cn/simple/"
+    },
+    {
+      "cname": "ubuntu",
+      "desc": "Ubuntu packages",
+      "url": "/ubuntu",
+      "status": "S1643822981",
+      "help": "/help/ubuntu",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+    },
+    {
+      "cname": "ubuntu-ports",
+      "desc": "Ubuntu arm/arm64 packages",
+      "url": "/ubuntu-ports",
+      "status": "C",
+      "help": "/help/ubuntu-ports",
+      "upstream": "http://mirrors.ustc.edu.cn/ubuntu-ports/"
+    },
+    {
+      "cname": "archlinux",
+      "desc": "Arch Linux Packages",
+      "url": "/archlinux",
+      "status": "S1643893922",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux"
+    },
+    {
+      "cname": "archlinuxcn",
+      "desc": "ArchlinuxCN Packages",
+      "url": "/archlinuxcn",
+      "status": "S1643883506",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn"
+    },
+    {
+      "cname": "centos",
+      "desc": "CentOS packages",
+      "url": "/centos",
+      "status": "S1643827858",
+      "help": "/help/centos",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/centos"
+    },
+    {
+      "cname": "deepin",
+      "desc": "Deepin packages",
+      "url": "/deepin",
+      "status": "S1643833506",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/deepin"
+    },
+    {
+      "cname": "docker-ce",
+      "desc": "Docker Community Edition",
+      "url": "/docker-ce",
+      "status": "S1643808605",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/docker-ce"
+    },
+    {
+      "cname": "postgresql",
+      "desc": "Free and open-source relational database management system",
+      "url": "/postgresql",
+      "status": "S1643840922",
+      "help": "",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/postgresql"
+    }
+  ]
 }
