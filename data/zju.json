@@ -2,6 +2,7 @@
   "version": 1.5,
   "site": {
     "url": "https://mirrors.zju.edu.cn",
+    "logo": "https://mirrors.zju.edu.cn/ZJUSCT_Icon_Black.png",
     "abbr": "ZJU",
     "name": "浙江大学开源软件镜像站",
     "homepage": "https://www.zjusct.io",
@@ -647,7 +648,7 @@
       "cname": "debian",
       "desc": "Debian packages",
       "url": "/debian",
-      "status": "Y1643894401",
+      "status": "S1645964465",
       "help": "/help/debian",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian"
     },
@@ -655,7 +656,7 @@
       "cname": "fedora",
       "desc": "Fedora packages",
       "url": "/fedora",
-      "status": "S1643828683",
+      "status": "S1645906334",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora"
     },
@@ -695,7 +696,7 @@
       "cname": "ubuntu",
       "desc": "Ubuntu packages",
       "url": "/ubuntu",
-      "status": "S1643822981",
+      "status": "S1645900761",
       "help": "/help/ubuntu",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu"
     },
@@ -711,7 +712,7 @@
       "cname": "archlinux",
       "desc": "Arch Linux Packages",
       "url": "/archlinux",
-      "status": "S1643893922",
+      "status": "S1645967524",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux"
     },
@@ -719,7 +720,7 @@
       "cname": "archlinuxcn",
       "desc": "ArchlinuxCN Packages",
       "url": "/archlinuxcn",
-      "status": "S1643883506",
+      "status": "S1645957629",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn"
     },
@@ -727,7 +728,7 @@
       "cname": "centos",
       "desc": "CentOS packages",
       "url": "/centos",
-      "status": "S1643827858",
+      "status": "S1645901132",
       "help": "/help/centos",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/centos"
     },
@@ -735,7 +736,7 @@
       "cname": "deepin",
       "desc": "Deepin packages",
       "url": "/deepin",
-      "status": "S1643833506",
+      "status": "S1645907107",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/deepin"
     },
@@ -743,7 +744,7 @@
       "cname": "docker-ce",
       "desc": "Docker Community Edition",
       "url": "/docker-ce",
-      "status": "S1643808605",
+      "status": "S1645882207",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/docker-ce"
     },
@@ -751,9 +752,36 @@
       "cname": "postgresql",
       "desc": "Free and open-source relational database management system",
       "url": "/postgresql",
-      "status": "S1643840922",
+      "status": "S1645915468",
       "help": "",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/postgresql"
+    }
+  ],
+  "extension": "D",
+  "endpoints": [
+    {
+      "label": "zju",
+      "public": true,
+      "resolve": "mirrors.zju.edu.cn",
+      "filter": [
+        "V4",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": [
+        "AS4538",
+        "AS24367",
+        "210.32.0.0/20",
+        "222.205.0.0/17",
+        "210.32.128.0/19",
+        "210.32.160.0/21",
+        "210.32.168.0/22",
+        "210.32.172.0/23",
+        "210.32.174.0/24",
+        "210.32.176.0/20",
+        "58.196.192.0/19",
+        "58.196.224.0/20"
+      ]
     }
   ]
 }
