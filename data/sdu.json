@@ -17,8 +17,8 @@
       "category": "os",
       "urls": [
         {
-          "name": "2022.02.01 (x86_64, CLI-only)",
-          "url": "/archlinux/iso/latest/archlinux-2022.02.01-x86_64.iso"
+          "name": "2022.03.01 (x86_64, CLI-only)",
+          "url": "/archlinux/iso/latest/archlinux-2022.03.01-x86_64.iso"
         }
       ]
     },
@@ -136,34 +136,34 @@
       "cname": "archlinux",
       "desc": "",
       "url": "/archlinux/",
-      "status": "S1645808448",
+      "status": "S1646154085",
       "help": "/docs/guide/ArchLinux",
       "upstream": "",
-      "size": "68600M"
+      "size": "68465M"
     },
     {
       "cname": "github-release",
       "desc": "",
       "url": "/github-release/",
-      "status": "S1645876280",
+      "status": "S1646221129",
       "help": "https://github.com/SDU-Mirrors/wonderful-github-releases",
       "upstream": "",
-      "size": "4314M"
+      "size": "4467M"
     },
     {
       "cname": "manjaro",
       "desc": "",
       "url": "/manjaro/",
-      "status": "S1645812295",
+      "status": "S1646157917",
       "help": "",
       "upstream": "",
-      "size": "123491M"
+      "size": "101861M"
     },
     {
       "cname": "rocky",
       "desc": "",
       "url": "/rocky/",
-      "status": "S1645810354",
+      "status": "S1646155899",
       "help": "/docs/guide/RockyLinux",
       "upstream": "",
       "size": "235119M"
@@ -172,19 +172,37 @@
       "cname": "ubuntu",
       "desc": "",
       "url": "/ubuntu/",
-      "status": "S1645869898",
+      "status": "S1646217627",
       "help": "/docs/guide/Ubuntu",
       "upstream": "",
-      "size": "1692247M"
+      "size": "1687169M"
     },
     {
       "cname": "ubuntu-releases",
       "desc": "",
       "url": "/ubuntu-releases/",
-      "status": "S1645812019",
+      "status": "S1646157611",
       "help": "",
       "upstream": "",
       "size": "24605M"
+    }
+  ],
+  "extension": "D",
+  "endpoints": [
+    {
+      "label": "sdu",
+      "public": true,
+      "resolve": "mirrors.sdu.edu.cn",
+      "filter": [
+        "V4",
+        "V6",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": [
+        "AS4538",
+        "AS23910"
+      ]
     }
   ]
 }
