@@ -25,6 +25,7 @@ async function update(site) {
   let n = await load(LIST[site]);
   if (n === null)
     return `${site}: fetch failed\n`
+  n.info = n.info ?? [] // fix for site without info
   d = diff(o, n)
   if (d !== "") {
     fs.writeFileSync(filename, JSON.stringify(n, null, 2));
