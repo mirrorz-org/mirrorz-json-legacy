@@ -7,7 +7,7 @@
     "name": "XTOM 开源软件镜像站（澳大利亚）",
     "email": "mirror AT xtom DOT com",
     "request": "https://github.com/xtomcom/mirrorrequest",
-    "disk": "24.30TiB/104.47TiB"
+    "disk": "24.45TiB/104.47TiB"
   },
   "info": [
     {
@@ -505,12 +505,12 @@
       "category": "app",
       "urls": [
         {
-          "name": "20.10.19 (macOS)",
-          "url": "/docker-ce/mac/static/stable/x86_64/docker-20.10.19.tgz"
+          "name": "20.10.20 (macOS)",
+          "url": "/docker-ce/mac/static/stable/x86_64/docker-20.10.20.tgz"
         },
         {
-          "name": "20.10.19 (Windows)",
-          "url": "/docker-ce/win/static/stable/x86_64/docker-20.10.19.zip"
+          "name": "20.10.20 (Windows)",
+          "url": "/docker-ce/win/static/stable/x86_64/docker-20.10.20.zip"
         }
       ]
     },
@@ -547,66 +547,106 @@
   ],
   "mirrors": [
     {
-      "cname": "archlinux",
-      "options_name": "archlinux",
-      "url": "/archlinux",
-      "status": "S1665927042X1665930642",
-      "upstream": "rsync://mirrors.xtom.com/repo/archlinux/",
-      "size": "229.65G"
+      "cname": "centos-stream",
+      "options_name": "centos-stream",
+      "url": "/centos-stream",
+      "status": "S1666305463X1666391863",
+      "upstream": "rsync://mirrors.xtom.de/centos-stream/",
+      "size": "1.16T"
     },
     {
-      "cname": "archlinuxcn",
-      "options_name": "archlinuxcn",
-      "url": "/archlinuxcn",
-      "status": "S1665926285X1665940685",
-      "upstream": "rsync://sync.repo.archlinuxcn.org/repo/",
-      "size": "81.57G"
+      "cname": "centos",
+      "options_name": "centos",
+      "url": "/centos",
+      "status": "S1666357885X1666444285",
+      "upstream": "rsync://mirror.digitalpacific.com.au/centos/",
+      "size": "505.60G"
+    },
+    {
+      "cname": "deb-multimedia",
+      "options_name": "deb-multimedia",
+      "url": "/deb-multimedia",
+      "status": "S1666312428X1666398828",
+      "upstream": "rsync://mirrors.xtom.jp/deb-multimedia/",
+      "size": "16.32G"
+    },
+    {
+      "cname": "github-release",
+      "options_name": "github-release",
+      "url": "/github-release",
+      "status": "S1666353699X1666396899",
+      "upstream": "https://api.github.com/repos/",
+      "size": "61.73G"
+    },
+    {
+      "cname": "debian-security",
+      "options_name": "debian-security",
+      "url": "/debian-security",
+      "status": "S1666351168X1666375168",
+      "upstream": "rsync://rsync.security.debian.org/debian-security/",
+      "size": "276.81G"
+    },
+    {
+      "cname": "archlinuxarm",
+      "options_name": "archlinux-arm",
+      "url": "/archlinux-arm",
+      "status": "S1666284371X1666370771",
+      "upstream": "rsync://mirrors.xtom.jp/archlinux-arm/",
+      "size": "97.02G"
+    },
+    {
+      "cname": "manjaro",
+      "options_name": "manjaro",
+      "url": "/manjaro",
+      "status": "S1666357449X1666361049",
+      "upstream": "rsync://ftp.tsukuba.wide.ad.jp/manjaro/",
+      "size": "144.80G"
+    },
+    {
+      "cname": "mariadb",
+      "options_name": "mariadb",
+      "url": "/mariadb",
+      "status": "S1666360000X1666446400",
+      "upstream": "rsync://mirrors.xtom.de/repo/mariadb/",
+      "size": "745.19G"
+    },
+    {
+      "cname": "postgresql",
+      "options_name": "postgresql",
+      "url": "/postgresql",
+      "status": "S1666335823X1666422223",
+      "upstream": "rsync://ftp.postgresql.org/pgsql-ftp/",
+      "size": "397.37G"
     },
     {
       "cname": "proxmox",
       "options_name": "proxmox",
       "url": "/proxmox",
-      "status": "S1665923715X1666010115",
+      "status": "S1666355885X1666442285",
       "upstream": "rsync://mirrors.xtom.de/proxmox/",
-      "size": "366.39G"
-    },
-    {
-      "cname": "kde",
-      "options_name": "kde",
-      "url": "/kde",
-      "status": "S1665925438X1665929038",
-      "upstream": "rsync://rsync.kde.org/kdeftp/",
-      "size": "729.18G"
-    },
-    {
-      "cname": "rocky",
-      "options_name": "rocky",
-      "url": "/rocky",
-      "status": "S1665918109X1665932569",
-      "upstream": "rsync://mirrors.xtom.de/rocky/",
-      "size": "830.10G"
-    },
-    {
-      "cname": "almalinux",
-      "options_name": "almalinux",
-      "url": "/almalinux",
-      "status": "S1665841685X1665928085",
-      "upstream": "rsync://mirror.digitalpacific.com.au/almalinux/",
-      "size": "552.91G"
+      "size": "367.49G"
     },
     {
       "cname": "alpine",
       "options_name": "alpine",
       "url": "/alpine",
-      "status": "Y1665927584O1665841179",
+      "status": "S1666283686X1666370086",
       "upstream": "rsync://mirror.aarnet.edu.au/pub/alpine/",
       "size": "1.88T"
+    },
+    {
+      "cname": "centos-altarch",
+      "options_name": "centos-altarch",
+      "url": "/centos-altarch",
+      "status": "S1666280538X1666366938",
+      "upstream": "rsync://mirrors.xtom.jp/centos-altarch/",
+      "size": "291.21G"
     },
     {
       "cname": "debian-cd",
       "options_name": "debian-cd",
       "url": "/debian-cd",
-      "status": "S1665925221X1666011621",
+      "status": "S1666357297X1666443697",
       "upstream": "rsync://cdimage.debian.org/debian-cd/",
       "size": "225.95G"
     },
@@ -614,233 +654,193 @@
       "cname": "debian",
       "options_name": "debian",
       "url": "/debian",
-      "status": "S1665917672X1665960872",
+      "status": "S1666355459X1666398659",
       "upstream": "rsync://mirror.linux.org.au/debian/",
       "size": "1.8T"
-    },
-    {
-      "cname": "fedora",
-      "options_name": "fedora",
-      "url": "/fedora",
-      "status": "S1665847256X1665933656",
-      "upstream": "rsync://mirrors.xtom.de/fedora/",
-      "size": "4.72T"
-    },
-    {
-      "cname": "kali-images",
-      "options_name": "kali-images",
-      "url": "/kali-images",
-      "status": "S1665886445X1665972845",
-      "upstream": "rsync://mirrors.xtom.jp/kali-images/",
-      "size": "124.68G"
-    },
-    {
-      "cname": "bioarchlinux",
-      "options_name": "bioarchlinux",
-      "url": "/bioarchlinux",
-      "status": "S1665925879X1666012279",
-      "upstream": "rsync://mirrors.xtom.jp/bioarchlinux/",
-      "size": "31.74G"
-    },
-    {
-      "cname": "centos-altarch",
-      "options_name": "centos-altarch",
-      "url": "/centos-altarch",
-      "status": "S1665848321X1665934721",
-      "upstream": "rsync://mirrors.xtom.jp/centos-altarch/",
-      "size": "291.21G"
-    },
-    {
-      "cname": "deb-multimedia",
-      "options_name": "deb-multimedia",
-      "url": "/deb-multimedia",
-      "status": "S1665880117X1665966517",
-      "upstream": "rsync://mirrors.xtom.jp/deb-multimedia/",
-      "size": "16.45G"
-    },
-    {
-      "cname": "debian-security",
-      "options_name": "debian-security",
-      "url": "/debian-security",
-      "status": "S1665914930X1665938930",
-      "upstream": "rsync://rsync.security.debian.org/debian-security/",
-      "size": "246.39G"
-    },
-    {
-      "cname": "postgresql",
-      "options_name": "postgresql",
-      "url": "/postgresql",
-      "status": "S1665899294X1665985694",
-      "upstream": "rsync://ftp.postgresql.org/pgsql-ftp/",
-      "size": "388.32G"
-    },
-    {
-      "cname": "archlinuxarm",
-      "options_name": "archlinux-arm",
-      "url": "/archlinux-arm",
-      "status": "S1665851951X1665938351",
-      "upstream": "rsync://mirrors.xtom.jp/archlinux-arm/",
-      "size": "96.85G"
-    },
-    {
-      "cname": "centos",
-      "options_name": "centos",
-      "url": "/centos",
-      "status": "S1665924819X1666011219",
-      "upstream": "rsync://mirror.digitalpacific.com.au/centos/",
-      "size": "503.48G"
-    },
-    {
-      "cname": "debian-cdimage",
-      "options_name": "debian-cdimage",
-      "url": "/debian-cdimage",
-      "status": "S1665853468X1665939868",
-      "upstream": "rsync://mirrors.xtom.jp/debian-cdimage/",
-      "size": "921.84G"
-    },
-    {
-      "cname": "github-release",
-      "options_name": "github-release",
-      "url": "/github-release",
-      "status": "S1665921486X1665964686",
-      "upstream": "https://api.github.com/repos/",
-      "size": "61.77G"
-    },
-    {
-      "cname": "kde-application",
-      "options_name": "kde-application",
-      "url": "/kde-application",
-      "status": "S1665927817X1665931417",
-      "upstream": "rsync://rsync.kde.org/applicationdata/",
-      "size": "435.69G"
-    },
-    {
-      "cname": "m.ac",
-      "options_name": "m.ac",
-      "url": "/m.ac",
-      "status": "S1665860365X1665946765",
-      "upstream": "rsync://rsync.m.ac/repo/",
-      "size": "10.60G"
-    },
-    {
-      "cname": "fedora-altarch",
-      "options_name": "fedora-altarch",
-      "url": "/fedora-altarch",
-      "status": "S1665901018X1665987418",
-      "upstream": "rsync://mirrors.xtom.jp/fedora-altarch/",
-      "size": "5.00T"
-    },
-    {
-      "cname": "manjaro",
-      "options_name": "manjaro",
-      "url": "/manjaro",
-      "status": "S1665927212X1665930812",
-      "upstream": "rsync://ftp.tsukuba.wide.ad.jp/manjaro/",
-      "size": "142.12G"
-    },
-    {
-      "cname": "ubuntu-releases",
-      "options_name": "ubuntu-releases",
-      "url": "/ubuntu-releases",
-      "status": "S1665924329X1666010729",
-      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
-      "size": "29.26G"
-    },
-    {
-      "cname": "powerdns",
-      "options_name": "powerdns",
-      "url": "/powerdns",
-      "status": "S1665919685X1666006085",
-      "upstream": "rsync://mirrors.xtom.de/powerdns/",
-      "size": "109.15G"
-    },
-    {
-      "cname": "centos-stream",
-      "options_name": "centos-stream",
-      "url": "/centos-stream",
-      "status": "S1665873071X1665959471",
-      "upstream": "rsync://mirrors.xtom.de/centos-stream/",
-      "size": "1.16T"
-    },
-    {
-      "cname": "debian-archive",
-      "options_name": "debian-archive",
-      "url": "/debian-archive",
-      "status": "S1665845498X1665931898",
-      "upstream": "rsync://mirrors.xtom.de/debian-archive/",
-      "size": "1.52T"
-    },
-    {
-      "cname": "kali",
-      "options_name": "kali",
-      "url": "/kali",
-      "status": "S1665869673X1665956073",
-      "upstream": "rsync://mirrors.xtom.jp/kali/",
-      "size": "629.75G"
-    },
-    {
-      "cname": "sb",
-      "options_name": "sb",
-      "url": "/sb",
-      "status": "S1665925368X1665939828",
-      "upstream": "rsync://mirrors.xtom.com/repo/sb/",
-      "size": "155.39M"
-    },
-    {
-      "cname": "ubuntu",
-      "options_name": "ubuntu",
-      "url": "/ubuntu",
-      "status": "S1665917502X1665960822",
-      "upstream": "rsync://mirrors.xtom.de/ubuntu/",
-      "size": "1.85T"
     },
     {
       "cname": "docker-ce",
       "options_name": "docker-ce",
       "url": "/docker-ce",
-      "status": "S1665927009X1666013409",
+      "status": "S1666278327X1666364727",
       "upstream": "rsync://mirrors.xtom.jp/docker-ce/",
-      "size": "678.95G"
+      "size": "685.12G"
+    },
+    {
+      "cname": "m.ac",
+      "options_name": "m.ac",
+      "url": "/m.ac",
+      "status": "S1666292415X1666378815",
+      "upstream": "rsync://rsync.m.ac/repo/",
+      "size": "10.60G"
+    },
+    {
+      "cname": "powerdns",
+      "options_name": "powerdns",
+      "url": "/powerdns",
+      "status": "S1666351808X1666438208",
+      "upstream": "rsync://mirrors.xtom.de/powerdns/",
+      "size": "113.07G"
+    },
+    {
+      "cname": "sb",
+      "options_name": "sb",
+      "url": "/sb",
+      "status": "S1666359333X1666373793",
+      "upstream": "rsync://mirrors.xtom.com/repo/sb/",
+      "size": "155.39M"
+    },
+    {
+      "cname": "almalinux",
+      "options_name": "almalinux",
+      "url": "/almalinux",
+      "status": "S1666360530X1666446930",
+      "upstream": "rsync://mirror.digitalpacific.com.au/almalinux/",
+      "size": "555.33G"
+    },
+    {
+      "cname": "bioarchlinux",
+      "options_name": "bioarchlinux",
+      "url": "/bioarchlinux",
+      "status": "S1666358051X1666444451",
+      "upstream": "rsync://mirrors.xtom.jp/bioarchlinux/",
+      "size": "31.94G"
+    },
+    {
+      "cname": "fedora-altarch",
+      "options_name": "fedora-altarch",
+      "url": "/fedora-altarch",
+      "status": "S1666354401X1666440801",
+      "upstream": "rsync://mirrors.xtom.jp/fedora-altarch/",
+      "size": "4.99T"
+    },
+    {
+      "cname": "ubuntu",
+      "options_name": "ubuntu",
+      "url": "/ubuntu",
+      "status": "S1666353604X1666396924",
+      "upstream": "rsync://mirrors.xtom.de/ubuntu/",
+      "size": "1.86T"
+    },
+    {
+      "cname": "archlinux",
+      "options_name": "archlinux",
+      "url": "/archlinux",
+      "status": "S1666360475X1666364075",
+      "upstream": "rsync://mirrors.xtom.com/repo/archlinux/",
+      "size": "221.77G"
     },
     {
       "cname": "epel",
       "options_name": "epel",
       "url": "/epel",
-      "status": "S1665860663X1665947063",
+      "status": "S1666293305X1666379705",
       "upstream": "rsync://mirror.digitalpacific.com.au/epel/",
-      "size": "430.62G"
+      "size": "430.32G"
     },
     {
-      "cname": "mariadb",
-      "options_name": "mariadb",
-      "url": "/mariadb",
-      "status": "S1665927869X1666014269",
-      "upstream": "rsync://mirrors.xtom.de/repo/mariadb/",
-      "size": "745.19G"
+      "cname": "kde",
+      "options_name": "kde",
+      "url": "/kde",
+      "status": "S1666358833X1666362433",
+      "upstream": "rsync://rsync.kde.org/kdeftp/",
+      "size": "729.92G"
     },
     {
       "cname": "nginx",
       "options_name": "nginx",
       "url": "/nginx",
-      "status": "S1665879023X1665965423",
+      "status": "S1666311424X1666397824",
       "upstream": "rsync://mirrors.xtom.jp/nginx/",
-      "size": "56.81G"
-    },
-    {
-      "cname": "sury",
-      "options_name": "sury",
-      "url": "/sury",
-      "status": "S1665886994X1665973394",
-      "upstream": "rsync://rsync.sury.org/repositories/",
-      "size": "13.67G"
+      "size": "58.02G"
     },
     {
       "cname": "ubuntu-ports",
       "options_name": "ubuntu-ports",
       "url": "/ubuntu-ports",
-      "status": "S1665895790X1665982190",
+      "status": "S1666332624X1666419024",
       "upstream": "rsync://mirrors.xtom.de/ubuntu-ports/",
       "size": "2.21T"
+    },
+    {
+      "cname": "kali-images",
+      "options_name": "kali-images",
+      "url": "/kali-images",
+      "status": "S1666319019X1666405419",
+      "upstream": "rsync://mirrors.xtom.jp/kali-images/",
+      "size": "121.98G"
+    },
+    {
+      "cname": "ubuntu-releases",
+      "options_name": "ubuntu-releases",
+      "url": "/ubuntu-releases",
+      "status": "S1666356842X1666443242",
+      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
+      "size": "29.00G"
+    },
+    {
+      "cname": "sury",
+      "options_name": "sury",
+      "url": "/sury",
+      "status": "S1666319471X1666405871",
+      "upstream": "rsync://rsync.sury.org/repositories/",
+      "size": "13.67G"
+    },
+    {
+      "cname": "archlinuxcn",
+      "options_name": "archlinuxcn",
+      "url": "/archlinuxcn",
+      "status": "S1666359043X1666373443",
+      "upstream": "rsync://sync.repo.archlinuxcn.org/repo/",
+      "size": "86.04G"
+    },
+    {
+      "cname": "debian-archive",
+      "options_name": "debian-archive",
+      "url": "/debian-archive",
+      "status": "S1666280327X1666366727",
+      "upstream": "rsync://mirrors.xtom.de/debian-archive/",
+      "size": "1.52T"
+    },
+    {
+      "cname": "debian-cdimage",
+      "options_name": "debian-cdimage",
+      "url": "/debian-cdimage",
+      "status": "S1666286179X1666372579",
+      "upstream": "rsync://mirrors.xtom.jp/debian-cdimage/",
+      "size": "921.78G"
+    },
+    {
+      "cname": "fedora",
+      "options_name": "fedora",
+      "url": "/fedora",
+      "status": "S1666281583X1666367983",
+      "upstream": "rsync://mirrors.xtom.de/fedora/",
+      "size": "4.75T"
+    },
+    {
+      "cname": "kali",
+      "options_name": "kali",
+      "url": "/kali",
+      "status": "S1666305233X1666391633",
+      "upstream": "rsync://mirrors.xtom.jp/kali/",
+      "size": "629.92G"
+    },
+    {
+      "cname": "kde-application",
+      "options_name": "kde-application",
+      "url": "/kde-application",
+      "status": "S1666360517X1666364117",
+      "upstream": "rsync://rsync.kde.org/applicationdata/",
+      "size": "442.48G"
+    },
+    {
+      "cname": "rocky",
+      "options_name": "rocky",
+      "url": "/rocky",
+      "status": "S1666352747X1666367207",
+      "upstream": "rsync://mirrors.xtom.de/rocky/",
+      "size": "841.97G"
     }
   ]
 }
