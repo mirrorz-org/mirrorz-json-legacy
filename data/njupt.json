@@ -13,8 +13,8 @@
       "category": "os",
       "urls": [
         {
-          "name": "2022.09.03 (x86_64, CLI-only)",
-          "url": "/archlinux/iso/latest/archlinux-2022.09.03-x86_64.iso"
+          "name": "2022.10.01 (x86_64, CLI-only)",
+          "url": "/archlinux/iso/latest/archlinux-2022.10.01-x86_64.iso"
         }
       ]
     },
@@ -243,6 +243,14 @@
           "url": "/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot"
         },
         {
+          "name": "22.10 (amd64, Server)",
+          "url": "/ubuntu-releases/kinetic/ubuntu-22.10-live-server-amd64.iso"
+        },
+        {
+          "name": "22.10 (amd64, Desktop LiveDVD)",
+          "url": "/ubuntu-releases/kinetic/ubuntu-22.10-desktop-amd64.iso"
+        },
+        {
           "name": "22.04.1 (amd64, Server)",
           "url": "/ubuntu-releases/jammy/ubuntu-22.04.1-live-server-amd64.iso"
         },
@@ -271,10 +279,6 @@
           "url": "/ubuntu-releases/xenial/ubuntu-16.04.7-server-amd64.iso"
         },
         {
-          "name": "16.04.7 (amd64, Desktop LiveDVD)",
-          "url": "/ubuntu-releases/xenial/ubuntu-16.04.7-desktop-amd64.iso"
-        },
-        {
           "name": "16.04.6 (i386, Server)",
           "url": "/ubuntu-releases/xenial/ubuntu-16.04.6-server-i386.iso"
         },
@@ -299,6 +303,10 @@
         {
           "name": "23-nightly (amd64, desktop-community-23-nightly)",
           "url": "/deepin-cd/23-nightly/deepin-desktop-community-23-nightly-amd64.iso"
+        },
+        {
+          "name": "20.7.1 (amd64, desktop-community-20.7.1)",
+          "url": "/deepin-cd/20.7.1/deepin-desktop-community-20.7.1-amd64.iso"
         },
         {
           "name": "20.7 (amd64, desktop-community-20.7)",
@@ -327,10 +335,6 @@
         {
           "name": "20.2.3 (amd64, desktop-community-20.2.3)",
           "url": "/deepin-cd/20.2.3/deepin-desktop-community-20.2.3-amd64.iso"
-        },
-        {
-          "name": "20.2.2 (amd64, desktop-community-20.2.2)",
-          "url": "/deepin-cd/20.2.2/deepin-desktop-community-20.2.2-amd64.iso"
         }
       ]
     },
@@ -399,24 +403,20 @@
           "url": "/anaconda/miniconda/Miniconda2-4.7.12.1-Linux-x86_64.sh"
         },
         {
-          "name": "Anaconda3 2022.05 (Windows/x86_64, exe)",
-          "url": "/anaconda/archive/Anaconda3-2022.05-Windows-x86_64.exe"
+          "name": "Anaconda3 2022.10 (Windows/x86_64, exe)",
+          "url": "/anaconda/archive/Anaconda3-2022.10-Windows-x86_64.exe"
         },
         {
-          "name": "Anaconda3 2022.05 (Windows/x86, exe)",
-          "url": "/anaconda/archive/Anaconda3-2022.05-Windows-x86.exe"
+          "name": "Anaconda3 2022.10 (MacOSX/x86_64, sh)",
+          "url": "/anaconda/archive/Anaconda3-2022.10-MacOSX-x86_64.sh"
         },
         {
-          "name": "Anaconda3 2022.05 (MacOSX/x86_64, sh)",
-          "url": "/anaconda/archive/Anaconda3-2022.05-MacOSX-x86_64.sh"
+          "name": "Anaconda3 2022.10 (MacOSX/x86_64, pkg)",
+          "url": "/anaconda/archive/Anaconda3-2022.10-MacOSX-x86_64.pkg"
         },
         {
-          "name": "Anaconda3 2022.05 (MacOSX/x86_64, pkg)",
-          "url": "/anaconda/archive/Anaconda3-2022.05-MacOSX-x86_64.pkg"
-        },
-        {
-          "name": "Anaconda3 2022.05 (Linux/x86_64, sh)",
-          "url": "/anaconda/archive/Anaconda3-2022.05-Linux-x86_64.sh"
+          "name": "Anaconda3 2022.10 (Linux/x86_64, sh)",
+          "url": "/anaconda/archive/Anaconda3-2022.10-Linux-x86_64.sh"
         },
         {
           "name": "Anaconda2 2019.10 (Windows/x86_64, exe)",
@@ -445,205 +445,205 @@
       "category": "app",
       "urls": [
         {
-          "name": "20.10.18 (macOS)",
-          "url": "/docker-ce/mac/static/stable/x86_64/docker-20.10.18.tgz"
+          "name": "20.10.20 (macOS)",
+          "url": "/docker-ce/mac/static/stable/x86_64/docker-20.10.20.tgz"
         },
         {
-          "name": "20.10.18 (Windows)",
-          "url": "/docker-ce/win/static/stable/x86_64/docker-20.10.18.zip"
+          "name": "20.10.20 (Windows)",
+          "url": "/docker-ce/win/static/stable/x86_64/docker-20.10.20.zip"
         }
       ]
     }
   ],
   "mirrors": [
     {
-      "cname": "centos",
-      "options_name": "centos",
-      "url": "/centos",
-      "status": "S1662899599X1662913999",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/",
-      "size": "495.89G",
-      "help": "/help/centos"
-    },
-    {
-      "cname": "debian",
-      "options_name": "debian",
-      "url": "/debian",
-      "status": "S1662895576X1662909976",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian/",
-      "size": "1.99T",
-      "help": "/help/debian"
-    },
-    {
-      "cname": "docker-ce",
-      "options_name": "docker-ce",
-      "url": "/docker-ce",
-      "status": "S1662901536X1662915936",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/docker-ce/",
-      "size": "671.09G",
-      "help": "/help/docker-ce"
-    },
-    {
-      "cname": "fedora",
-      "options_name": "fedora",
-      "url": "/fedora",
-      "status": "S1662899595X1662913995",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
-      "size": "1.38T",
-      "help": "/help/fedora"
-    },
-    {
-      "cname": "linuxmint",
-      "options_name": "linuxmint",
-      "url": "/linuxmint",
-      "status": "S1662900930X1662915330",
-      "upstream": "rsync://rsync-packages.linuxmint.com/packages/",
-      "size": "37.97G",
-      "help": "/help/linuxmint"
-    },
-    {
-      "cname": "ubuntu",
-      "options_name": "ubuntu",
-      "url": "/ubuntu",
-      "status": "S1662897909X1662912309",
-      "upstream": "rsync://archive.ubuntu.com/ubuntu/",
-      "size": "1.81T",
-      "help": "/help/ubuntu"
-    },
-    {
-      "cname": "deepin-cd",
-      "options_name": "deepin-cd",
-      "url": "/deepin-cd",
-      "status": "S1662898689X1662913089",
-      "upstream": "rsync://rsync.deepin.com/releases/",
-      "size": "48.26G",
-      "help": "/help/deepin-cd"
-    },
-    {
       "cname": "homebrew-bottles",
       "options_name": "homebrew-bottles",
       "url": "/homebrew-bottles",
-      "status": "Y1662903269O1662888867",
+      "status": "S1666778875X1666793275",
       "upstream": "https://homebrew.bintray.com",
       "size": "unknown",
       "help": "/help/homebrew-bottles"
     },
     {
-      "cname": "termux",
-      "options_name": "termux",
-      "url": "/termux",
-      "status": "S1662899676X1662914076",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/termux/",
-      "size": "16.98G",
-      "help": "/help/termux"
+      "cname": "ubuntu",
+      "options_name": "ubuntu",
+      "url": "/ubuntu",
+      "status": "S1666783953X1666798353",
+      "upstream": "rsync://archive.ubuntu.com/ubuntu/",
+      "size": "1.87T",
+      "help": "/help/ubuntu"
     },
     {
       "cname": "zabbix",
       "options_name": "zabbix",
       "url": "/zabbix",
-      "status": "S1662899236X1662913636",
+      "status": "S1666783008X1666797408",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/zabbix/",
-      "size": "111.23G",
+      "size": "120.33G",
       "help": "/help/zabbix"
     },
     {
-      "cname": "anaconda",
-      "options_name": "anaconda",
-      "url": "/anaconda",
-      "status": "S1662894203X1662908603",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/anaconda/",
-      "size": "8.99T",
-      "help": "/help/anaconda"
+      "cname": "centos",
+      "options_name": "centos",
+      "url": "/centos",
+      "status": "S1666786352X1666800752",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/",
+      "size": "506.84G",
+      "help": "/help/centos"
     },
     {
       "cname": "bioarchlinux",
       "options_name": "bioarchlinux",
       "url": "/bioarchlinux",
-      "status": "S1662899609X1662914009",
+      "status": "S1666784160X1666798560",
       "upstream": "bioarchlinux.org::sync/",
-      "size": "31.68G",
+      "size": "32.01G",
       "help": "/help/bioarchlinux"
     },
     {
-      "cname": "debian-security",
-      "options_name": "debian-security",
-      "url": "/debian-security",
-      "status": "S1662898695X1662913095",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-security/",
-      "size": "236.85G",
-      "help": "/help/debian-security"
-    },
-    {
-      "cname": "epel",
-      "options_name": "epel",
-      "url": "/epel",
-      "status": "S1662892564X1662906964",
-      "upstream": "rsync://fedora-rsync.ftp.pub.2iij.net/fedora-epel/",
-      "size": "439.59G",
-      "help": "/help/epel"
-    },
-    {
-      "cname": "homebrew",
-      "options_name": "homebrew",
-      "url": "/homebrew",
-      "status": "S1662901734X1662916134",
-      "upstream": "",
-      "size": "unknown",
-      "help": "/help/homebrew"
-    },
-    {
-      "cname": "raspbian",
-      "options_name": "raspbian",
-      "url": "/raspbian",
-      "status": "S1662891125X1662905525",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspbian/",
-      "size": "560.02G",
-      "help": "/help/raspbian"
-    },
-    {
-      "cname": "archlinux",
-      "options_name": "archlinux",
-      "url": "/archlinux",
-      "status": "S1662895107X1662909507",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
-      "size": "74.59G",
-      "help": "/help/archlinux"
+      "cname": "debian",
+      "options_name": "debian",
+      "url": "/debian",
+      "status": "S1666789509X1666803909",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/debian/",
+      "size": "1.92T",
+      "help": "/help/debian"
     },
     {
       "cname": "deepin",
       "options_name": "deepin",
       "url": "/deepin",
-      "status": "S1662890914X1662905314",
+      "status": "Y1666792574O1666778169",
       "upstream": "rsync://rsync.deepin.com/deepin/",
-      "size": "362.42G",
+      "size": "371.63G",
       "help": "/help/deepin"
+    },
+    {
+      "cname": "docker-ce",
+      "options_name": "docker-ce",
+      "url": "/docker-ce",
+      "status": "S1666790830X1666805230",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/docker-ce/",
+      "size": "688.59G",
+      "help": "/help/docker-ce"
     },
     {
       "cname": "elasticstack",
       "options_name": "elasticstack",
       "url": "/elasticstack",
-      "status": "S1662899600X1662914000",
+      "status": "S1666792536X1666806936",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elasticstack/",
-      "size": "318.08G",
+      "size": "330.86G",
       "help": "/help/elasticstack"
+    },
+    {
+      "cname": "homebrew",
+      "options_name": "homebrew",
+      "url": "/homebrew",
+      "status": "S1666791276X1666805676",
+      "upstream": "",
+      "size": "unknown",
+      "help": "/help/homebrew"
+    },
+    {
+      "cname": "linuxmint",
+      "options_name": "linuxmint",
+      "url": "/linuxmint",
+      "status": "S1666783717X1666798117",
+      "upstream": "rsync://rsync-packages.linuxmint.com/packages/",
+      "size": "38.01G",
+      "help": "/help/linuxmint"
+    },
+    {
+      "cname": "archlinux",
+      "options_name": "archlinux",
+      "url": "/archlinux",
+      "status": "S1666779291X1666793691",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
+      "size": "76.07G",
+      "help": "/help/archlinux"
+    },
+    {
+      "cname": "debian-security",
+      "options_name": "debian-security",
+      "url": "/debian-security",
+      "status": "S1666789222X1666803622",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-security/",
+      "size": "260.60G",
+      "help": "/help/debian-security"
+    },
+    {
+      "cname": "deepin-cd",
+      "options_name": "deepin-cd",
+      "url": "/deepin-cd",
+      "status": "S1666783014X1666797414",
+      "upstream": "rsync://rsync.deepin.com/releases/",
+      "size": "51.82G",
+      "help": "/help/deepin-cd"
+    },
+    {
+      "cname": "epel",
+      "options_name": "epel",
+      "url": "/epel",
+      "status": "S1666791938X1666806338",
+      "upstream": "rsync://fedora-rsync.ftp.pub.2iij.net/fedora-epel/",
+      "size": "441.69G",
+      "help": "/help/epel"
     },
     {
       "cname": "kali",
       "options_name": "kali",
       "url": "/kali",
-      "status": "S1662889896X1662904296",
+      "status": "S1666787674X1666802074",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/kali/",
-      "size": "545.02G",
+      "size": "635.15G",
       "help": "/help/kali"
+    },
+    {
+      "cname": "termux",
+      "options_name": "termux",
+      "url": "/termux",
+      "status": "S1666783151X1666797551",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/termux/",
+      "size": "17.99G",
+      "help": "/help/termux"
+    },
+    {
+      "cname": "anaconda",
+      "options_name": "anaconda",
+      "url": "/anaconda",
+      "status": "S1666790904X1666805304",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/anaconda/",
+      "size": "9.45T",
+      "help": "/help/anaconda"
+    },
+    {
+      "cname": "raspbian",
+      "options_name": "raspbian",
+      "url": "/raspbian",
+      "status": "S1666778623X1666793023",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspbian/",
+      "size": "566.44G",
+      "help": "/help/raspbian"
     },
     {
       "cname": "ubuntu-releases",
       "options_name": "ubuntu-releases",
       "url": "/ubuntu-releases",
-      "status": "S1662899371X1662913771",
+      "status": "S1666784310X1666798710",
       "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
-      "size": "23.28G",
+      "size": "29.00G",
       "help": "/help/ubuntu-releases"
+    },
+    {
+      "cname": "fedora",
+      "options_name": "fedora",
+      "url": "/fedora",
+      "status": "S1666788715X1666803115",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
+      "size": "1.40T",
+      "help": "/help/fedora"
     }
   ]
 }
