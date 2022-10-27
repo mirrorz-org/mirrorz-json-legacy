@@ -445,76 +445,103 @@
       "category": "app",
       "urls": [
         {
-          "name": "20.10.20 (macOS)",
-          "url": "/docker-ce/mac/static/stable/x86_64/docker-20.10.20.tgz"
+          "name": "20.10.21 (macOS)",
+          "url": "/docker-ce/mac/static/stable/x86_64/docker-20.10.21.tgz"
         },
         {
-          "name": "20.10.20 (Windows)",
-          "url": "/docker-ce/win/static/stable/x86_64/docker-20.10.20.zip"
+          "name": "20.10.21 (Windows)",
+          "url": "/docker-ce/win/static/stable/x86_64/docker-20.10.21.zip"
         }
       ]
     }
   ],
   "mirrors": [
     {
-      "cname": "homebrew-bottles",
-      "options_name": "homebrew-bottles",
-      "url": "/homebrew-bottles",
-      "status": "S1666778875X1666793275",
-      "upstream": "https://homebrew.bintray.com",
-      "size": "unknown",
-      "help": "/help/homebrew-bottles"
-    },
-    {
-      "cname": "ubuntu",
-      "options_name": "ubuntu",
-      "url": "/ubuntu",
-      "status": "S1666783953X1666798353",
-      "upstream": "rsync://archive.ubuntu.com/ubuntu/",
-      "size": "1.87T",
-      "help": "/help/ubuntu"
-    },
-    {
-      "cname": "zabbix",
-      "options_name": "zabbix",
-      "url": "/zabbix",
-      "status": "S1666783008X1666797408",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/zabbix/",
-      "size": "120.33G",
-      "help": "/help/zabbix"
+      "cname": "bioarchlinux",
+      "options_name": "bioarchlinux",
+      "url": "/bioarchlinux",
+      "status": "S1666871245X1666885645",
+      "upstream": "bioarchlinux.org::sync/",
+      "size": "32.02G",
+      "help": "/help/bioarchlinux"
     },
     {
       "cname": "centos",
       "options_name": "centos",
       "url": "/centos",
-      "status": "S1666786352X1666800752",
+      "status": "S1666875121X1666889521",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/",
-      "size": "506.84G",
+      "size": "507.34G",
       "help": "/help/centos"
     },
     {
-      "cname": "bioarchlinux",
-      "options_name": "bioarchlinux",
-      "url": "/bioarchlinux",
-      "status": "S1666784160X1666798560",
-      "upstream": "bioarchlinux.org::sync/",
-      "size": "32.01G",
-      "help": "/help/bioarchlinux"
+      "cname": "debian-security",
+      "options_name": "debian-security",
+      "url": "/debian-security",
+      "status": "S1666875838X1666890238",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-security/",
+      "size": "261.64G",
+      "help": "/help/debian-security"
     },
     {
-      "cname": "debian",
-      "options_name": "debian",
-      "url": "/debian",
-      "status": "S1666789509X1666803909",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian/",
-      "size": "1.92T",
-      "help": "/help/debian"
+      "cname": "homebrew",
+      "options_name": "homebrew",
+      "url": "/homebrew",
+      "status": "S1666870916X1666885316",
+      "upstream": "",
+      "size": "unknown",
+      "help": "/help/homebrew"
+    },
+    {
+      "cname": "kali",
+      "options_name": "kali",
+      "url": "/kali",
+      "status": "S1666874671X1666889071",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/kali/",
+      "size": "635.15G",
+      "help": "/help/kali"
+    },
+    {
+      "cname": "raspbian",
+      "options_name": "raspbian",
+      "url": "/raspbian",
+      "status": "Y1666876689O1666862286",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspbian/",
+      "size": "567.06G",
+      "help": "/help/raspbian"
+    },
+    {
+      "cname": "termux",
+      "options_name": "termux",
+      "url": "/termux",
+      "status": "S1666870023X1666884423",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/termux/",
+      "size": "17.94G",
+      "help": "/help/termux"
+    },
+    {
+      "cname": "zabbix",
+      "options_name": "zabbix",
+      "url": "/zabbix",
+      "status": "S1666871644X1666886044",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/zabbix/",
+      "size": "121.18G",
+      "help": "/help/zabbix"
+    },
+    {
+      "cname": "archlinux",
+      "options_name": "archlinux",
+      "url": "/archlinux",
+      "status": "Y1666875034O1666860631",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
+      "size": "76.12G",
+      "help": "/help/archlinux"
     },
     {
       "cname": "deepin",
       "options_name": "deepin",
       "url": "/deepin",
-      "status": "Y1666792574O1666778169",
+      "status": "S1666865002X1666879402",
       "upstream": "rsync://rsync.deepin.com/deepin/",
       "size": "371.63G",
       "help": "/help/deepin"
@@ -523,127 +550,100 @@
       "cname": "docker-ce",
       "options_name": "docker-ce",
       "url": "/docker-ce",
-      "status": "S1666790830X1666805230",
+      "status": "S1666863060X1666877460",
       "upstream": "rsync://mirrors.bfsu.edu.cn/docker-ce/",
-      "size": "688.59G",
+      "size": "695.42G",
       "help": "/help/docker-ce"
-    },
-    {
-      "cname": "elasticstack",
-      "options_name": "elasticstack",
-      "url": "/elasticstack",
-      "status": "S1666792536X1666806936",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elasticstack/",
-      "size": "330.86G",
-      "help": "/help/elasticstack"
-    },
-    {
-      "cname": "homebrew",
-      "options_name": "homebrew",
-      "url": "/homebrew",
-      "status": "S1666791276X1666805676",
-      "upstream": "",
-      "size": "unknown",
-      "help": "/help/homebrew"
-    },
-    {
-      "cname": "linuxmint",
-      "options_name": "linuxmint",
-      "url": "/linuxmint",
-      "status": "S1666783717X1666798117",
-      "upstream": "rsync://rsync-packages.linuxmint.com/packages/",
-      "size": "38.01G",
-      "help": "/help/linuxmint"
-    },
-    {
-      "cname": "archlinux",
-      "options_name": "archlinux",
-      "url": "/archlinux",
-      "status": "S1666779291X1666793691",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
-      "size": "76.07G",
-      "help": "/help/archlinux"
-    },
-    {
-      "cname": "debian-security",
-      "options_name": "debian-security",
-      "url": "/debian-security",
-      "status": "S1666789222X1666803622",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/debian-security/",
-      "size": "260.60G",
-      "help": "/help/debian-security"
-    },
-    {
-      "cname": "deepin-cd",
-      "options_name": "deepin-cd",
-      "url": "/deepin-cd",
-      "status": "S1666783014X1666797414",
-      "upstream": "rsync://rsync.deepin.com/releases/",
-      "size": "51.82G",
-      "help": "/help/deepin-cd"
     },
     {
       "cname": "epel",
       "options_name": "epel",
       "url": "/epel",
-      "status": "S1666791938X1666806338",
+      "status": "S1666866030X1666880430",
       "upstream": "rsync://fedora-rsync.ftp.pub.2iij.net/fedora-epel/",
-      "size": "441.69G",
+      "size": "443.61G",
       "help": "/help/epel"
     },
     {
-      "cname": "kali",
-      "options_name": "kali",
-      "url": "/kali",
-      "status": "S1666787674X1666802074",
-      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/kali/",
-      "size": "635.15G",
-      "help": "/help/kali"
-    },
-    {
-      "cname": "termux",
-      "options_name": "termux",
-      "url": "/termux",
-      "status": "S1666783151X1666797551",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/termux/",
-      "size": "17.99G",
-      "help": "/help/termux"
+      "cname": "linuxmint",
+      "options_name": "linuxmint",
+      "url": "/linuxmint",
+      "status": "S1666870726X1666885126",
+      "upstream": "rsync://rsync-packages.linuxmint.com/packages/",
+      "size": "38.01G",
+      "help": "/help/linuxmint"
     },
     {
       "cname": "anaconda",
       "options_name": "anaconda",
       "url": "/anaconda",
-      "status": "S1666790904X1666805304",
+      "status": "Y1666871614O1666857213",
       "upstream": "rsync://mirrors.bfsu.edu.cn/anaconda/",
       "size": "9.45T",
       "help": "/help/anaconda"
     },
     {
-      "cname": "raspbian",
-      "options_name": "raspbian",
-      "url": "/raspbian",
-      "status": "S1666778623X1666793023",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspbian/",
-      "size": "566.44G",
-      "help": "/help/raspbian"
+      "cname": "deepin-cd",
+      "options_name": "deepin-cd",
+      "url": "/deepin-cd",
+      "status": "S1666869444X1666883844",
+      "upstream": "rsync://rsync.deepin.com/releases/",
+      "size": "51.82G",
+      "help": "/help/deepin-cd"
     },
     {
-      "cname": "ubuntu-releases",
-      "options_name": "ubuntu-releases",
-      "url": "/ubuntu-releases",
-      "status": "S1666784310X1666798710",
-      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
-      "size": "29.00G",
-      "help": "/help/ubuntu-releases"
+      "cname": "elasticstack",
+      "options_name": "elasticstack",
+      "url": "/elasticstack",
+      "status": "S1666865198X1666879598",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elasticstack/",
+      "size": "330.86G",
+      "help": "/help/elasticstack"
     },
     {
       "cname": "fedora",
       "options_name": "fedora",
       "url": "/fedora",
-      "status": "S1666788715X1666803115",
+      "status": "S1666872446X1666886846",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
       "size": "1.40T",
       "help": "/help/fedora"
+    },
+    {
+      "cname": "debian",
+      "options_name": "debian",
+      "url": "/debian",
+      "status": "S1666868123X1666882523",
+      "upstream": "rsync://mirrors.bfsu.edu.cn/debian/",
+      "size": "1.94T",
+      "help": "/help/debian"
+    },
+    {
+      "cname": "homebrew-bottles",
+      "options_name": "homebrew-bottles",
+      "url": "/homebrew-bottles",
+      "status": "S1666869263X1666883663",
+      "upstream": "https://homebrew.bintray.com",
+      "size": "unknown",
+      "help": "/help/homebrew-bottles"
+    },
+    {
+      "cname": "ubuntu-releases",
+      "options_name": "ubuntu-releases",
+      "url": "/ubuntu-releases",
+      "status": "S1666871257X1666885657",
+      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
+      "size": "29.00G",
+      "help": "/help/ubuntu-releases"
+    },
+    {
+      "cname": "ubuntu",
+      "options_name": "ubuntu",
+      "url": "/ubuntu",
+      "status": "S1666869193X1666883593",
+      "upstream": "rsync://archive.ubuntu.com/ubuntu/",
+      "size": "1.87T",
+      "help": "/help/ubuntu"
     }
   ]
 }
