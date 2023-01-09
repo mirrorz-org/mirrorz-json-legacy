@@ -3,30 +3,749 @@
   "site": {
     "name": "吉林大学开源镜像站",
     "abbr": "JLU",
-    "url": "https://mirrors6.jlu.edu.cn",
-    "logo": "https://mirrors6.jlu.edu.cn/_static/logo.svg",
+    "url": "https://mirrors.jlu.edu.cn",
+    "logo": "https://mirrors.jlu.edu.cn/_static/logo.svg",
     "homepage": "https://jlulug.org",
     "issue": "https://github.com/JLULUG/issues/issues",
     "request": "https://github.com/JLULUG/issues/issues/new/choose",
     "email": "mirrors@jlu.edu.cn",
     "group": "QQ 1026894631 / TG @JLULUG",
-    "disk": "~60T",
-    "note": "试营业中，期间校外仅限 v6",
+    "disk": "11.66/42.28 TiB + 11.47/18.5 TiB",
+    "note": "试营业期间校外仅限 v6",
     "big": "/_static/speedtest.bin"
   },
-  "info": [],
+  "extension": "D",
+  "endpoints": [
+    {
+      "label": "jlu",
+      "public": true,
+      "resolve": "mirrors.jlu.edu.cn",
+      "filter": [
+        "V6",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": [
+        "AS4134",
+        "AS4809"
+      ]
+    },
+    {
+      "label": "jlu4",
+      "public": false,
+      "resolve": "mirrors.jlu.edu.cn",
+      "filter": [
+        "V4",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": []
+    },
+    {
+      "label": "jlu6",
+      "public": true,
+      "resolve": "mirrors.jlu.edu.cn",
+      "filter": [
+        "V6",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": []
+    },
+    {
+      "label": "jlunet",
+      "public": false,
+      "resolve": "mirrors.jlu.edu.cn",
+      "filter": [
+        "V4",
+        "V6",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": [
+        "49.140.0.0/16",
+        "59.72.0.0/17",
+        "111.26.2.0/23",
+        "111.26.82.0/26",
+        "111.116.96.0/20",
+        "124.234.155.0/26",
+        "202.98.13.0/24",
+        "202.98.17.0/24",
+        "202.98.18.0/25",
+        "202.98.18.224/27",
+        "202.111.177.224/27",
+        "202.127.245.0/24",
+        "202.198.16.0/20",
+        "202.198.32.0/20",
+        "202.198.48.0/20",
+        "202.198.64.0/20",
+        "202.198.144.0/20",
+        "202.198.160.0/20",
+        "219.217.0.0/20",
+        "219.217.48.0/20",
+        "222.27.64.0/19",
+        "222.34.4.0/24",
+        "222.161.207.64/26",
+        "222.168.3.64/27",
+        "222.168.40.0/23",
+        "2001:da8:b000::/48",
+        "2403:8c00::/32"
+      ]
+    }
+  ],
+  "info": [
+    {
+      "distro": "Arch Linux",
+      "category": "os",
+      "urls": [
+        {
+          "name": "Arch Linux 2023.01.01 (x86_64, iso)",
+          "url": "/archlinux/iso/2023.01.01/archlinux-2023.01.01-x86_64.iso"
+        },
+        {
+          "name": "Arch Linux 2023.01.01 (x86_64, bootstrap)",
+          "url": "/archlinux/iso/2023.01.01/archlinux-bootstrap-2023.01.01-x86_64.tar.gz"
+        }
+      ]
+    },
+    {
+      "distro": "Arch Linux ARM",
+      "category": "os",
+      "urls": [
+        {
+          "name": "Arch Linux ARM latest (aarch64-chromebook)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-aarch64-chromebook-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (aarch64)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-aarch64-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (am33x)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-am33x-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (armv7-chromebook)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-armv7-chromebook-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (armv7)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-armv7-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (chiliboard)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-chiliboard-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (clearfog)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-clearfog-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (dragonboard410c)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-dragonboard410c-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (espressobin)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-espressobin-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (gru)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-gru-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (imx6-cubox)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-imx6-cubox-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (oak)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-oak-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (odroid-c1)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-odroid-c1-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (odroid-c2)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-odroid-c2-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (odroid)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-odroid-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (odroid-n2)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-odroid-n2-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (odroid-x)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-odroid-x-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (odroid-xu)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-odroid-xu-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (odroid-xu3)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-odroid-xu3-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (rpi-aarch64)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (rpi-armv7)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-rpi-armv7-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (usbarmory)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-usbarmory-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (usbarmory-mkii)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-usbarmory-mkii-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (utilite)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-utilite-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (veyron)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-veyron-latest.tar.gz"
+        },
+        {
+          "name": "Arch Linux ARM latest (zedboard)",
+          "url": "/archlinuxarm/os/ArchLinuxARM-zedboard-latest.tar.gz"
+        }
+      ]
+    },
+    {
+      "distro": "CTAN",
+      "category": "app",
+      "urls": [
+        {
+          "name": "CTAN Tex Live 2022",
+          "url": "/CTAN/systems/texlive/Images/texlive2022-20220321.iso"
+        },
+        {
+          "name": "CTAN MiKTeX (x64, windows)",
+          "url": "/CTAN/systems/win32/miktex/setup/windows-x64/basic-miktex-22.10-x64.exe"
+        },
+        {
+          "name": "CTAN MiKTeX (x86_64, macos)",
+          "url": "/CTAN/systems/win32/miktex/setup/darwin-x86_64/miktex-22.1-darwin-x86_64.dmg"
+        },
+        {
+          "name": "CTAN MacTeX 2022",
+          "url": "/CTAN/systems/mac/mactex/mactex-20220321.pkg"
+        }
+      ]
+    },
+    {
+      "distro": "CentOS",
+      "category": "os",
+      "urls": [
+        {
+          "name": "CentOS 8 Stream (aarch64, boot)",
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20221222-boot.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (aarch64, dvd)",
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20221222-dvd1.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (ppc64le, boot)",
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20221222-boot.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (ppc64le, dvd)",
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20221222-dvd1.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (x86_64, boot)",
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20221222-boot.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (x86_64, dvd)",
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20221222-dvd1.iso"
+        },
+        {
+          "name": "CentOS 7 (x86_64, DVD)",
+          "url": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso"
+        },
+        {
+          "name": "CentOS 7 (x86_64, Everything)",
+          "url": "/centos/7/isos/x86_64/CentOS-7-x86_64-Everything-2009.iso"
+        },
+        {
+          "name": "CentOS 7 (x86_64, Minimal)",
+          "url": "/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso"
+        },
+        {
+          "name": "CentOS 7 (x86_64, NetInstall)",
+          "url": "/centos/7/isos/x86_64/CentOS-7-x86_64-NetInstall-2009.iso"
+        },
+        {
+          "name": "CentOS 7 (x86_64, DVD-2207-02)",
+          "url": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2207-02.iso"
+        },
+        {
+          "name": "CentOS 7 (x86_64, Everything-2207-02)",
+          "url": "/centos/7/isos/x86_64/CentOS-7-x86_64-Everything-2207-02.iso"
+        },
+        {
+          "name": "CentOS 7 (x86_64, Minimal-2207-02)",
+          "url": "/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-2207-02.iso"
+        }
+      ]
+    },
+    {
+      "distro": "Ubuntu",
+      "category": "os",
+      "urls": [
+        {
+          "name": "Ubuntu 22.10 (kinetic) (amd64, desktop)",
+          "url": "/ubuntu-releases/22.10/ubuntu-22.10-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 22.10 (kinetic) (amd64, server)",
+          "url": "/ubuntu-releases/22.10/ubuntu-22.10-live-server-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 22.04 (jammy) (amd64, desktop)",
+          "url": "/ubuntu-releases/22.04/ubuntu-22.04.1-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 22.04 (jammy) (amd64, server)",
+          "url": "/ubuntu-releases/22.04/ubuntu-22.04.1-live-server-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 20.04 (focal) (amd64, desktop)",
+          "url": "/ubuntu-releases/20.04/ubuntu-20.04.5-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 20.04 (focal) (amd64, server)",
+          "url": "/ubuntu-releases/20.04/ubuntu-20.04.5-live-server-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 18.04 (bionic) (amd64, desktop)",
+          "url": "/ubuntu-releases/18.04/ubuntu-18.04.6-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 18.04 (bionic) (amd64, server)",
+          "url": "/ubuntu-releases/18.04/ubuntu-18.04.6-live-server-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 16.04 (xenial) (i386, desktop)",
+          "url": "/ubuntu-releases/16.04/ubuntu-16.04.6-desktop-i386.iso"
+        },
+        {
+          "name": "Ubuntu 16.04 (xenial) (i386, server)",
+          "url": "/ubuntu-releases/16.04/ubuntu-16.04.6-server-i386.iso"
+        },
+        {
+          "name": "Ubuntu 16.04 (xenial) (amd64, desktop)",
+          "url": "/ubuntu-releases/16.04/ubuntu-16.04.7-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 16.04 (xenial) (amd64, server)",
+          "url": "/ubuntu-releases/16.04/ubuntu-16.04.7-server-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 14.04 (trusty) (amd64, desktop)",
+          "url": "/ubuntu-releases/14.04/ubuntu-14.04.6-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 14.04 (trusty) (i386, desktop)",
+          "url": "/ubuntu-releases/14.04/ubuntu-14.04.6-desktop-i386.iso"
+        },
+        {
+          "name": "Ubuntu 14.04 (trusty) (amd64, server)",
+          "url": "/ubuntu-releases/14.04/ubuntu-14.04.6-server-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 14.04 (trusty) (i386, server)",
+          "url": "/ubuntu-releases/14.04/ubuntu-14.04.6-server-i386.iso"
+        }
+      ]
+    },
+    {
+      "distro": "Fedora",
+      "category": "os",
+      "urls": []
+    },
+    {
+      "distro": "Debian",
+      "category": "os",
+      "urls": [
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, cinnamon)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-cinnamon.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, gnome)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-gnome.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, kde)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-kde.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, lxde)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-lxde.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, lxqt)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-lxqt.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, mate)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-mate.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, no GUI)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-standard.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (amd64, xfce)",
+          "url": "/debian-cd/11.6.0-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-xfce.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, cinnamon)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-cinnamon.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, gnome)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-gnome.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, kde)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-kde.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, lxde)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-lxde.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, lxqt)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-lxqt.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, mate)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-mate.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, no GUI)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-standard.iso"
+        },
+        {
+          "name": "Debian 11.6.0 Live DVD/USB (i386, xfce)",
+          "url": "/debian-cd/11.6.0-live/i386/iso-hybrid/debian-live-11.6.0-i386-xfce.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (amd64, DVD-1)",
+          "url": "/debian-cd/11.6.0/amd64/iso-dvd/debian-11.6.0-amd64-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (amd64-i386, netinst)",
+          "url": "/debian-cd/11.6.0/multi-arch/iso-cd/debian-11.6.0-amd64-i386-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (amd64, netinst)",
+          "url": "/debian-cd/11.6.0/amd64/iso-cd/debian-11.6.0-amd64-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (arm64, DVD-1)",
+          "url": "/debian-cd/11.6.0/arm64/iso-dvd/debian-11.6.0-arm64-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (arm64, netinst)",
+          "url": "/debian-cd/11.6.0/arm64/iso-cd/debian-11.6.0-arm64-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (armel, DVD-1)",
+          "url": "/debian-cd/11.6.0/armel/iso-dvd/debian-11.6.0-armel-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (armel, netinst)",
+          "url": "/debian-cd/11.6.0/armel/iso-cd/debian-11.6.0-armel-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (armhf, DVD-1)",
+          "url": "/debian-cd/11.6.0/armhf/iso-dvd/debian-11.6.0-armhf-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (armhf, netinst)",
+          "url": "/debian-cd/11.6.0/armhf/iso-cd/debian-11.6.0-armhf-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (i386, DVD-1)",
+          "url": "/debian-cd/11.6.0/i386/iso-dvd/debian-11.6.0-i386-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (i386, netinst)",
+          "url": "/debian-cd/11.6.0/i386/iso-cd/debian-11.6.0-i386-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (mips64el, DVD-1)",
+          "url": "/debian-cd/11.6.0/mips64el/iso-dvd/debian-11.6.0-mips64el-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (mips64el, netinst)",
+          "url": "/debian-cd/11.6.0/mips64el/iso-cd/debian-11.6.0-mips64el-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (mipsel, DVD-1)",
+          "url": "/debian-cd/11.6.0/mipsel/iso-dvd/debian-11.6.0-mipsel-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (mipsel, netinst)",
+          "url": "/debian-cd/11.6.0/mipsel/iso-cd/debian-11.6.0-mipsel-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (ppc64el, DVD-1)",
+          "url": "/debian-cd/11.6.0/ppc64el/iso-dvd/debian-11.6.0-ppc64el-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (ppc64el, netinst)",
+          "url": "/debian-cd/11.6.0/ppc64el/iso-cd/debian-11.6.0-ppc64el-netinst.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (s390x, DVD-1)",
+          "url": "/debian-cd/11.6.0/s390x/iso-dvd/debian-11.6.0-s390x-DVD-1.iso"
+        },
+        {
+          "name": "Debian 11.6.0 (s390x, netinst)",
+          "url": "/debian-cd/11.6.0/s390x/iso-cd/debian-11.6.0-s390x-netinst.iso"
+        }
+      ]
+    },
+    {
+      "distro": "Deepin",
+      "category": "os",
+      "urls": [
+        {
+          "name": "Deepin 20.8 (amd64)",
+          "url": "/deepin-cd/20.8/deepin-desktop-community-20.8-amd64.iso"
+        }
+      ]
+    },
+    {
+      "distro": "Linux Mint",
+      "category": "os",
+      "urls": [
+        {
+          "name": "Linux Mint 21.1 (64bit, cinnamon)",
+          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-cinnamon-64bit.iso"
+        },
+        {
+          "name": "Linux Mint 21.1 (64bit, mate)",
+          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-mate-64bit.iso"
+        },
+        {
+          "name": "Linux Mint 21.1 (64bit, xfce)",
+          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-xfce-64bit.iso"
+        }
+      ]
+    }
+  ],
   "mirrors": [
     {
       "cname": "manjaro",
-      "status": "S1670079973X1670087409",
-      "size": "143.16 GiB",
-      "url": "/manjaro"
+      "status": "S1673251941X1673271510",
+      "desc": "用户友好的 Arch Linux 衍生版",
+      "size": "131.92 GiB",
+      "url": "/manjaro/",
+      "help": "",
+      "upstream": "rsync://ftp.halifax.rwth-aachen.de/manjaro/"
     },
     {
       "cname": "archlinux",
-      "status": "S1670077309X1670084665",
-      "size": "72.27 GiB",
-      "url": "/archlinux"
+      "status": "S1673257222X1673264328",
+      "desc": "独立开发的通用 GNU/Linux 滚动发行版",
+      "size": "78.35 GiB",
+      "url": "/archlinux/",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/"
+    },
+    {
+      "cname": "archlinuxcn",
+      "status": "S1673252750X1673285570",
+      "desc": "由 Arch Linux 中文社区维护的非官方软件仓库",
+      "size": "79.63 GiB",
+      "url": "/archlinuxcn/",
+      "help": "",
+      "upstream": "rsync://jlu@sync.repo.archlinuxcn.org/repo/"
+    },
+    {
+      "cname": "archlinuxarm",
+      "status": "S1673247841X1673261496",
+      "desc": "Arch Linux 的 ARM 平台移植",
+      "size": "94.06 GiB",
+      "url": "/archlinuxarm/",
+      "help": "",
+      "upstream": "rsync://ftp.halifax.rwth-aachen.de/archlinux-arm/"
+    },
+    {
+      "cname": "CTAN",
+      "status": "S1673216733X1673308636",
+      "desc": "TeX 的发行版、软件包等资源的集散地",
+      "size": "49.34 GiB",
+      "url": "/CTAN/",
+      "help": "",
+      "upstream": "rsync://rsync.dante.ctan.org/CTAN/"
+    },
+    {
+      "cname": "apache",
+      "status": "S1673245721X1673268175",
+      "desc": "Apache 基金会支持的开源项目",
+      "size": "167.62 GiB",
+      "url": "/apache/",
+      "help": "",
+      "upstream": "rsync://rsync.apache.org/apache-dist/"
+    },
+    {
+      "cname": "centos",
+      "status": "S1673257053X1673270459",
+      "desc": "基于 RHEL 源码的免费起夜级发行版",
+      "size": "499.73 GiB",
+      "url": "/centos/",
+      "help": "",
+      "upstream": "rsync://mirrors4.hit.edu.cn/centos/"
+    },
+    {
+      "cname": "ubuntu",
+      "status": "S1673253651X1673273383",
+      "desc": "Canonical 公司基于 Debian 维护的 GNU/Linux 发行版",
+      "size": "1.91 TiB",
+      "url": "/ubuntu/",
+      "help": "",
+      "upstream": "rsync://rsync.archive.ubuntu.com/ubuntu/"
+    },
+    {
+      "cname": "ubuntu-releases",
+      "status": "S1673259342X1673273184",
+      "desc": "Ubuntu 的 ISO 安装镜像",
+      "size": "27.01 GiB",
+      "url": "/ubuntu-releases/",
+      "help": "",
+      "upstream": "rsync://rsync.releases.ubuntu.com/releases/"
+    },
+    {
+      "cname": "debian",
+      "status": "S1673253100X1673276850",
+      "desc": "完全由自由软件组成的 GNU/Linux 发行版",
+      "size": "1.82 TiB",
+      "url": "/debian/",
+      "help": "",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian/"
+    },
+    {
+      "cname": "pypi",
+      "status": "S1673261977X1673262276",
+      "desc": "Python 软件包索引",
+      "size": "11.47 TiB",
+      "url": "/pypi/",
+      "help": "",
+      "upstream": "https://pypi.org"
+    },
+    {
+      "cname": "fedora",
+      "status": "F1673262270X1673262300O1673260848",
+      "desc": "",
+      "size": "6.03 TiB",
+      "url": "/fedora/",
+      "help": "",
+      "upstream": "rsync://dl-iad03.fedoraproject.org"
+    },
+    {
+      "cname": "raspbian",
+      "status": "S1673262139X1673285086",
+      "desc": "为树莓派编译的 Debian 系统软件源",
+      "size": "541.99 GiB",
+      "url": "/raspbian/",
+      "help": "",
+      "upstream": "rsync://archive.raspbian.org/archive/"
+    },
+    {
+      "cname": "deb-multimedia",
+      "status": "S1673211010X1673298671",
+      "desc": "用于 Debian 的第三方多媒体软件源",
+      "size": "14.84 GiB",
+      "url": "/deb-multimedia/",
+      "help": "",
+      "upstream": "rsync://www.deb-multimedia.org/deb/"
+    },
+    {
+      "cname": "debian-cd",
+      "status": "S1673227336X1673269719",
+      "desc": "Debian GNU/Linux 的 ISO 安装镜像",
+      "size": "212.48 GiB",
+      "url": "/debian-cd/",
+      "help": "",
+      "upstream": "rsync://cdimage.debian.org/debian-cd/"
+    },
+    {
+      "cname": "deepin",
+      "status": "S1673220595X1673266081",
+      "desc": "基于 Debian 开发的国产 GNU/Linux 发行版",
+      "size": "367.72 GiB",
+      "url": "/deepin/",
+      "help": "",
+      "upstream": "rsync://rsync.deepin.com/deepin/"
+    },
+    {
+      "cname": "deepin-cd",
+      "status": "S1673212616X1673307331",
+      "desc": "深度操作系统 Deepin Linux 的 ISO 安装镜像",
+      "size": "55.41 GiB",
+      "url": "/deepin-cd/",
+      "help": "",
+      "upstream": "rsync://rsync.deepin.com/releases/"
+    },
+    {
+      "cname": "linuxmint",
+      "status": "S1673239858X1673283837",
+      "desc": "基于 Ubuntu 的 GNU/Linux 发行版",
+      "size": "35.88 GiB",
+      "url": "/linuxmint/",
+      "help": "",
+      "upstream": "rsync://rsync-packages.linuxmint.com/packages/"
+    },
+    {
+      "cname": "linuxmint-cd",
+      "status": "S1673235057X1673320208",
+      "desc": "Linux Mint 的 ISO 安装镜像",
+      "size": "361.22 GiB",
+      "url": "/linuxmint-cd/",
+      "help": "",
+      "upstream": "rsync://pub.linuxmint.com/pub/"
+    },
+    {
+      "cname": "debian-security",
+      "status": "S1673258170X1673268040",
+      "desc": "提供 Debian GNU/Linux 系统安全更新",
+      "size": "270.08 GiB",
+      "url": "/debian-security/",
+      "help": "",
+      "upstream": "rsync://rsync.security.debian.org/debian-security/"
+    },
+    {
+      "cname": "knoppix-dvd",
+      "status": "S1673177167X1673264924",
+      "desc": "基于 Debian 的光盘/闪存盘驱动的 GNU/Linux 发行版",
+      "size": "17.4 GiB",
+      "url": "/knoppix-dvd/",
+      "help": "",
+      "upstream": "rsync://ftp.uni-kl.de/knoppix-dvd/"
+    },
+    {
+      "cname": "knoppix",
+      "status": "S1673201374X1673284170",
+      "desc": "基于 Debian 的光盘/闪存盘驱动的 GNU/Linux 发行版",
+      "size": "6.84 GiB",
+      "url": "/knoppix/",
+      "help": "",
+      "upstream": "rsync://ftp.uni-kl.de/knoppix/"
     }
   ]
 }
