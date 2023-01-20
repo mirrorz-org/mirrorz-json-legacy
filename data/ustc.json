@@ -107,57 +107,37 @@
   },
   "info": [
     {
-      "distro": "ubuntu",
+      "distro": "archlinux",
       "urls": [
         {
-          "name": "22.10 (amd64, desktop LiveCD)",
-          "url": "/ubuntu-releases/kinetic/ubuntu-22.10-desktop-amd64.iso"
-        },
-        {
-          "name": "22.04.1 (amd64, desktop LiveCD)",
-          "url": "/ubuntu-releases/jammy/ubuntu-22.04.1-desktop-amd64.iso"
-        },
-        {
-          "name": "20.04.5 (amd64, desktop LiveCD)",
-          "url": "/ubuntu-releases/focal/ubuntu-20.04.5-desktop-amd64.iso"
-        },
-        {
-          "name": "18.04.6 (amd64, desktop LiveCD)",
-          "url": "/ubuntu-releases/bionic/ubuntu-18.04.6-desktop-amd64.iso"
+          "name": "2023.01.01 (x86_64, CLI-only)",
+          "url": "/archlinux/iso/latest/archlinux-2023.01.01-x86_64.iso"
         }
       ],
       "category": "os"
     },
     {
-      "distro": "Ubuntu 衍生版",
+      "distro": "centos",
       "urls": [
         {
-          "name": "Ubuntu Kylin 22.04.1 (amd64)",
-          "url": "/ubuntu-cdimage/ubuntukylin/releases/jammy/release/ubuntukylin-22.04.1-desktop-amd64.iso"
+          "name": "7 (x86_64, NetInstall)",
+          "url": "/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-NetInstall-2009.iso"
         },
         {
-          "name": "Kubuntu 22.10 (amd64)",
-          "url": "/ubuntu-cdimage/kubuntu/releases/kinetic/release/kubuntu-22.10-desktop-amd64.iso"
+          "name": "7 (x86_64, Minimal)",
+          "url": "/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso"
         },
         {
-          "name": "Lubuntu 22.10 (amd64)",
-          "url": "/ubuntu-cdimage/lubuntu/releases/kinetic/release/lubuntu-22.10-desktop-amd64.iso"
+          "name": "Stream 8-20230119 (x86_64, boot)",
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20230119-boot.iso"
         },
         {
-          "name": "Xubuntu 22.10 (amd64)",
-          "url": "/ubuntu-cdimage/xubuntu/releases/kinetic/release/xubuntu-22.10-desktop-amd64.iso"
+          "name": "Stream 8-20230119 (aarch64, boot)",
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20230119-boot.iso"
         },
         {
-          "name": "Ubuntu Gnome 16.04.5 (amd64)",
-          "url": "/ubuntu-cdimage/ubuntu-gnome/releases/xenial/release/ubuntu-gnome-16.04.5-desktop-amd64.iso"
-        },
-        {
-          "name": "Ubuntu Gnome 16.04.5 (i386)",
-          "url": "/ubuntu-cdimage/ubuntu-gnome/releases/xenial/release/ubuntu-gnome-16.04.5-desktop-i386.iso"
-        },
-        {
-          "name": "Ubuntu Mate 22.10 (amd64)",
-          "url": "/ubuntu-cdimage/ubuntu-mate/releases/kinetic/release/ubuntu-mate-22.10-desktop-amd64.iso"
+          "name": "Stream 8-20230119 (ppc64le, boot)",
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20230119-boot.iso"
         }
       ],
       "category": "os"
@@ -271,16 +251,6 @@
       "category": "os"
     },
     {
-      "distro": "archlinux",
-      "urls": [
-        {
-          "name": "2023.01.01 (x86_64, CLI-only)",
-          "url": "/archlinux/iso/latest/archlinux-2023.01.01-x86_64.iso"
-        }
-      ],
-      "category": "os"
-    },
-    {
       "distro": "fedora",
       "urls": [
         {
@@ -364,6 +334,24 @@
         {
           "name": "2022.4 (arm64, Network installer)",
           "url": "/kali-images/current/kali-linux-2022.4-installer-netinst-arm64.iso"
+        }
+      ],
+      "category": "os"
+    },
+    {
+      "distro": "linuxmint",
+      "urls": [
+        {
+          "name": "21.1 (64bit, xfce)",
+          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-xfce-64bit.iso"
+        },
+        {
+          "name": "21.1 (64bit, mate)",
+          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-mate-64bit.iso"
+        },
+        {
+          "name": "21.1 (64bit, cinnamon)",
+          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-cinnamon-64bit.iso"
         }
       ],
       "category": "os"
@@ -559,45 +547,57 @@
       "category": "os"
     },
     {
-      "distro": "centos",
+      "distro": "ubuntu",
       "urls": [
         {
-          "name": "7 (x86_64, NetInstall)",
-          "url": "/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-NetInstall-2009.iso"
+          "name": "22.10 (amd64, desktop LiveCD)",
+          "url": "/ubuntu-releases/kinetic/ubuntu-22.10-desktop-amd64.iso"
         },
         {
-          "name": "7 (x86_64, Minimal)",
-          "url": "/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso"
+          "name": "22.04.1 (amd64, desktop LiveCD)",
+          "url": "/ubuntu-releases/jammy/ubuntu-22.04.1-desktop-amd64.iso"
         },
         {
-          "name": "Stream 8-20230119 (x86_64, boot)",
-          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20230119-boot.iso"
+          "name": "20.04.5 (amd64, desktop LiveCD)",
+          "url": "/ubuntu-releases/focal/ubuntu-20.04.5-desktop-amd64.iso"
         },
         {
-          "name": "Stream 8-20230119 (aarch64, boot)",
-          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20230119-boot.iso"
-        },
-        {
-          "name": "Stream 8-20230119 (ppc64le, boot)",
-          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20230119-boot.iso"
+          "name": "18.04.6 (amd64, desktop LiveCD)",
+          "url": "/ubuntu-releases/bionic/ubuntu-18.04.6-desktop-amd64.iso"
         }
       ],
       "category": "os"
     },
     {
-      "distro": "linuxmint",
+      "distro": "Ubuntu 衍生版",
       "urls": [
         {
-          "name": "21.1 (64bit, xfce)",
-          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-xfce-64bit.iso"
+          "name": "Ubuntu Kylin 22.04.1 (amd64)",
+          "url": "/ubuntu-cdimage/ubuntukylin/releases/jammy/release/ubuntukylin-22.04.1-desktop-amd64.iso"
         },
         {
-          "name": "21.1 (64bit, mate)",
-          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-mate-64bit.iso"
+          "name": "Kubuntu 22.10 (amd64)",
+          "url": "/ubuntu-cdimage/kubuntu/releases/kinetic/release/kubuntu-22.10-desktop-amd64.iso"
         },
         {
-          "name": "21.1 (64bit, cinnamon)",
-          "url": "/linuxmint-cd/stable/21.1/linuxmint-21.1-cinnamon-64bit.iso"
+          "name": "Lubuntu 22.10 (amd64)",
+          "url": "/ubuntu-cdimage/lubuntu/releases/kinetic/release/lubuntu-22.10-desktop-amd64.iso"
+        },
+        {
+          "name": "Xubuntu 22.10 (amd64)",
+          "url": "/ubuntu-cdimage/xubuntu/releases/kinetic/release/xubuntu-22.10-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu Gnome 16.04.5 (amd64)",
+          "url": "/ubuntu-cdimage/ubuntu-gnome/releases/xenial/release/ubuntu-gnome-16.04.5-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu Gnome 16.04.5 (i386)",
+          "url": "/ubuntu-cdimage/ubuntu-gnome/releases/xenial/release/ubuntu-gnome-16.04.5-desktop-i386.iso"
+        },
+        {
+          "name": "Ubuntu Mate 22.10 (amd64)",
+          "url": "/ubuntu-cdimage/ubuntu-mate/releases/kinetic/release/ubuntu-mate-22.10-desktop-amd64.iso"
         }
       ],
       "category": "os"
@@ -662,37 +662,37 @@
       "cname": "archlinux",
       "desc": "",
       "url": "/archlinux",
-      "status": "S1674195838X1674210180",
+      "status": "S1674210513X1674224580",
       "help": "/help/archlinux.html",
       "upstream": "rsync://rsync.archlinux.org/ftp_tier1/",
-      "size": "78.78 GiB"
+      "size": "79.12 GiB"
     },
     {
       "cname": "archlinuxarm",
       "desc": "",
       "url": "/archlinuxarm",
-      "status": "S1674187549X1674208980",
+      "status": "S1674209006X1674230580",
       "help": "/help/archlinuxarm.html",
       "upstream": "rsync://ftp.halifax.rwth-aachen.de/archlinux-arm/",
-      "size": "95.39 GiB"
+      "size": "95.38 GiB"
     },
     {
       "cname": "archlinuxcn",
       "desc": "",
       "url": "/archlinuxcn",
-      "status": "S1674197850X1674210420",
+      "status": "S1674210449X1674224820",
       "help": "/help/archlinuxcn.html",
       "upstream": "rsync://sync.repo.archlinuxcn.org/repo/",
-      "size": "86.86 GiB"
+      "size": "86.79 GiB"
     },
     {
       "cname": "armbian",
       "desc": "",
       "url": "/armbian",
-      "status": "S1674127846X1674214200",
+      "status": "S1674214243X1674300600",
       "help": "",
       "upstream": "rsync://rsync.armbian.com/apt/",
-      "size": "93.15 GiB"
+      "size": "93.06 GiB"
     },
     {
       "cname": "armbian-releases",
@@ -734,7 +734,7 @@
       "cname": "brew.git",
       "desc": "",
       "url": "/brew.git",
-      "status": "S1674204788X1674208380",
+      "status": "S1674211988X1674215580",
       "help": "/help/brew.git.html",
       "upstream": "https://github.com/Homebrew/brew.git",
       "size": "70.66 MiB"
@@ -743,7 +743,7 @@
       "cname": "centos",
       "desc": "",
       "url": "/centos",
-      "status": "S1674199574X1674213780",
+      "status": "S1674213858X1674228180",
       "help": "/help/centos.html",
       "upstream": "rsync://us-msync.centos.org/CentOS/",
       "size": "457.16 GiB"
@@ -823,7 +823,7 @@
       "cname": "crates.io-index.git",
       "desc": "",
       "url": "/crates.io-index",
-      "status": "S1674204533X1674207900",
+      "status": "S1674211712X1674215100",
       "help": "/help/crates.io-index.html",
       "upstream": "https://github.com/rust-lang/crates.io-index",
       "size": "2.44 GiB"
@@ -868,10 +868,10 @@
       "cname": "debian",
       "desc": "",
       "url": "/debian",
-      "status": "Y1674204590O1674185109X1674244680",
+      "status": "S1674207578X1674244680",
       "help": "/help/debian.html",
       "upstream": "rsync://syncproxy2.wna.debian.org/debian/",
-      "size": "1.79 TiB"
+      "size": "1.80 TiB"
     },
     {
       "cname": "debian-cd",
@@ -1048,19 +1048,19 @@
       "cname": "gentoo",
       "desc": "",
       "url": "/gentoo",
-      "status": "S1674197918X1674212040",
+      "status": "S1674212249X1674226440",
       "help": "/help/gentoo.html",
       "upstream": "rsync://masterdistfiles.gentoo.org/gentoo/",
-      "size": "564.34 GiB"
+      "size": "564.36 GiB"
     },
     {
       "cname": "gentoo-portage",
       "desc": "",
       "url": "/gentoo-portage",
-      "status": "S1674192073X1674213480",
+      "status": "S1674213497X1674235080",
       "help": "/help/gentoo-portage.html",
       "upstream": "rsync://mirror.yandex.ru/gentoo-portage/",
-      "size": "535.37 MiB"
+      "size": "535.62 MiB"
     },
     {
       "cname": "gentoo.git",
@@ -1075,7 +1075,7 @@
       "cname": "ghcup",
       "desc": "",
       "url": "/ghcup",
-      "status": "S1674123609X1674210000",
+      "status": "S1674210007X1674296400",
       "help": "/help/ghcup.html",
       "upstream": "https://www.haskell.org/ghcup/",
       "size": "96.68 GiB"
@@ -1156,7 +1156,7 @@
       "cname": "homebrew-bottles",
       "desc": "",
       "url": "/homebrew-bottles",
-      "status": "S1674204932X1674208500",
+      "status": "S1674212130X1674215700",
       "help": "/help/homebrew-bottles.html",
       "upstream": "http://homebrew.bintray.com/",
       "size": "401.08 GiB"
@@ -1165,7 +1165,7 @@
       "cname": "homebrew-cask-versions.git",
       "desc": "",
       "url": "/homebrew-cask-versions.git",
-      "status": "S1674204923X1674208500",
+      "status": "S1674212118X1674215700",
       "help": "/help/homebrew-cask-versions.git.html",
       "upstream": "https://github.com/Homebrew/homebrew-cask-versions.git",
       "size": "74.10 MiB"
@@ -1174,19 +1174,19 @@
       "cname": "homebrew-cask.git",
       "desc": "",
       "url": "/homebrew-cask.git",
-      "status": "S1674205008X1674208500",
+      "status": "S1674212206X1674215700",
       "help": "/help/homebrew-cask.git.html",
       "upstream": "https://github.com/Homebrew/homebrew-cask.git",
-      "size": "803.12 MiB"
+      "size": "401.70 MiB"
     },
     {
       "cname": "homebrew-core.git",
       "desc": "",
       "url": "/homebrew-core.git",
-      "status": "S1674205150X1674208440",
+      "status": "S1674212348X1674215640",
       "help": "/help/homebrew-core.git.html",
       "upstream": "https://github.com/Homebrew/homebrew-core.git",
-      "size": "1.32 GiB"
+      "size": "676.32 MiB"
     },
     {
       "cname": "influxdata",
@@ -1297,6 +1297,15 @@
       "size": "17.40 GiB"
     },
     {
+      "cname": "kodi",
+      "desc": "",
+      "url": "/xbmc",
+      "status": "S1674153803X1674239220",
+      "help": "/help/xbmc.html",
+      "upstream": "rsync://mirror.yandex.ru/mirrors/xbmc/",
+      "size": "186.40 GiB"
+    },
+    {
       "cname": "kubernetes",
       "desc": "",
       "url": "/kubernetes",
@@ -1313,6 +1322,15 @@
       "help": "",
       "upstream": "rsync://ftp.osuosl.org/lfs/",
       "size": "29.51 GiB"
+    },
+    {
+      "cname": "libreoffice",
+      "desc": "",
+      "url": "/tdf",
+      "status": "S1674157394X1674243780",
+      "help": "",
+      "upstream": "rsync://rsync.documentfoundation.org/tdf-pub/",
+      "size": "91.25 GiB"
     },
     {
       "cname": "lineage-rom",
@@ -1405,15 +1423,6 @@
       "size": "649.69 GiB"
     },
     {
-      "cname": "mysql-ftp",
-      "desc": "",
-      "url": "/mysql-ftp",
-      "status": "S1674164734X1674251100",
-      "help": "",
-      "upstream": "rsync://ftp5.gwdg.de/pub/linux/mysql/",
-      "size": "612.68 GiB"
-    },
-    {
       "cname": "mysql",
       "desc": "",
       "url": "/mysql-repo",
@@ -1421,6 +1430,15 @@
       "help": "",
       "upstream": "https://repo.mysql.com/",
       "size": "1.60 TiB"
+    },
+    {
+      "cname": "mysql-ftp",
+      "desc": "",
+      "url": "/mysql-ftp",
+      "status": "S1674164734X1674251100",
+      "help": "",
+      "upstream": "rsync://ftp5.gwdg.de/pub/linux/mysql/",
+      "size": "612.68 GiB"
     },
     {
       "cname": "neurodebian",
@@ -1667,7 +1685,7 @@
       "cname": "rocky",
       "desc": "",
       "url": "/rocky",
-      "status": "S1674197071X1674211380",
+      "status": "S1674211537X1674225780",
       "help": "/help/rocky.html",
       "upstream": "rsync://msync.rockylinux.org/rocky-linux/",
       "size": "567.14 GiB"
@@ -1754,15 +1772,6 @@
       "size": "97.56 GiB"
     },
     {
-      "cname": "libreoffice",
-      "desc": "",
-      "url": "/tdf",
-      "status": "S1674157394X1674243780",
-      "help": "",
-      "upstream": "rsync://rsync.documentfoundation.org/tdf-pub/",
-      "size": "91.25 GiB"
-    },
-    {
       "cname": "termux",
       "desc": "",
       "url": "/termux",
@@ -1829,7 +1838,7 @@
       "cname": "ubuntu-cdimage",
       "desc": "",
       "url": "/ubuntu-cdimage",
-      "status": "S1674192609X1674214200",
+      "status": "S1674214209X1674235800",
       "help": "/help/ubuntu-cdimage.html",
       "upstream": "rsync://cdimage.ubuntu.com/cdimage/",
       "size": "529.13 GiB"
@@ -1904,15 +1913,6 @@
       "help": "",
       "upstream": "ftp://ftp.winehq.org/pub/.",
       "size": "37.57 GiB"
-    },
-    {
-      "cname": "kodi",
-      "desc": "",
-      "url": "/xbmc",
-      "status": "S1674153803X1674239220",
-      "help": "/help/xbmc.html",
-      "upstream": "rsync://mirror.yandex.ru/mirrors/xbmc/",
-      "size": "186.40 GiB"
     },
     {
       "cname": "xorg",
