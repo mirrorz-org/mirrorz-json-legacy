@@ -6,9 +6,21 @@ const { init, load } = require("./parser/node");
 init(config, "mirrorz-json-legacy"); // global.fetch, global.DOMParser, global.Timeout, global.timeout
 const parsers = require("./parser/parsers");
 
+const custom = require("./mirrorz-d-extension/custom");
+
+function parsers_customized(e) {
+  if (e in custom) {
+    return async () => custom[e](await load(parsers[e]));
+  }
+  else {
+    return parsers[e];
+  }
+}
+
 const LIST = {
+  // FIXME: should also patch config.mirrors with config.d_mirrors
   ...config.mirrors,
-  ...Object.fromEntries(config.upstream_parser.map((e) => [e, parsers[e]])),
+  ...Object.fromEntries(config.upstream_parser.map((e) => [e, parsers_customized(e)])),
 }
 
 const diff = require("./diff");

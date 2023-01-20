@@ -21,6 +21,7 @@ jobs:
         run: |
           git clone https://github.com/mirrorz-org/mirrorz-parser.git parser
           git clone https://github.com/mirrorz-org/mirrorz-config.git config
+          git clone https://github.com/mirrorz-org/mirrorz-d-extension.git mirrorz-d-extension
           ln -s config/mirrorz.org.json config/config.json
           ln -s ../config/config.json parser/config.json
       - name: Update json if there is any change

@@ -67,5 +67,40 @@ module.exports = function (o, n) {
       }
     }
   }
+  // extension
+  let primarykeys = union(o, n, (e) => Object.keys(e));
+  let ext = "extension";
+  if (primarykeys.includes(ext)) {
+    if (ext in o && !(ext in n))
+      log += `- ${ext}:${o[ext]}\n`
+    if (!(ext in o) && ext in n)
+      log += `+ ${ext}:${n[ext]}\n`
+    if (ext in o && ext in n && o[ext] !== n[ext]) {
+      log += `- ${ext}:${o[ext]}\n`
+      log += `+ ${ext}:${n[ext]}\n`
+    }
+    if (ext in o && ext in n) {
+      // D extension
+      if (o[ext].includes("D") && n[ext].includes("D")) {
+        let edp = "endpoints";
+        if (edp in o && !(edp in n))
+          log += `- ${edp}\n`
+        if (!(edp in o) && edp in n)
+          log += `+ ${edp}\n`
+        if (edp in o && edp in n) {
+          // endpoints
+          let endpointslabels = union(o, n, (e) => e.endpoints.map((e) => e.label));
+          for (l of endpointslabels) {
+            let ol = find(o.endpoints, l, "label")
+            let nl = find(n.endpoints, l, "label")
+            if (nl === null)
+              log += `- endpoints:${l}\n`
+            if (ol === null)
+              log += `+ endpoints:${l}\n`
+          }
+        }
+      }
+    }
+  }
   return log
 }
