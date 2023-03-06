@@ -20,12 +20,24 @@ async function cernet() {
   cnames = []
   note = []
 
+  cnames_noredir = [
+    "AOSP",
+    "CocoaPods",
+    "homebrew",
+    "pybombs",
+    "anaconda",
+    "gentoo",
+  ]
+
   for (const site of sites) {
     if (!("extension" in site && site.extension.includes("D"))) {
       continue;
     }
     note.push(site.site.abbr);
     for (const mirror of site.mirrors) {
+      if (cnames_noredir.includes(mirror.cname)) {
+        continue;
+      }
       if (!cnames.includes(mirror.cname)) {
         cnames.push(mirror.cname);
       }
