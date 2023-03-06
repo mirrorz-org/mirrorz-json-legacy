@@ -8,6 +8,8 @@ const parsers = require("./parser/parsers");
 
 const custom = require("./mirrorz-d-extension/custom");
 
+const cernet = require("./cernet");
+
 function parsers_customized(e) {
   if (e in custom) {
     return async () => custom[e](await load(parsers[e]));
@@ -21,6 +23,9 @@ const LIST = {
   // FIXME: should also patch config.mirrors with config.d_mirrors
   ...config.mirrors,
   ...Object.fromEntries(config.upstream_parser.map((e) => [e, parsers_customized(e)])),
+  // Special update function for cernet
+  // must be the last one
+  "cernet": cernet,
 }
 
 const diff = require("./diff");
