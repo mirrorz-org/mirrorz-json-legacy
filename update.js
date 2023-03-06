@@ -8,7 +8,7 @@ const parsers = require("./parser/parsers");
 
 const custom = require("./mirrorz-d-extension/custom");
 
-const cernet = require("./cernet");
+const { cernet } = require("./cernet");
 
 function parsers_customized(e) {
   if (e in custom) {
