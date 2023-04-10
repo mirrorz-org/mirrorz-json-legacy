@@ -10,8 +10,7 @@
     "request": "https://github.com/JLULUG/issues/issues/new/choose",
     "email": "mirrors@jlu.edu.cn",
     "group": "QQ 1026894631 / TG @JLULUG",
-    "disk": "10.92/42.28 TiB + 12.46/18.5 TiB",
-    "note": "试营业期间校外仅限 v6",
+    "disk": "11.62/42.28 TiB + 13.07/18.5 TiB",
     "big": "/_static/speedtest.bin"
   },
   "extension": "D",
@@ -21,36 +20,46 @@
       "public": true,
       "resolve": "mirrors.jlu.edu.cn",
       "filter": [
+        "V4",
         "V6",
         "SSL",
         "NOSSL"
       ],
       "range": [
-        "AS4134",
-        "AS4809"
+        "COUNTRY:CN",
+        "REGION:JL",
+        "ISP:CERNET"
       ]
     },
     {
       "label": "jlu4",
-      "public": false,
-      "resolve": "mirrors.jlu.edu.cn",
+      "public": true,
+      "resolve": "mirrors4.jlu.edu.cn",
       "filter": [
         "V4",
         "SSL",
         "NOSSL"
       ],
-      "range": []
+      "range": [
+        "COUNTRY:CN",
+        "REGION:JL",
+        "ISP:CERNET"
+      ]
     },
     {
       "label": "jlu6",
       "public": true,
-      "resolve": "mirrors.jlu.edu.cn",
+      "resolve": "mirrors6.jlu.edu.cn",
       "filter": [
         "V6",
         "SSL",
         "NOSSL"
       ],
-      "range": []
+      "range": [
+        "COUNTRY:CN",
+        "REGION:JL",
+        "ISP:CERNET"
+      ]
     },
     {
       "label": "jlunet",
@@ -99,12 +108,12 @@
       "category": "os",
       "urls": [
         {
-          "name": "Arch Linux 2023.03.01 (x86_64, iso)",
-          "url": "/archlinux/iso/2023.03.01/archlinux-2023.03.01-x86_64.iso"
+          "name": "Arch Linux 2023.04.01 (x86_64, iso)",
+          "url": "/archlinux/iso/2023.04.01/archlinux-2023.04.01-x86_64.iso"
         },
         {
-          "name": "Arch Linux 2023.03.01 (x86_64, bootstrap)",
-          "url": "/archlinux/iso/2023.03.01/archlinux-bootstrap-2023.03.01-x86_64.tar.gz"
+          "name": "Arch Linux 2023.04.01 (x86_64, bootstrap)",
+          "url": "/archlinux/iso/2023.04.01/archlinux-bootstrap-2023.04.01-x86_64.tar.gz"
         }
       ]
     },
@@ -224,27 +233,51 @@
       "urls": [
         {
           "name": "CentOS 8 Stream (aarch64, boot)",
-          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20230209-boot.iso"
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-20230404.0-aarch64-boot.iso"
         },
         {
           "name": "CentOS 8 Stream (aarch64, dvd)",
-          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20230209-dvd1.iso"
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-20230404.0-aarch64-dvd1.iso"
         },
         {
           "name": "CentOS 8 Stream (ppc64le, boot)",
-          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20230209-boot.iso"
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-20230404.0-ppc64le-boot.iso"
         },
         {
           "name": "CentOS 8 Stream (ppc64le, dvd)",
-          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20230209-dvd1.iso"
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-20230404.0-ppc64le-dvd1.iso"
         },
         {
           "name": "CentOS 8 Stream (x86_64, boot)",
-          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20230209-boot.iso"
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-20230404.0-x86_64-boot.iso"
         },
         {
           "name": "CentOS 8 Stream (x86_64, dvd)",
-          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20230209-dvd1.iso"
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-20230404.0-x86_64-dvd1.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (aarch64, boot)",
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (aarch64, dvd)",
+          "url": "/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (ppc64le, boot)",
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (ppc64le, dvd)",
+          "url": "/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (x86_64, boot)",
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso"
+        },
+        {
+          "name": "CentOS 8 Stream (x86_64, dvd)",
+          "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso"
         },
         {
           "name": "CentOS 7 (x86_64, DVD)",
@@ -281,8 +314,8 @@
       "category": "app",
       "urls": [
         {
-          "name": "CTAN Tex Live 2022",
-          "url": "/CTAN/systems/texlive/Images/texlive2022-20220321.iso"
+          "name": "CTAN Tex Live 2023",
+          "url": "/CTAN/systems/texlive/Images/texlive2023-20230313.iso"
         },
         {
           "name": "CTAN MiKTeX (x64, windows)",
@@ -293,8 +326,8 @@
           "url": "/CTAN/systems/win32/miktex/setup/darwin-x86_64/miktex-22.1-darwin-x86_64.dmg"
         },
         {
-          "name": "CTAN MacTeX 2022",
-          "url": "/CTAN/systems/mac/mactex/mactex-20220321.pkg"
+          "name": "CTAN MacTeX 2023",
+          "url": "/CTAN/systems/mac/mactex/mactex-20230314.pkg"
         }
       ]
     },
@@ -655,6 +688,14 @@
       "category": "os",
       "urls": [
         {
+          "name": "Ubuntu 23.04 (lunar) (amd64, desktop)",
+          "url": "/ubuntu-releases/23.04/ubuntu-23.04-beta-desktop-amd64.iso"
+        },
+        {
+          "name": "Ubuntu 23.04 (lunar) (amd64, server)",
+          "url": "/ubuntu-releases/23.04/ubuntu-23.04-beta-live-server-amd64.iso"
+        },
+        {
           "name": "Ubuntu 22.10 (kinetic) (amd64, desktop)",
           "url": "/ubuntu-releases/22.10/ubuntu-22.10-desktop-amd64.iso"
         },
@@ -672,11 +713,11 @@
         },
         {
           "name": "Ubuntu 20.04 (focal) (amd64, desktop)",
-          "url": "/ubuntu-releases/20.04/ubuntu-20.04.5-desktop-amd64.iso"
+          "url": "/ubuntu-releases/20.04/ubuntu-20.04.6-desktop-amd64.iso"
         },
         {
           "name": "Ubuntu 20.04 (focal) (amd64, server)",
-          "url": "/ubuntu-releases/20.04/ubuntu-20.04.5-live-server-amd64.iso"
+          "url": "/ubuntu-releases/20.04/ubuntu-20.04.6-live-server-amd64.iso"
         },
         {
           "name": "Ubuntu 18.04 (bionic) (amd64, desktop)",
@@ -724,79 +765,79 @@
   "mirrors": [
     {
       "cname": "apache",
-      "status": "S1678073845X1678097306",
+      "status": "S1681121164X1681142556",
       "desc": "Apache 基金会支持的开源项目",
-      "size": "172.81 GiB",
+      "size": "181.18 GiB",
       "url": "/apache",
       "help": "",
       "upstream": "rsync://rsync.apache.org/apache-dist/"
     },
     {
       "cname": "archlinux",
-      "status": "S1678083535X1678090880",
+      "status": "S1681129476X1681137044",
       "desc": "独立开发的通用 GNU/Linux 滚动发行版",
-      "size": "88.2 GiB",
+      "size": "94.21 GiB",
       "url": "/archlinux",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/"
     },
     {
       "cname": "archlinuxarm",
-      "status": "S1678076606X1678091262",
+      "status": "S1681127062X1681140945",
       "desc": "Arch Linux 的 ARM 平台移植",
-      "size": "86.51 GiB",
+      "size": "83.78 GiB",
       "url": "/archlinuxarm",
       "help": "",
       "upstream": "rsync://ftp.halifax.rwth-aachen.de/archlinux-arm/"
     },
     {
       "cname": "archlinuxcn",
-      "status": "S1678063798X1678090918",
+      "status": "S1681121857X1681147957",
       "desc": "由 Arch Linux 中文社区维护的非官方软件仓库",
-      "size": "134.44 GiB",
+      "size": "138.16 GiB",
       "url": "/archlinuxcn",
       "help": "",
       "upstream": "rsync://jlu@sync.repo.archlinuxcn.org/repo/"
     },
     {
       "cname": "centos",
-      "status": "S1678084165X1678097243",
+      "status": "S1681121792X1681134850",
       "desc": "基于 RHEL 源码的免费起夜级发行版",
-      "size": "519.5 GiB",
+      "size": "557.12 GiB",
       "url": "/centos",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/"
     },
     {
       "cname": "CTAN",
-      "status": "S1678075068X1678120897",
+      "status": "S1681092805X1681133045",
       "desc": "TeX 的发行版、软件包等资源的集散地",
-      "size": "49.33 GiB",
+      "size": "49.91 GiB",
       "url": "/CTAN",
       "help": "",
       "upstream": "rsync://rsync.dante.ctan.org/CTAN/"
     },
     {
       "cname": "deb-multimedia",
-      "status": "S1678077502X1678162633",
+      "status": "S1681106002X1681185881",
       "desc": "用于 Debian 的第三方多媒体软件源",
-      "size": "14.76 GiB",
+      "size": "11.39 GiB",
       "url": "/deb-multimedia",
       "help": "",
       "upstream": "rsync://www.deb-multimedia.org/deb/"
     },
     {
       "cname": "debian",
-      "status": "S1678077898X1678093612",
+      "status": "S1681121776X1681135484",
       "desc": "完全由自由软件组成的 GNU/Linux 发行版",
-      "size": "1.8 TiB",
+      "size": "1.7 TiB",
       "url": "/debian",
       "help": "",
       "upstream": "rsync://mirrors6.tuna.tsinghua.edu.cn/debian/"
     },
     {
       "cname": "debian-cd",
-      "status": "S1678062577X1678109852",
+      "status": "S1681097445X1681138979",
       "desc": "Debian GNU/Linux 的 ISO 安装镜像",
       "size": "212.48 GiB",
       "url": "/debian-cd",
@@ -805,25 +846,25 @@
     },
     {
       "cname": "debian-security",
-      "status": "S1678087415X1678098200",
+      "status": "S1681131654X1681139018",
       "desc": "提供 Debian GNU/Linux 系统安全更新",
-      "size": "296.13 GiB",
+      "size": "294.84 GiB",
       "url": "/debian-security",
       "help": "",
       "upstream": "rsync://rsync.security.debian.org/debian-security/"
     },
     {
       "cname": "deepin",
-      "status": "S1678053872X1678093962",
+      "status": "S1681121661X1681168162",
       "desc": "基于 Debian 开发的国产 GNU/Linux 发行版",
-      "size": "369.54 GiB",
+      "size": "370.58 GiB",
       "url": "/deepin",
       "help": "",
       "upstream": "rsync://rsync.deepin.com/deepin/"
     },
     {
       "cname": "deepin-cd",
-      "status": "S1678055160X1678139730",
+      "status": "S1681058125X1681151446",
       "desc": "深度操作系统 Deepin Linux 的 ISO 安装镜像",
       "size": "59.47 GiB",
       "url": "/deepin-cd",
@@ -832,16 +873,16 @@
     },
     {
       "cname": "endeavouros",
-      "status": "S1678059729X1678104288",
-      "desc": "",
-      "size": "43.02 GiB",
+      "status": "S1681121665X1681136919",
+      "desc": "新兴的社区驱动 Arch Linux 衍生版",
+      "size": "46.86 GiB",
       "url": "/endeavouros",
       "help": "",
-      "upstream": "rsync://mirror.alpix.eu/endeavouros/"
+      "upstream": "rsync://alpix.eu.rsync.endeavouros.com/endeavouros/"
     },
     {
       "cname": "fedora",
-      "status": "S1678082990X1678089984",
+      "status": "Y1681101720O1681094048",
       "desc": "由 Fedora 项目社群开发的 GNU/Linux 发行版",
       "size": "6.03 TiB",
       "url": "/fedora",
@@ -850,7 +891,7 @@
     },
     {
       "cname": "garuda-linux",
-      "status": "S1678075991X1678096159",
+      "status": "S1681120150X1681140888",
       "desc": "",
       "size": "16.8 GiB",
       "url": "/garuda-linux",
@@ -859,7 +900,7 @@
     },
     {
       "cname": "knoppix",
-      "status": "S1678060810X1678154355",
+      "status": "S1681117802X1681197924",
       "desc": "基于 Debian 的光盘/闪存盘驱动的 GNU/Linux 发行版",
       "size": "6.84 GiB",
       "url": "/knoppix",
@@ -868,7 +909,7 @@
     },
     {
       "cname": "knoppix-dvd",
-      "status": "S1678043902X1678136030",
+      "status": "S1681121745X1681204407",
       "desc": "基于 Debian 的光盘/闪存盘驱动的 GNU/Linux 发行版",
       "size": "17.4 GiB",
       "url": "/knoppix-dvd",
@@ -877,7 +918,7 @@
     },
     {
       "cname": "linuxmint",
-      "status": "S1678049984X1678090060",
+      "status": "S1681116972X1681158175",
       "desc": "基于 Ubuntu 的 GNU/Linux 发行版",
       "size": "35.89 GiB",
       "url": "/linuxmint",
@@ -886,7 +927,7 @@
     },
     {
       "cname": "linuxmint-cd",
-      "status": "S1678051798X1678136530",
+      "status": "S1681120785X1681211503",
       "desc": "Linux Mint 的 ISO 安装镜像",
       "size": "361.22 GiB",
       "url": "/linuxmint-cd",
@@ -895,45 +936,45 @@
     },
     {
       "cname": "manjaro",
-      "status": "S1678083046X1678104756",
+      "status": "S1681122933X1681143877",
       "desc": "用户友好的 Arch Linux 衍生版",
-      "size": "146.87 GiB",
+      "size": "137.18 GiB",
       "url": "/manjaro",
       "help": "",
       "upstream": "rsync://ftp.halifax.rwth-aachen.de/manjaro/"
     },
     {
       "cname": "pypi",
-      "status": "S1678087800X1678088100",
+      "status": "S1681132763X1681133063",
       "desc": "Python 软件包索引",
-      "size": "12.46 TiB",
+      "size": "13.07 TiB",
       "url": "/pypi",
       "help": "",
       "upstream": "https://pypi.org"
     },
     {
       "cname": "raspbian",
-      "status": "S1678076771X1678099619",
+      "status": "S1681121780X1681144400",
       "desc": "为树莓派编译的 Debian 系统软件源",
-      "size": "550.83 GiB",
+      "size": "552.4 GiB",
       "url": "/raspbian",
       "help": "",
       "upstream": "rsync://archive.raspbian.org/archive/"
     },
     {
       "cname": "ubuntu",
-      "status": "S1678074062X1678097184",
+      "status": "S1681114111X1681135820",
       "desc": "Canonical 公司基于 Debian 维护的 GNU/Linux 发行版",
-      "size": "2.02 TiB",
+      "size": "2.05 TiB",
       "url": "/ubuntu",
       "help": "",
       "upstream": "rsync://rsync.archive.ubuntu.com/ubuntu/"
     },
     {
       "cname": "ubuntu-releases",
-      "status": "S1678087688X1678101213",
+      "status": "S1681121509X1681134513",
       "desc": "Ubuntu 的 ISO 安装镜像",
-      "size": "28.51 GiB",
+      "size": "36.34 GiB",
       "url": "/ubuntu-releases",
       "help": "",
       "upstream": "rsync://rsync.releases.ubuntu.com/releases/"
