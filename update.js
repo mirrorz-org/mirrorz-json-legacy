@@ -53,7 +53,9 @@ async function update(site) {
 
 async function main() {
   for (site in LIST) {
-    d = await update(site);
+    d = await update(site).catch(error => {
+        return `${site}: throws exception ${error}\n`
+    });
     console.log(d)
   }
   fs.writeFileSync('./data/lastupdate', (new Date).toISOString())
