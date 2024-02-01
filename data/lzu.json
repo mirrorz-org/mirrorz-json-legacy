@@ -1,5 +1,5 @@
 {
-  "version": 1.5,
+  "version": 1.7,
   "site": {
     "url": "https://mirror.lzu.edu.cn",
     "logo": "https://mirror.lzu.edu.cn/assets/img/oss_logo_trans.webp",
@@ -18,141 +18,523 @@
   "mirrors": [
     {
       "cname": "almalinux",
+      "desc": "almalinux mirror description",
       "url": "/almalinux",
-      "status": "F1705872088",
-      "help": "/help/#/almalinux/"
+      "status": "S1706787986X1706795186",
+      "help": "/help/almalinux/",
+      "upstream": "rsync://rsync.repo.almalinux.org/almalinux/",
+      "size": "1.33T",
+      "disable": false
+    },
+    {
+      "cname": "alpine",
+      "desc": "alpine mirror description",
+      "url": "/alpine",
+      "status": "S1706788773X1706803173",
+      "help": "/help/alpine/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/alpine/",
+      "size": "2.76T",
+      "disable": false
+    },
+    {
+      "cname": "anaconda",
+      "desc": "anaconda mirror description",
+      "url": "/anaconda",
+      "status": "S1706774342X1706803142",
+      "help": "/help/anaconda/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/anaconda/",
+      "size": "14.00T",
+      "disable": false
+    },
+    {
+      "cname": "anthon",
+      "desc": "anthon mirror description",
+      "url": "/anthon",
+      "status": "S1706780817X1706809617",
+      "help": "/help/anthon/",
+      "upstream": "rsync://repo.aosc.io/anthon/",
+      "size": "1.54T",
+      "disable": false
+    },
+    {
+      "cname": "apache",
+      "desc": "apache mirror description",
+      "url": "/apache",
+      "status": "S1706767721X1706796521",
+      "help": "/help/apache/",
+      "upstream": "rsync://rsync.apache.org/apache-dist/",
+      "size": "232.85G",
+      "disable": false
     },
     {
       "cname": "archlinux",
+      "desc": "archlinux mirror description",
       "url": "/archlinux",
-      "status": "S1705917607",
-      "help": "/help/#/archlinux/"
+      "status": "S1706780288X1706809088",
+      "help": "/help/archlinux/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
+      "size": "105.20G",
+      "disable": false
+    },
+    {
+      "cname": "archlinuxarm",
+      "desc": "archlinuxarm mirror description",
+      "url": "/archlinuxarm",
+      "status": "S1706770537X1706799337",
+      "help": "/help/archlinuxarm/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/",
+      "size": "108.68G",
+      "disable": false
     },
     {
       "cname": "archlinuxcn",
+      "desc": "archlinuxcn mirror description",
       "url": "/archlinuxcn",
-      "status": "S1705917639",
-      "help": "/help/#/archlinuxcn/"
+      "status": "S1706780475X1706809275",
+      "help": "/help/archlinuxcn/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/",
+      "size": "214.19G",
+      "disable": false
+    },
+    {
+      "cname": "archriscv",
+      "desc": "archriscv mirror description",
+      "url": "/archriscv",
+      "status": "S1706777051X1706805851",
+      "help": "/help/archriscv/",
+      "upstream": "rsync://archriscv.felixc.at/archriscv/",
+      "size": "69.28G",
+      "disable": false
+    },
+    {
+      "cname": "blackarch",
+      "desc": "blackarch mirror description",
+      "url": "/blackarch",
+      "status": "S1706786142X1706800542",
+      "help": "/help/blackarch/",
+      "upstream": "rsync://www.blackarch.org/blackarch/",
+      "size": "91.97G",
+      "disable": false
+    },
+    {
+      "cname": "bmclapi",
+      "desc": "bmclapi mirror description",
+      "url": "/bmclapi",
+      "status": "S1706768546X1706797346",
+      "help": "/help/bmclapi/",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/bmclapi/",
+      "size": "74.71G",
+      "disable": false
+    },
+    {
+      "cname": "centos",
+      "desc": "centos mirror description",
+      "url": "/centos",
+      "status": "S1706791924X1706802724",
+      "help": "/help/centos/",
+      "upstream": "rsync://msync.centos.org/CentOS/",
+      "size": "541.35G",
+      "disable": false
+    },
+    {
+      "cname": "centos-altarch",
+      "desc": "centos-altarch mirror description",
+      "url": "/centos-altarch",
+      "status": "S1706769918X1706798718",
+      "help": "/help/centos-altarch/",
+      "upstream": "rsync://msync.centos.org/altarch/",
+      "size": "352.73G",
+      "disable": false
+    },
+    {
+      "cname": "centos-stream",
+      "desc": "centos-stream mirror description",
+      "url": "/centos-stream",
+      "status": "S1706787358X1706798158",
+      "help": "/help/centos-stream/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos-stream/",
+      "size": "2.27T",
+      "disable": false
+    },
+    {
+      "cname": "centos-vault",
+      "desc": "centos-vault mirror description",
+      "url": "/centos-vault",
+      "status": "S1706782940X1706811740",
+      "help": "/help/centos-vault/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos-vault/",
+      "size": "6.13T",
+      "disable": false
+    },
+    {
+      "cname": "CPAN",
+      "desc": "CPAN mirror description",
+      "url": "/CPAN",
+      "status": "S1706769432X1706798232",
+      "help": "/help/CPAN/",
+      "upstream": "rsync://cpan-rsync.perl.org/CPAN/",
+      "size": "34.37G",
+      "disable": false
+    },
+    {
+      "cname": "CRAN",
+      "desc": "CRAN mirror description",
+      "url": "/CRAN",
+      "status": "S1706777718X1706806518",
+      "help": "/help/CRAN/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CRAN/",
+      "size": "438.64G",
+      "disable": false
+    },
+    {
+      "cname": "CTAN",
+      "desc": "CTAN mirror description",
+      "url": "/CTAN",
+      "status": "S1706771601X1706800401",
+      "help": "/help/CTAN/",
+      "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
+      "size": "57.11G",
+      "disable": false
     },
     {
       "cname": "cygwin",
+      "desc": "cygwin mirror description",
       "url": "/cygwin",
-      "status": "S1705869082",
-      "help": "/help/#/cygwin/"
+      "status": "S1706770230X1706799030",
+      "help": "/help/cygwin/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/cygwin/",
+      "size": "110.76G",
+      "disable": false
+    },
+    {
+      "cname": "deb-multimedia",
+      "desc": "debian-multimedia mirror description",
+      "url": "/debian-multimedia",
+      "status": "S1706770422X1706799222",
+      "help": "/help/debian-multimedia/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-multimedia/",
+      "size": "15.03G",
+      "disable": false
     },
     {
       "cname": "debian",
+      "desc": "debian mirror description",
       "url": "/debian",
-      "status": "S1705898130",
-      "help": "/help/#/debian/"
+      "status": "U1706773996",
+      "help": "/help/debian/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian/",
+      "size": "2.00T",
+      "disable": false
     },
     {
       "cname": "debian-cd",
+      "desc": "debian-cd mirror description",
       "url": "/debian-cd",
-      "status": "S1705869013",
-      "help": "/help/#/debian-cd/"
+      "status": "S1706770199X1706798999",
+      "help": "/help/debian-cd/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd/",
+      "size": "230.78G",
+      "disable": false
     },
     {
-      "cname": "debian-ports",
-      "url": "/debian-ports",
-      "status": "S1705865980",
-      "help": "/help/#/debian-ports/"
+      "cname": "debian-nonfree",
+      "desc": "debian-nonfree mirror description",
+      "url": "/debian-nonfree",
+      "status": "S1706780637X1706809437",
+      "help": "/help/debian-nonfree/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-nonfree/",
+      "size": "33.62G",
+      "disable": false
     },
     {
       "cname": "debian-security",
+      "desc": "debian-security mirror description",
       "url": "/debian-security",
-      "status": "S1705899022",
-      "help": "/help/#/debian-security/"
+      "status": "S1706787553X1706794753",
+      "help": "/help/debian-security/",
+      "upstream": "rsync://rsync.security.debian.org/debian-security/",
+      "size": "185.09G",
+      "disable": false
+    },
+    {
+      "cname": "deepin",
+      "desc": "deepin mirror description",
+      "url": "/deepin",
+      "status": "U1706710621",
+      "help": "/help/deepin/",
+      "upstream": "rsync://rsync.deepin.com/deepin/",
+      "size": null,
+      "disable": false
     },
     {
       "cname": "deepin-cd",
-      "url": "/deepin-releases",
-      "status": "S1705865405",
-      "help": "/help/#/deepin-releases/"
+      "desc": "deepin-cd mirror description",
+      "url": "/deepin-cd",
+      "status": "S1706782428X1706811228",
+      "help": "/help/deepin-cd/",
+      "upstream": "rsync://rsync.deepin.com/releases/",
+      "size": "76.53G",
+      "disable": false
+    },
+    {
+      "cname": "elrepo",
+      "desc": "elrepo mirror description",
+      "url": "/elrepo",
+      "status": "S1706769469X1706798269",
+      "help": "/help/elrepo/",
+      "upstream": "rsync://ftp.kddilabs.jp/elrepo/",
+      "size": "91.84G",
+      "disable": false
     },
     {
       "cname": "epel",
+      "desc": "epel mirror description",
       "url": "/epel",
-      "status": "S1705865053",
-      "help": "/help/#/epel/"
+      "status": "S1706789479X1706800279",
+      "help": "/help/epel/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/epel/",
+      "size": "536.39G",
+      "disable": false
     },
     {
-      "cname": "flutter",
-      "url": "/flutter",
-      "status": "S1705867411",
-      "help": "/help/#/flutter/"
+      "cname": "fedora",
+      "desc": "fedora mirror description",
+      "url": "/fedora",
+      "status": "S1706791943X1706802743",
+      "help": "/help/fedora/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
+      "size": "1.70T",
+      "disable": false
     },
     {
-      "cname": "FreeBSD",
-      "url": "/freebsd",
-      "status": "S1705861996",
-      "help": "/help/#/freebsd/"
+      "cname": "fedora-altarch",
+      "desc": "fedora-altarch mirror description",
+      "url": "/fedora-altarch",
+      "status": "S1706790998X1706801798",
+      "help": "/help/fedora-altarch/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora-altarch//",
+      "size": "67.25G",
+      "disable": false
     },
     {
       "cname": "gentoo",
+      "desc": "gentoo mirror description",
       "url": "/gentoo",
-      "status": "S1705912212",
-      "help": "/help/#/gentoo/"
+      "status": "S1706770419X1706799219",
+      "help": "/help/gentoo/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gentoo/",
+      "size": "841.99G",
+      "disable": false
     },
     {
       "cname": "gentoo-portage",
+      "desc": "gentoo-portage mirror description",
       "url": "/gentoo-portage",
-      "status": "S1705859631",
-      "help": "/help/#/gentoo-portage/"
+      "status": "S1706768785X1706797585",
+      "help": "/help/gentoo-portage/",
+      "upstream": "rsync://rsync.us.gentoo.org/gentoo-portage/",
+      "size": "206.98M",
+      "disable": false
+    },
+    {
+      "cname": "gentoo-portage-prefix",
+      "desc": "gentoo-portage-prefix mirror description",
+      "url": "/gentoo-portage-prefix",
+      "status": "S1706770008X1706798808",
+      "help": "/help/gentoo-portage-prefix/",
+      "upstream": "rsync://rsync.prefix.bitzolder.nl/gentoo-portage-prefix/",
+      "size": "207.51M",
+      "disable": false
+    },
+    {
+      "cname": "gnu",
+      "desc": "gnu mirror description",
+      "url": "/gnu",
+      "status": "S1706791327X1706798527",
+      "help": "/help/gnu/",
+      "upstream": "rsync://ftp.gnu.org/gnu/",
+      "size": "176.83G",
+      "disable": false
+    },
+    {
+      "cname": "homebrew-bottles",
+      "desc": "homebrew-bottles mirror description",
+      "url": "/homebrew-bottles",
+      "status": "S1706777152X1706805952",
+      "help": "/help/homebrew-bottles/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/",
+      "size": "540.25G",
+      "disable": false
+    },
+    {
+      "cname": "kali",
+      "desc": "kali mirror description",
+      "url": "/kali",
+      "status": "S1706785549X1706814349",
+      "help": "/help/kali/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali/",
+      "size": "931.45G",
+      "disable": false
+    },
+    {
+      "cname": "kali-images",
+      "desc": "kali-images mirror description",
+      "url": "/kali-images",
+      "status": "S1706791657X1706820457",
+      "help": "/help/kali-images/",
+      "upstream": "rsync://ftp.nluug.nl/kali-images/",
+      "size": "184.34G",
+      "disable": false
+    },
+    {
+      "cname": "kernel",
+      "desc": "kernel mirror description",
+      "url": "/kernel",
+      "status": "S1706785977X1706814777",
+      "help": "/help/kernel/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kernel/",
+      "size": "1.20T",
+      "disable": false
+    },
+    {
+      "cname": "loongson",
+      "desc": "loongson mirror description",
+      "url": "/loongson",
+      "status": "S1706771785X1706800585",
+      "help": "/help/loongson/",
+      "upstream": "rsync://rsync.anheng.com.cn/loongson/",
+      "size": "20.99G",
+      "disable": false
     },
     {
       "cname": "manjaro",
+      "desc": "manjaro mirror description",
       "url": "/manjaro",
-      "status": "S1705866772",
-      "help": "/help/#/manjaro/"
+      "status": "S1706770709X1706799509",
+      "help": "/help/manjaro/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/manjaro/",
+      "size": "196.75G",
+      "disable": false
     },
     {
       "cname": "openeuler",
+      "desc": "openeuler mirror description",
       "url": "/openeuler",
-      "status": "S1705864464",
-      "help": "/help/#/openeuler/"
-    },
-    {
-      "cname": "openkylin",
-      "url": "/openkylin",
-      "status": "F1705865406",
-      "help": "/help/#/openkylin/"
+      "status": "S1706787686X1706816486",
+      "help": "/help/openeuler/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openeuler/",
+      "size": "4.16T",
+      "disable": false
     },
     {
       "cname": "opensuse",
+      "desc": "opensuse mirror description",
       "url": "/opensuse",
-      "status": "S1705867478",
-      "help": "/help/#/opensuse/"
+      "status": "U1706765571",
+      "help": "/help/opensuse/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/opensuse/",
+      "size": null,
+      "disable": false
     },
     {
-      "cname": "pypi",
-      "url": "/pypi",
-      "status": "S1705925011",
-      "help": "/help/#/pypi/"
-    },
-    {
-      "cname": "radxa-apt",
-      "url": "/radxa-apt",
-      "status": "S1705867802",
-      "help": "/help/#/radxa-apt/"
+      "cname": "openwrt",
+      "desc": "openwrt mirror description",
+      "url": "/openwrt",
+      "status": "U1706764096",
+      "help": "/help/openwrt/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openwrt/",
+      "size": null,
+      "disable": false
     },
     {
       "cname": "rocky",
+      "desc": "rocky mirror description",
       "url": "/rocky",
-      "status": "S1705866406",
-      "help": "/help/#/rocky/"
+      "status": "S1706787255X1706816055",
+      "help": "/help/rocky/",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/rocky/",
+      "size": "1.27T",
+      "disable": false
+    },
+    {
+      "cname": "rpmfusion",
+      "desc": "rpmfusion mirror description",
+      "url": "/rpmfusion",
+      "status": "S1706772856X1706801656",
+      "help": "/help/rpmfusion/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rpmfusion/",
+      "size": "147.34G",
+      "disable": false
+    },
+    {
+      "cname": "ubuntu",
+      "desc": "ubuntu mirror description",
+      "url": "/ubuntu",
+      "status": "S1706792112X1706820912",
+      "help": "/help/ubuntu/",
+      "upstream": "rsync://archive.ubuntu.com/ubuntu/",
+      "size": "2.63T",
+      "disable": false
+    },
+    {
+      "cname": "ubuntu-cdimage",
+      "desc": "ubuntu-cdimage mirror description",
+      "url": "/ubuntu-cdimage",
+      "status": "U1706710676",
+      "help": "/help/ubuntu-cdimage/",
+      "upstream": "rsync://cdimage.ubuntu.com/cdimage/",
+      "size": null,
+      "disable": false
+    },
+    {
+      "cname": "ubuntu-cloud-images",
+      "desc": "ubuntu-cloud-images mirror description",
+      "url": "/ubuntu-cloud-images",
+      "status": "U1706710661",
+      "help": "/help/ubuntu-cloud-images/",
+      "upstream": "rsync://cloud-images.ubuntu.com/cloud-images/",
+      "size": null,
+      "disable": false
+    },
+    {
+      "cname": "ubuntu-ports",
+      "desc": "ubuntu-ports mirror description",
+      "url": "/ubuntu-ports",
+      "status": "U1706710641",
+      "help": "/help/ubuntu-ports/",
+      "upstream": "rsync://ports.ubuntu.com/ubuntu-ports/",
+      "size": null,
+      "disable": false
     },
     {
       "cname": "ubuntu-releases",
+      "desc": "ubuntu-releases mirror description",
       "url": "/ubuntu-releases",
-      "status": "F1705863602",
-      "help": "/help/#/ubuntu-releases/"
+      "status": "S1706768316X1706797116",
+      "help": "/help/ubuntu-releases/",
+      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
+      "size": "41.70G",
+      "disable": false
     },
     {
-      "cname": "wepe",
-      "url": "/wepe",
-      "status": "S1705924802",
-      "help": "/help/#/wepe/"
+      "cname": "ubuntukylin",
+      "desc": "ubuntukylin mirror description",
+      "url": "/ubuntukylin",
+      "status": "S1706780187X1706808987",
+      "help": "/help/ubuntukylin/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntukylin/",
+      "size": "5.24G",
+      "disable": false
+    },
+    {
+      "cname": "ubuntukylin-cdimage",
+      "desc": "ubuntukylin-cdimage mirror description",
+      "url": "/ubuntukylin-cdimage",
+      "status": "S1706780417X1706809217",
+      "help": "/help/ubuntukylin-cdimage/",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntukylin-cdimage/",
+      "size": "8.85G",
+      "disable": false
     }
   ]
 }
