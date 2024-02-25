@@ -9,14 +9,14 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.MIRRORZ_JSON_LEGACY_PAT }}
           submodules: true
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '18'
       - name: Prepare parser and config
         run: |
           git clone https://github.com/mirrorz-org/mirrorz-parser.git parser
