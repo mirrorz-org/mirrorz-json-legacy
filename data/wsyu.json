@@ -4,8 +4,8 @@
     "logo": "https://mirrors.wsyu.edu.cn/.mirrorz/wsyu-logo.png",
     "abbr": "WSYU",
     "name": "武昌首义学院开源软件镜像站",
-    "disk": "492G / 9.0T (5%)",
-    "note": "WSYU 镜像时隔半年又和大家见面啦！",
+    "disk": "1.4T / 10T (15%)",
+    "note": "WSYU 镜像提供特别的 LoongArch 支持",
     "big": "https://mirrors.wsyu.edu.cn/archriscv/images/archriscv-20210601.tar.zst"
   },
   "info": [
@@ -14,8 +14,8 @@
       "category": "os",
       "urls": [
         {
-          "name": "2023.12.01 (x86_64, CLI-only)",
-          "url": "/archlinux/iso/latest/archlinux-2023.12.01-x86_64.iso"
+          "name": "2024.03.01 (x86_64, CLI-only)",
+          "url": "/archlinux/iso/latest/archlinux-2024.03.01-x86_64.iso"
         }
       ]
     },
@@ -23,6 +23,14 @@
       "distro": "archriscv",
       "category": "os",
       "urls": [
+        {
+          "name": "latest (riscv64gc)",
+          "url": "/archriscv/images/archriscv-latest.tar.zst"
+        },
+        {
+          "name": "2023-12-13 (riscv64gc)",
+          "url": "/archriscv/images/archriscv-2023-12-13.tar.zst"
+        },
         {
           "name": "2023-10-09 (riscv64gc)",
           "url": "/archriscv/images/archriscv-2023-10-09.tar.zst"
@@ -75,7 +83,7 @@
       "url": "/archlinux",
       "status": "U",
       "upstream": "rsync://mirrors.pkgbuild.com/packages",
-      "size": "76G"
+      "size": "99G"
     },
     {
       "cname": "archlinuxcn",
@@ -83,15 +91,29 @@
       "url": "/archlinuxcn",
       "status": "U",
       "upstream": "rsync://mirrors.bfsu.edu.cn/archlinuxcn",
-      "size": "70G"
+      "size": "137G"
     },
     {
       "cname": "archriscv",
-      "desc": "Arch Linux RISC-V 移植项目（WIP）",
+      "desc": "Arch Linux RISC-V 移植项目",
       "url": "/archriscv",
       "status": "U",
       "upstream": "rsync://archriscv.felixc.at/archriscv",
-      "size": "3.2G"
+      "size": "67G"
+    },
+    {
+      "cname": "loongarch",
+      "desc": "Loong Arch Linux 移植项目",
+      "url": "/loongarch",
+      "status": "U",
+      "size": "61G"
+    },
+    {
+      "cname": "slackwareloong",
+      "desc": "Slackware Loong 移植项目",
+      "url": "/slackwareloong",
+      "status": "U",
+      "size": "46G"
     }
   ]
 }
