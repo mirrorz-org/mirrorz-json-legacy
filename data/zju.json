@@ -1,557 +1,545 @@
 {
-  "version": 1.6,
+  "version": 1.7,
   "site": {
     "url": "https://mirrors.zju.edu.cn",
     "logo": "https://mirrors.zju.edu.cn/zju-falcon.svg",
     "abbr": "ZJU",
     "name": "浙江大学开源软件镜像站",
     "homepage": "https://www.zjusct.io",
-    "disk": "49T/110T"
+    "email": "mirrors@zju.edu.cn",
+    "disable": false
   },
-  "info": [
-    {
-      "distro": "anaconda",
-      "category": "app",
-      "urls": []
-    },
-    {
-      "distro": "archlinux",
-      "category": "os",
-      "urls": []
-    },
-    {
-      "distro": "debian",
-      "category": "os",
-      "urls": []
-    },
-    {
-      "distro": "ubuntu",
-      "category": "os",
-      "urls": []
-    }
-  ],
+  "info": [],
   "mirrors": [
     {
       "cname": "almalinux",
-      "desc": "一类企业 Linux 发行版",
+      "desc": "Enterprise Linux 兼容发行版",
       "url": "/almalinux",
-      "status": "D1712868615X1712883000O1712833632",
+      "status": "S1714803011X1714831561",
       "help": "/docs/almalinux",
       "upstream": "rsync://rsync.repo.almalinux.org/almalinux/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "alpine",
       "desc": "基于 musl libc 和 busybox 的安全、轻量 Linux 发行版",
       "url": "/alpine",
-      "status": "S1712868832X1712851200",
+      "status": "S1714815609X1714842897",
       "help": "/docs/alpine",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/alpine/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "anaconda",
       "desc": "科学计算工具包",
       "url": "/anaconda",
-      "status": "D1712865625X1712851200O1712830732",
+      "status": "S1714819833X1714847120",
       "help": "/docs/anaconda",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/anaconda/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "anolis",
       "desc": "支持多架构的开源 Linux 操作系统发行版",
       "url": "/anolis",
-      "status": "C",
+      "status": "S1714799434X1714885247",
       "help": "/docs/anolis",
       "upstream": "rsync://rsync.openanolis.cn/anolis",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "archlinux",
       "desc": "Arch Linux 软件包",
       "url": "/archlinux",
-      "status": "S1712865781X1712851200",
+      "status": "S1714826838X1714848332",
       "help": "/docs/archlinux",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "archlinuxcn",
       "desc": "由 Arch Linux 中文社区提供的额外软件包",
       "url": "/archlinuxcn",
-      "status": "S1712865892X1712851200",
+      "status": "S1714801678X1714830243",
       "help": "/docs/archlinuxcn",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "bioconductor",
       "desc": "生物信息学开源软件",
       "url": "/bioconductor",
-      "status": "S1712839365X1712880000",
+      "status": "S1714761339X1714843039",
       "help": "/docs/bioconductor",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/bioconductor/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "centos",
-      "desc": "CentOS Linux 与 CentOS Stream 8 镜像",
+      "desc": "Mirror of CentOS Linux and CentOS Stream 8",
       "url": "/centos",
-      "status": "S1712866010X1712851200",
+      "status": "Y1714823538O1714737468",
       "help": "/docs/centos",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/centos/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "centos-vault",
-      "desc": "历史 CentOS 版本软件包源",
+      "desc": "已归档 CentOS 版本软件包源",
       "url": "/centos-vault",
       "status": "C",
-      "help": "/index/docs/centos-vault",
+      "help": "/docs/centos-vault",
       "upstream": "https://mirrors.tuna.tsinghua.edu.cn/centos-vault",
-      "size": "N/A"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "CPAN",
       "desc": "Perl 语言模块仓库",
       "url": "/CPAN",
-      "status": "S1712867748X1712851200",
+      "status": "S1714819975X1714847957",
       "help": "/docs/CPAN",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CPAN/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "CRAN",
       "desc": "R 语言的可执行文件、源代码和说明文件，以及用户撰写的软件包",
       "url": "/CRAN",
-      "status": "Y1712870232X1712851200O1712855408",
+      "status": "S1714821658X1714848196",
       "help": "/docs/CRAN",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CRAN/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
-      "cname": "crates.io-index.git",
+      "cname": "crates.io-index",
       "desc": "Rust 语言软件包索引（稀疏）",
       "url": "/crates.io-index",
-      "status": "D1712865625X1712851200O1712858920",
-      "help": "/docs/crates.io",
+      "status": "S1714813412X1714834184",
+      "help": "/docs/crates.io-index",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/crates.io-index/",
-      "size": "1G"
-    },
-    {
-      "cname": "crates.io-index.git",
-      "desc": "Rust 语言软件包索引",
-      "url": "/git/crates.io-index",
-      "status": "D1712869215X1712844000O1712865670",
-      "help": "/docs/crates.io",
-      "upstream": "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "CTAN",
       "desc": "TeX 的各种发行版、软件包和文档",
       "url": "/CTAN",
-      "status": "S1712866303X1712851200",
+      "status": "S1714820064X1714848375",
       "help": "/docs/CTAN",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CTAN/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "cygwin",
       "desc": "Cygwin 提供 Windows 下的 POSIX 兼容环境与开源工具包",
       "url": "/cygwin",
-      "status": "S1712866545X1712851200",
+      "status": "S1714818009X1714882597",
       "help": "/docs/cygwin",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/cygwin/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "debian",
       "desc": "Debian 发行版软件包",
       "url": "/debian",
-      "status": "Y1712870223X1712851200O1712861585",
+      "status": "Y1714823632O1714814413",
       "help": "/docs/debian",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "debian-cd",
       "desc": "Debian Linux 安装镜像",
       "url": "/debian-cd",
-      "status": "C",
-      "help": "/docs/debian",
+      "status": "S1714817987X1714904377",
+      "help": "/docs/debian-cd",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "debian-security",
       "desc": "Debian 发行版安全更新软件包",
       "url": "/debian-security",
-      "status": "C",
-      "help": "/docs/debian",
-      "upstream": "rsync://rsync.security.debian.org/debian-security/",
-      "size": "1G"
+      "status": "S1714827223X1714855875",
+      "help": "/docs/debian-security",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-security/",
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "deepin",
       "desc": "深度操作系统软件源",
       "url": "/deepin",
-      "status": "S1712869282X1712851200",
+      "status": "S1714801368X1714843498",
       "help": "/docs/deepin",
       "upstream": "rsync://rsync.deepin.com/deepin/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "deepin-cd",
       "desc": "Deepin Linux 安装镜像",
       "url": "/deepin-cd",
-      "status": "C",
-      "help": "/docs/deepin",
+      "status": "S1714817986X1714904378",
+      "help": "/docs/deepin-cd",
       "upstream": "rsync://rsync.deepin.com/releases/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "docker-ce",
       "desc": "Docker 社区版",
       "url": "/docker-ce",
-      "status": "C",
+      "status": "S1714823477X1714909676",
       "help": "/docs/docker-ce",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/docker-ce/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "elpa",
       "desc": "Emacs Lisp 软件包归档",
       "url": "/elpa",
-      "status": "D1712865625X1712851200O1712857011",
+      "status": "S1714806060X1714848963",
       "help": "/docs/elpa",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elpa/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "elrepo",
-      "desc": "Enterprise Linux 的社区软件源",
+      "desc": "Enterprise Linux 社区软件源",
       "url": "/elrepo",
-      "status": "D1712865625X1712851200O1712856826",
+      "status": "S1714800435X1714843596",
       "help": "/docs/elrepo",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/elrepo/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "epel",
       "desc": "Extra Packages for Enterprise Linux",
       "url": "/epel",
-      "status": "D1712865625X1712851200O1712857317",
+      "status": "S1714797727X1714840085",
       "help": "/docs/epel",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/epel/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "fedora",
       "desc": "Fedora Linux 源",
       "url": "/fedora",
-      "status": "S1712870094X1712851200",
+      "status": "S1714822384X1714850020",
       "help": "/docs/fedora",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "gentoo",
-      "desc": "一个灵活的、源码分发的 Linux 发行版",
+      "desc": "灵活的、源码分发的 Linux 发行版",
       "url": "/gentoo",
-      "status": "C",
+      "status": "S1714821399X1714841459",
       "help": "/docs/gentoo",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gentoo/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "gentoo-portage",
       "desc": "Gentoo ebuild 软件源",
       "url": "/gentoo-portage",
-      "status": "C",
+      "status": "S1714819237X1714840080",
       "help": "/docs/gentoo-portage",
-      "upstream": "",
-      "size": "1G"
-    },
-    {
-      "cname": "gentoo-portage.git",
-      "desc": "Gentoo Portage Git 仓库",
-      "url": "/git/gentoo-portage",
-      "status": "D1712869215X1712844000O1712695021",
-      "help": "/docs/gentoo-portage",
-      "upstream": "https://mirrors.bfsu.edu.cn/git/gentoo-portage.git",
-      "size": "0"
-    },
-    {
-      "cname": "glibc.git",
-      "desc": "GNC C Library 的源码 Git 仓库",
-      "url": "/git/glibc",
-      "status": "D1712869215X1712844000O1712865641",
-      "help": "/docs/glibc",
-      "upstream": "https://mirrors.bfsu.edu.cn/git/glibc.git",
-      "size": "1G"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gentoo-portage/",
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "gnu",
       "desc": "GNU 软件 （二进制、文档与源码包）",
       "url": "/gnu",
-      "status": "C",
+      "status": "S1714821844X1714908196",
       "help": "/docs/gnu",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gnu/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "homebrew",
-      "desc": "macOS 第三方的软件包管理器",
-      "url": "/git/homebrew",
-      "status": "D1712865625X1712851200O1712749138",
+      "desc": "macOS 第三方软件包管理器",
+      "url": "/homebrew",
+      "status": "S1714821984X1714864836",
       "help": "/docs/homebrew",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/homebrew/",
-      "size": "0"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "ius",
-      "desc": "为 CentOS 和 RHEL 提供最新的软件包",
+      "desc": "为 EL7 提供新版本的软件包",
       "url": "/ius",
-      "status": "C",
+      "status": "S0X1715231060",
       "help": "/docs/ius",
       "upstream": "rsync://origin.repo.ius.io/ius/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "kali",
       "desc": "Kali Linux 软件包仓库",
       "url": "/kali",
-      "status": "Y1712870222X1712851200O1712856733",
+      "status": "S1714809074X1714844531",
       "help": "/docs/kali",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "kali-images",
       "desc": "Kali Linux 安装镜像",
       "url": "/kali-images",
-      "status": "D1712865625X1712851200O1712856754",
+      "status": "S1714757973X1714844367",
       "help": "/docs/kali-images",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali-images/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "kernel",
       "desc": "Linux 内核源码和补丁",
       "url": "/kernel",
-      "status": "C",
+      "status": "S1714826679X1714912800",
       "help": "/docs/kernel",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kernel/",
-      "size": "1G"
-    },
-    {
-      "cname": "linux.git",
-      "desc": "Linux 内核源代码 Git 仓库",
-      "url": "/git/linux",
-      "status": "D1712865625X1712840400O1712848148",
-      "help": "/docs/linux",
-      "upstream": "https://mirrors.tuna.tsinghua.edu.cn/git/linux.git",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "linuxmint",
       "desc": "Linux Mint 软件包仓库",
       "url": "/linuxmint",
-      "status": "D1712865625X1712880000O1712831270",
+      "status": "S1714804895X1714847958",
       "help": "/docs/linuxmint",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/linuxmint/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "llvm-apt",
       "desc": "为 Debian 和 Ubuntu 提供的、每夜构建的 LLVM 二进制包",
       "url": "/llvm-apt",
-      "status": "D1712865625X1712851200O1712857576",
+      "status": "S1714756642X1714843004",
       "help": "/docs/llvm-apt",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/llvm-apt/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "manjaro",
-      "desc": "Manjaro 是一个基于独立开发的 Arch Linux 对用户友好的 Linux 发行版",
+      "desc": "基于独立开发的 Arch Linux 对用户友好的 Linux 发行版",
       "url": "/manjaro",
-      "status": "S1712866166X1712851200",
+      "status": "S1714802026X1714830533",
       "help": "/docs/manjaro",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/manjaro/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "msys2",
       "desc": "面向 Windows 的软件分发与构建平台",
       "url": "/msys2",
-      "status": "S1712866324X1712851200",
+      "status": "S1714827130X1714869983",
       "help": "/docs/msys2",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/msys2/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "openeuler",
       "desc": "面向数字基础设施的开源操作系统",
       "url": "/openeuler",
-      "status": "S1712870278X1712851200",
+      "status": "S1714813222X1714841310",
       "help": "/docs/openeuler",
-      "upstream": "rsync://repo.openeuler.openatom.cn/openeuler/",
-      "size": "1G"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openeuler/",
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "opensuse",
-      "desc": "openSUSE 的安装镜像和官方软件包仓库",
+      "desc": "openSUSE 安装介质与官方软件包仓库",
       "url": "/opensuse",
-      "status": "D1712865625X1712858400O1712761616",
+      "status": "S1714807739X1714835282",
       "help": "/docs/opensuse",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/opensuse/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "openwrt",
       "desc": "用于网络路由的嵌入式系统",
       "url": "/openwrt",
       "status": "C",
-      "help": "/index/docs/openwrt",
+      "help": "/docs/openwrt",
       "upstream": "https://mirrors.tuna.tsinghua.edu.cn/openwrt",
-      "size": "N/A"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "packman",
       "desc": "为 Debian、Fedora、openSUSE、Ubuntu 提供额外和过期软件包的仓库",
       "url": "/packman",
-      "status": "D1712865625X1712880000O1712830729",
+      "status": "S1714809158X1714852146",
       "help": "/docs/packman",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/packman/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "postgresql",
       "desc": "世界上最先进的开源关系型数据库",
       "url": "/postgresql",
-      "status": "Y1712870278X1712851200O1712856295",
+      "status": "S1714754481X1714839871",
       "help": "/docs/postgresql",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/postgresql/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "pypi",
       "desc": "Python 第三方软件包索引",
       "url": "/pypi",
-      "status": "D1712865625X1712837400O1712865103",
-      "help": "/index/docs/pypi",
-      "upstream": "rsync://mirrors6.tuna.tsinghua.edu.cn/pypi/",
-      "size": "1G"
+      "status": "Y1714826184O1714786781",
+      "help": "/docs/pypi",
+      "upstream": "https://pypi.org",
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "raspberrypi",
       "desc": "用于树莓派的一些 Debian 软件包",
       "url": "/raspberrypi",
-      "status": "D1712865625X1712851200O1712857481",
+      "status": "Y1714823563O1714780434",
       "help": "/docs/raspberrypi",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspberrypi/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "raspbian",
-      "desc": "为树莓派优化过的 Debian 发行版",
+      "desc": "为树莓派优化的 Debian 发行版",
       "url": "/raspbian",
-      "status": "D1712865625X1712851200O1712858824",
+      "status": "S1714795196X1714836382",
       "help": "/docs/raspbian",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/raspbian/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "rocky",
-      "desc": "一类企业 Linux 发行版",
+      "desc": "Enterprise Linux 兼容发行版",
       "url": "/rocky",
-      "status": "C",
+      "status": "S1714821980X1714850022",
       "help": "/docs/rocky",
-      "upstream": "rsync://mirrors.jlu.edu.cn/rocky",
-      "size": "1G"
+      "upstream": "rsync://msync.rockylinux.org/rocky/mirror/pub/rocky/",
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "ros",
       "desc": "ROS 软件包（仅同步 Ubuntu）",
       "url": "/ros",
-      "status": "D1712865625X1712851200O1712856274",
+      "status": "S1714816532X1714902669",
       "help": "/docs/ros",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "ros2",
       "desc": "ROS 2 软件包（仅同步 Ubuntu）",
       "url": "/ros2",
-      "status": "D1712865625X1712851200O1712855972",
+      "status": "S1714821631X1714907847",
       "help": "/docs/ros2",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros2/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "rosdistro",
       "desc": "rosdep 使用的文件",
       "url": "/rosdistro",
-      "status": "D1712865625X1712840400O1712862033",
+      "status": "S1714814338X1714900712",
       "help": "/docs/rosdistro",
-      "upstream": "https://github.com/ros/rosdistro.git",
-      "size": "1G"
-    },
-    {
-      "cname": "roswiki",
-      "desc": "ROS Wiki 镜像",
-      "url": "/roswiki",
-      "status": "D1712865625X1712851200O1712856023",
-      "help": "/docs/roswiki",
-      "upstream": "rsync://rsync.osuosl.org/ros_wiki_mirror/",
-      "size": "1G"
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rosdistro/",
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "rustup",
       "desc": "Rust 工具链二进制",
       "url": "/rustup",
-      "status": "D1712865625X1712851200O1712857867",
+      "status": "S1714798868X1714841097",
       "help": "/docs/rustup",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/rustup/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "termux",
       "desc": "Termux 软件包源",
       "url": "/termux",
-      "status": "D1712865625X1712851200O1712857741",
+      "status": "S1714815327X1714901624",
       "help": "/docs/termux",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/termux/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "ubuntu",
       "desc": "Ubuntu 软件包镜像",
       "url": "/ubuntu",
-      "status": "Y1712870278X1712851200O1712859811",
+      "status": "Y1714822686O1714765076",
       "help": "/docs/ubuntu",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "ubuntu-ports",
       "desc": "Ubuntu ports 软件包镜像",
       "url": "/ubuntu-ports",
       "status": "C",
-      "help": "/index/docs/ubuntu-ports",
-      "upstream": "https://mirrors6.tuna.tsinghua.edu.cn/ubuntu/",
-      "size": "N/A"
+      "help": "/docs/ubuntu-ports",
+      "upstream": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports",
+      "size": "0",
+      "disable": false
     },
     {
       "cname": "ubuntu-releases",
-      "desc": "Ubuntu 原版安装介质",
+      "desc": "Ubuntu 安装介质（原版）",
       "url": "/ubuntu-releases",
-      "status": "C",
+      "status": "S1714795098X1714881490",
       "help": "/docs/ubuntu-releases",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/",
-      "size": "1G"
+      "size": "0",
+      "disable": false
     }
   ],
   "extension": "D",
