@@ -69,7 +69,7 @@ async function main() {
   for (site in LIST) {
     d = await retry_update(site).catch(error => {
       // Remove site file if update failed
-      fs.unlinkSync('./data/' + site + '.json')
+      fs.unlink('./data/' + site + '.json', (err) => {})
       return `${site}: throws exception ${error}, removing...\n`
     });
     console.log(d)
