@@ -7,10 +7,18 @@ async function cernet() {
   let sites = [];
 
   config.mirrors_legacy.forEach((abbr) => {
-    sites.push(require(`./data/${abbr}.json`));
+    try {
+      sites.push(require(`./data/${abbr}.json`));
+    } catch (e) {
+      console.log(`Error: ${abbr} not found`);
+    }
   });
   for (const abbr in config.mirrors) {
-    sites.push(require(`./data/${abbr}.json`));
+    try {
+      sites.push(require(`./data/${abbr}.json`));
+    } catch (e) {
+      console.log(`Error: ${abbr} not found`);
+    }
   }
 
   // extra
