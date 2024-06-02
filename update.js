@@ -41,7 +41,7 @@ async function update(site) {
   }
   let n = await load(LIST[site]);
   if (n === null)
-    return `${site}: fetch failed\n`
+    throw new Error(`${site}: fetch failed`)
   n.info = n.info ?? [] // fix for site without info
   d = diff(o, n)
   if (d !== "") {
@@ -51,10 +51,26 @@ async function update(site) {
   return `${site}: same\n`
 }
 
+async function retry_update(site, retries = 3, delay = 1000) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await update(site);
+    } catch (e) {
+      console.log(`${site}: Error: ${e}, retrying...`);
+      if (i === retries - 1) {
+        throw e;
+      }
+      await new Promise((resolve) => setTimeout(resolve, delay));
+    }
+  }
+}
+
 async function main() {
   for (site in LIST) {
-    d = await update(site).catch(error => {
-        return `${site}: throws exception ${error}\n`
+    d = await retry_update(site).catch(error => {
+      // Remove site file if update failed
+      fs.unlinkSync('./data/' + site + '.json')
+      return `${site}: throws exception ${error}, removing...\n`
     });
     console.log(d)
   }
