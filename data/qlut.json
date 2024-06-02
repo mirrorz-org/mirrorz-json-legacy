@@ -15,8 +15,8 @@
       "category": "os",
       "urls": [
         {
-          "name": "2024.05.01 (x86_64, CLI-only)",
-          "url": "/archlinux/iso/latest/archlinux-2024.05.01-x86_64.iso"
+          "name": "2024.06.01 (x86_64, CLI-only)",
+          "url": "/archlinux/iso/latest/archlinux-2024.06.01-x86_64.iso"
         }
       ]
     },
@@ -24,6 +24,38 @@
       "distro": "centos",
       "category": "os",
       "urls": [
+        {
+          "name": "9 stream (x86_64, dvd1)",
+          "url": "/centos-stream/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-dvd1.iso"
+        },
+        {
+          "name": "9 stream (x86_64, boot)",
+          "url": "/centos-stream/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-boot.iso"
+        },
+        {
+          "name": "9 stream (s390x, dvd1)",
+          "url": "/centos-stream/9-stream/BaseOS/s390x/iso/CentOS-Stream-9-latest-s390x-dvd1.iso"
+        },
+        {
+          "name": "9 stream (s390x, boot)",
+          "url": "/centos-stream/9-stream/BaseOS/s390x/iso/CentOS-Stream-9-latest-s390x-boot.iso"
+        },
+        {
+          "name": "9 stream (ppc64le, dvd1)",
+          "url": "/centos-stream/9-stream/BaseOS/ppc64le/iso/CentOS-Stream-9-latest-ppc64le-dvd1.iso"
+        },
+        {
+          "name": "9 stream (ppc64le, boot)",
+          "url": "/centos-stream/9-stream/BaseOS/ppc64le/iso/CentOS-Stream-9-latest-ppc64le-boot.iso"
+        },
+        {
+          "name": "9 stream (aarch64, dvd1)",
+          "url": "/centos-stream/9-stream/BaseOS/aarch64/iso/CentOS-Stream-9-latest-aarch64-dvd1.iso"
+        },
+        {
+          "name": "9 stream (aarch64, boot)",
+          "url": "/centos-stream/9-stream/BaseOS/aarch64/iso/CentOS-Stream-9-latest-aarch64-boot.iso"
+        },
         {
           "name": "8 stream (x86_64, dvd1)",
           "url": "/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso"
@@ -339,6 +371,16 @@
       ]
     },
     {
+      "distro": "MSYS2",
+      "category": "app",
+      "urls": [
+        {
+          "name": "latest (Windows, x86_64)",
+          "url": "/msys2/distrib/msys2-x86_64-latest.exe"
+        }
+      ]
+    },
+    {
       "distro": "TeX 排版系统",
       "category": "app",
       "urls": [
@@ -364,6 +406,30 @@
       "distro": "ubuntu",
       "category": "os",
       "urls": [
+        {
+          "name": "xenial-updates (i386, network installer directory)",
+          "url": "/ubuntu/dists/xenial-updates/main/installer-i386/current/images/netboot"
+        },
+        {
+          "name": "xenial-updates (amd64, network installer directory)",
+          "url": "/ubuntu/dists/xenial-updates/main/installer-amd64/current/images/netboot"
+        },
+        {
+          "name": "xenial-proposed (i386, network installer directory)",
+          "url": "/ubuntu/dists/xenial-proposed/main/installer-i386/current/images/netboot"
+        },
+        {
+          "name": "xenial-proposed (amd64, network installer directory)",
+          "url": "/ubuntu/dists/xenial-proposed/main/installer-amd64/current/images/netboot"
+        },
+        {
+          "name": "xenial (i386, network installer directory)",
+          "url": "/ubuntu/dists/xenial/main/installer-i386/current/images/netboot"
+        },
+        {
+          "name": "xenial (amd64, network installer directory)",
+          "url": "/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot"
+        },
         {
           "name": "24.04 (s390x, Server)",
           "url": "/ubuntu-cdimage/releases/noble/release/ubuntu-24.04-live-server-s390x.iso"
@@ -704,9 +770,9 @@
       "cname": "archlinux",
       "options_name": "archlinux",
       "url": "/archlinux",
-      "status": "S1717226606X1717269806",
+      "status": "S1717313226X1717356426",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/archlinux/",
-      "size": "107.85G",
+      "size": "107.50G",
       "desc": "Arch Linux 的安装镜像和官方软件包仓库",
       "help": "/help/archlinux/"
     },
@@ -714,27 +780,36 @@
       "cname": "bmclapi",
       "options_name": "bmclapi",
       "url": "/bmclapi",
-      "status": "S1717232996X1717276196",
+      "status": "S1717319608X1717362809",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/bmclapi/",
-      "size": "79.04G"
+      "size": "79.16G"
     },
     {
       "cname": "centos",
       "options_name": "centos",
       "url": "/centos",
-      "status": "S1717260990X1717304190",
+      "status": "S1717347748X1717390948",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/centos/",
       "size": "575.12G",
       "desc": "CentOS 的安装镜像和官方软件包仓库",
       "help": "/help/centos/"
     },
     {
+      "cname": "centos-stream",
+      "options_name": "centos-stream",
+      "url": "/centos-stream",
+      "status": "S1717343233X1717386433",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/centos-stream/",
+      "size": "2.49T",
+      "help": "/help/centos-stream/"
+    },
+    {
       "cname": "ceph",
       "options_name": "ceph",
       "url": "/ceph",
-      "status": "S1717251817X1717295017",
+      "status": "S1717340541X1717383741",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/ceph/",
-      "size": "535.87G",
+      "size": "565.11G",
       "desc": "高性能对象存储和文件系统",
       "help": "/help/ceph/"
     },
@@ -742,9 +817,9 @@
       "cname": "CRAN",
       "options_name": "CRAN",
       "url": "/CRAN",
-      "status": "S1717246159X1717289359",
+      "status": "S1717344345X1717387545",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CRAN/",
-      "size": "456.64G",
+      "size": "456.60G",
       "desc": "R 语言的可执行文件、源代码和说明文件，也收录了各种用户撰写的软件包",
       "help": "/help/CRAN/"
     },
@@ -752,17 +827,27 @@
       "cname": "CTAN",
       "options_name": "CTAN",
       "url": "/CTAN",
-      "status": "S1717236470X1717279670",
+      "status": "S1717323688X1717366888",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CTAN/",
       "size": "59.74G",
       "desc": "TeX 的各种发行版、软件包和文档",
       "help": "/help/CTAN/"
     },
     {
+      "cname": "debian",
+      "options_name": "debian",
+      "url": "/debian",
+      "status": "Y1717263720",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/debian/",
+      "size": "2.12T",
+      "desc": "Debian Linux 的官方软件包仓库",
+      "help": "/help/debian/"
+    },
+    {
       "cname": "debian-cd",
       "options_name": "debian-cd",
       "url": "/debian-cd",
-      "status": "S1717223441X1717266641",
+      "status": "S1717309859X1717353059",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/debian-cd/",
       "size": "231.61G",
       "desc": "Debian Linux 的安装镜像"
@@ -771,7 +856,7 @@
       "cname": "deepin",
       "options_name": "deepin",
       "url": "/deepin",
-      "status": "S1717252745X1717295945",
+      "status": "S1717339846X1717383046",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/deepin/",
       "size": "674.19G",
       "desc": "Deepin Linux 的官方软件包仓库"
@@ -780,7 +865,7 @@
       "cname": "deepin-cd",
       "options_name": "deepin-cd",
       "url": "/deepin-cd",
-      "status": "S1717233375X1717276575",
+      "status": "S1717319785X1717362985",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/deepin-cd/",
       "size": "138.72G",
       "desc": "Deepin Linux 的安装镜像"
@@ -789,9 +874,9 @@
       "cname": "epel",
       "options_name": "epel",
       "url": "/epel",
-      "status": "S1717252857X1717296057",
+      "status": "S1717339790X1717382990",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/epel/",
-      "size": "545.06G",
+      "size": "554.49G",
       "desc": "企业版 Linux 附加软件包",
       "help": "/help/epel/"
     },
@@ -799,9 +884,9 @@
       "cname": "fedora",
       "options_name": "fedora",
       "url": "/fedora",
-      "status": "S1717223758X1717266958",
+      "status": "S1717311435X1717354635",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
-      "size": "2.32T",
+      "size": "2.33T",
       "desc": "Fedora Linux 的安装镜像和官方软件包仓库",
       "help": "/help/fedora/"
     },
@@ -809,9 +894,9 @@
       "cname": "kali",
       "options_name": "kali",
       "url": "/kali",
-      "status": "S1717243236X1717286436",
+      "status": "S1717330695X1717373895",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali/",
-      "size": "521.26G",
+      "size": "522.12G",
       "desc": "Kali Linux 的官方软件包仓库",
       "help": "/help/kali/"
     },
@@ -819,7 +904,7 @@
       "cname": "kali-images",
       "options_name": "kali-images",
       "url": "/kali-images",
-      "status": "S1717221130X1717264330",
+      "status": "S1717350745X1717393945",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/kali-images/",
       "size": "169.86G",
       "desc": "Kali Linux 的安装镜像"
@@ -828,7 +913,7 @@
       "cname": "kernel",
       "options_name": "kernel",
       "url": "/kernel",
-      "status": "S1717248050X1717291250",
+      "status": "S1717334460X1717377660",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/kernel/",
       "size": "unknown",
       "desc": "各个版本的 Linux 内核源代码压缩包和补丁"
@@ -837,24 +922,54 @@
       "cname": "loongson",
       "options_name": "loongson",
       "url": "/loongson",
-      "status": "F1717256892X1717300092",
+      "status": "F1717343303X1717386503",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/loongson/",
       "size": "unknown",
       "desc": "用于龙芯电脑的软件包"
     },
     {
+      "cname": "msys2",
+      "options_name": "msys2",
+      "url": "/msys2",
+      "status": "S1717316963X1717360163",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/msys2/",
+      "size": "918.87G",
+      "desc": "用于编译原生 Windows 程序的类 Linux 开发环境",
+      "help": "/help/msys2/"
+    },
+    {
+      "cname": "openwrt",
+      "options_name": "openwrt",
+      "url": "/openwrt",
+      "status": "S1717340318X1717383518",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openwrt/",
+      "size": "2.31T",
+      "desc": "OpenWrt/LEDE 软件包镜像源",
+      "help": "/help/openwrt/"
+    },
+    {
       "cname": "rocky",
       "options_name": "rocky",
       "url": "/rocky",
-      "status": "S1717219694X1717262894",
+      "status": "S1717349638X1717392838",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/rocky/",
       "size": "1.52T"
+    },
+    {
+      "cname": "ros",
+      "options_name": "ros",
+      "url": "/ros",
+      "status": "S1717314637X1717357837",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/ros/",
+      "size": "73.41G",
+      "desc": "ROS 提供一系列程序库和工具以帮助软件开发者创建机器人应用软件",
+      "help": "/help/ros/"
     },
     {
       "cname": "ros2",
       "options_name": "ros2",
       "url": "/ros2",
-      "status": "S1717256384X1717299584",
+      "status": "S1717342875X1717386075",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros2/",
       "size": "97.88G",
       "desc": "ROS (Robot Operating System) 2.0 版本",
@@ -867,11 +982,21 @@
       "upstream": "cloud.tsinghua.edu.cn"
     },
     {
+      "cname": "ubuntu",
+      "options_name": "ubuntu",
+      "url": "/ubuntu",
+      "status": "S1717345258X1717388458",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/",
+      "size": "3.00T",
+      "desc": "流行的 Linux 发行版 Ubuntu 的安装镜像和官方软件包仓库",
+      "help": "/help/ubuntu/"
+    },
+    {
       "cname": "ubuntu-cdimage",
       "options_name": "ubuntu-cdimage",
       "url": "/ubuntu-cdimage",
-      "status": "S1717243081X1717286281",
-      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/",
+      "status": "F1717350206O1717243081X1717393406",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-release/",
       "size": "894.86G",
       "desc": "Ubuntu 及 Ubuntu 衍生版各版本安装镜像"
     }
