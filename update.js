@@ -65,16 +65,40 @@ async function retry_update(site, retries = 3, delay = 1000) {
   }
 }
 
+// In milliseconds (Date object)
+const DAY = 24 * 60 * 60 * 1000;
+
 async function main() {
+  // get lastsuccess file
+  let lastsuccess
+  try {
+    lastsuccess = JSON.parse(fs.readFileSync('./data/lastsuccess'));
+  } catch (e) {
+    lastsuccess = {}
+  }
+
   for (site in LIST) {
-    d = await retry_update(site).catch(error => {
-      // Remove site file if update failed
-      fs.unlink('./data/' + site + '.json', (err) => {})
-      return `${site}: throws exception ${error}, removing...\n`
+    d = await retry_update(site).then((d) => {
+      lastsuccess[site] = (new Date).toISOString();
+      return d;
+    }).catch(error => {
+      // Remove site file if update failed and it has been failed for over 15 days
+      let do_remove = true
+      if (site in lastsuccess) {
+        let lastsuccess_date = new Date(lastsuccess[site])
+        let now = new Date()
+        if (now - lastsuccess_date < 15 * DAY) {
+          do_remove = false
+        }
+      }
+      if (do_remove)
+        fs.unlink('./data/' + site + '.json', (err) => {})
+      return `${site}: throws exception ${error}, ${do_remove ? '' : 'not '}removed...\n`
     });
     console.log(d)
   }
   fs.writeFileSync('./data/lastupdate', (new Date).toISOString())
+  fs.writeFileSync('./data/lastsuccess', JSON.stringify(lastsuccess, null, 2))
   process.exit(0);
 }
 
