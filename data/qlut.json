@@ -15,6 +15,14 @@
       "category": "os",
       "urls": [
         {
+          "name": "20250211 (riscv64, container)",
+          "url": "/anthon/aosc-os/os-riscv64/container/aosc-os_container_20250211_riscv64.tar.xz"
+        },
+        {
+          "name": "20250210 (riscv64, server)",
+          "url": "/anthon/aosc-os/os-riscv64/server/aosc-os_server_20250210_riscv64.tar.xz"
+        },
+        {
           "name": "20250210 (riscv64, livekit)",
           "url": "/anthon/aosc-os/os-riscv64/livekit/aosc-os_livekit_20250210_riscv64.iso"
         },
@@ -25,6 +33,14 @@
         {
           "name": "20250210 (riscv64, desktop)",
           "url": "/anthon/aosc-os/os-riscv64/desktop/aosc-os_desktop_20250210_riscv64.tar.xz"
+        },
+        {
+          "name": "20250210 (riscv64, buildkit)",
+          "url": "/anthon/aosc-os/os-riscv64/buildkit/aosc-os_buildkit_20250210_riscv64.tar.xz"
+        },
+        {
+          "name": "20250210 (riscv64, base)",
+          "url": "/anthon/aosc-os/os-riscv64/base/aosc-os_base_20250210_riscv64.tar.xz"
         },
         {
           "name": "20250210 (ppc64el, server)",
@@ -175,24 +191,8 @@
           "url": "/anthon/aosc-os/os-amd64/installer/aosc-os_installer_20250209_amd64.iso"
         },
         {
-          "name": "20250128 (riscv64, server)",
-          "url": "/anthon/aosc-os/os-riscv64/server/aosc-os_server_20250128_riscv64.tar.xz"
-        },
-        {
           "name": "20250128 (loongarch64, desktop+latx)",
           "url": "/anthon/aosc-os/os-loongarch64/desktop+latx/aosc-os_desktop+latx_20250128_loongarch64.tar.xz"
-        },
-        {
-          "name": "20250127 (riscv64, container)",
-          "url": "/anthon/aosc-os/os-riscv64/container/aosc-os_container_20250127_riscv64.tar.xz"
-        },
-        {
-          "name": "20250127 (riscv64, buildkit)",
-          "url": "/anthon/aosc-os/os-riscv64/buildkit/aosc-os_buildkit_20250127_riscv64.tar.xz"
-        },
-        {
-          "name": "20250127 (riscv64, base)",
-          "url": "/anthon/aosc-os/os-riscv64/base/aosc-os_base_20250127_riscv64.tar.xz"
         },
         {
           "name": "20240730 (amd64, emukit)",
@@ -363,16 +363,16 @@
           "url": "/armbian-releases/tinkerboard/archive/Armbian_25.2.1_Tinkerboard_bookworm_current_6.12.12_xfce_desktop.img.xz"
         },
         {
-          "name": "25.2.1 (Rockpi-e_noble_current_6.12.12_minimal, img.xz)",
-          "url": "/armbian-releases/rockpi-e/archive/Armbian_25.2.1_Rockpi-e_noble_current_6.12.12_minimal.img.xz"
+          "name": "25.2.1 (Rockpi-e_noble_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/rockpi-e/archive/Armbian_25.2.1_Rockpi-e_noble_current_6.12.13_minimal.img.xz"
         },
         {
-          "name": "25.2.1 (Rockpi-e_noble_current_6.12.12, img.xz)",
-          "url": "/armbian-releases/rockpi-e/archive/Armbian_25.2.1_Rockpi-e_noble_current_6.12.12.img.xz"
+          "name": "25.2.1 (Rockpi-e_noble_current_6.12.13, img.xz)",
+          "url": "/armbian-releases/rockpi-e/archive/Armbian_25.2.1_Rockpi-e_noble_current_6.12.13.img.xz"
         },
         {
-          "name": "25.2.1 (Rockpi-e_bookworm_current_6.12.12_minimal, img.xz)",
-          "url": "/armbian-releases/rockpi-e/archive/Armbian_25.2.1_Rockpi-e_bookworm_current_6.12.12_minimal.img.xz"
+          "name": "25.2.1 (Rockpi-e_bookworm_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/rockpi-e/archive/Armbian_25.2.1_Rockpi-e_bookworm_current_6.12.13_minimal.img.xz"
         },
         {
           "name": "25.2.1 (Rock-5c_noble_vendor_6.1.99_xfce_desktop, img.xz)",
@@ -523,6 +523,198 @@
           "url": "/armbian-releases/odroidxu4/archive/Armbian_25.2.1_Odroidxu4_bookworm_current_6.6.75_minimal.img.xz"
         },
         {
+          "name": "25.2.1 (Nanopct6_noble_vendor_6.1.99_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_vendor_6.1.99_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_vendor_6.1.99_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_vendor_6.1.99_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_vendor_6.1.99_kde-neon_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_vendor_6.1.99_kde-neon_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_vendor_6.1.99_gnome_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_vendor_6.1.99_gnome_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_vendor_6.1.99, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_vendor_6.1.99.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_current_6.12.13_kde-neon_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_current_6.12.13_kde-neon_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_current_6.12.13_gnome_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_current_6.12.13_gnome_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_noble_current_6.12.13, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_noble_current_6.12.13.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_bookworm_vendor_6.1.99_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_bookworm_vendor_6.1.99_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_bookworm_vendor_6.1.99_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_bookworm_vendor_6.1.99_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_bookworm_vendor_6.1.99_cinnamon-backported-mesa_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_bookworm_vendor_6.1.99_cinnamon-backported-mesa_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_bookworm_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_bookworm_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_bookworm_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_bookworm_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6_bookworm_current_6.12.13_cinnamon-backported-mesa_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6/archive/Armbian_25.2.1_Nanopct6_bookworm_current_6.12.13_cinnamon-backported-mesa_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_vendor_6.1.99_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_vendor_6.1.99_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_vendor_6.1.99_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_vendor_6.1.99_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_vendor_6.1.99_kde-neon_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_vendor_6.1.99_kde-neon_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_vendor_6.1.99_gnome_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_vendor_6.1.99_gnome_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_vendor_6.1.99, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_vendor_6.1.99.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_current_6.12.13_kde-neon_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_current_6.12.13_kde-neon_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_current_6.12.13_gnome_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_current_6.12.13_gnome_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_noble_current_6.12.13, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_noble_current_6.12.13.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_bookworm_vendor_6.1.99_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_bookworm_vendor_6.1.99_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_bookworm_vendor_6.1.99_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_bookworm_vendor_6.1.99_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_bookworm_vendor_6.1.99_cinnamon-backported-mesa_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_bookworm_vendor_6.1.99_cinnamon-backported-mesa_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_bookworm_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_bookworm_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_bookworm_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_bookworm_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Nanopct6-lts_bookworm_current_6.12.13_cinnamon-backported-mesa_desktop, img.xz)",
+          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_25.2.1_Nanopct6-lts_bookworm_current_6.12.13_cinnamon-backported-mesa_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_noble_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_noble_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_noble_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_noble_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_noble_current_6.12.13_kde-neon_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_noble_current_6.12.13_kde-neon_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_noble_current_6.12.13_gnome_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_noble_current_6.12.13_gnome_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_noble_current_6.12.13, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_noble_current_6.12.13.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_bookworm_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_bookworm_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_bookworm_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_bookworm_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl_bookworm_current_6.12.13_cinnamon_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl/archive/Armbian_25.2.1_Mba8mpxl_bookworm_current_6.12.13_cinnamon_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_noble_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_noble_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_noble_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_noble_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_noble_current_6.12.13_kde-neon_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_noble_current_6.12.13_kde-neon_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_noble_current_6.12.13_gnome_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_noble_current_6.12.13_gnome_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_noble_current_6.12.13, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_noble_current_6.12.13.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_bookworm_current_6.12.13_xfce_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_bookworm_current_6.12.13_xfce_desktop.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_bookworm_current_6.12.13_minimal, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_bookworm_current_6.12.13_minimal.img.xz"
+        },
+        {
+          "name": "25.2.1 (Mba8mpxl-ras314_bookworm_current_6.12.13_cinnamon_desktop, img.xz)",
+          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_25.2.1_Mba8mpxl-ras314_bookworm_current_6.12.13_cinnamon_desktop.img.xz"
+        },
+        {
           "name": "24.8.1 (Bananapim2s_noble_current_6.6.47_xfce_desktop, img.xz)",
           "url": "/armbian-releases/bananapim2s/archive/Armbian_24.8.1_Bananapim2s_noble_current_6.6.47_xfce_desktop.img.xz"
         },
@@ -669,70 +861,6 @@
         {
           "name": "24.11.3 (Rock-5b_bookworm_current_6.12.9_cinnamon-backported-mesa_desktop, img.xz)",
           "url": "/armbian-releases/rock-5b/archive/Armbian_24.11.3_Rock-5b_bookworm_current_6.12.9_cinnamon-backported-mesa_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_noble_current_6.12.10_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_noble_current_6.12.10_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_noble_current_6.12.10_minimal, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_noble_current_6.12.10_minimal.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_noble_current_6.12.10_kde-neon_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_noble_current_6.12.10_kde-neon_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_noble_current_6.12.10_gnome_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_noble_current_6.12.10_gnome_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_noble_current_6.12.10, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_noble_current_6.12.10.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_bookworm_current_6.12.10_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_bookworm_current_6.12.10_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_bookworm_current_6.12.10_minimal, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_bookworm_current_6.12.10_minimal.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl_bookworm_current_6.12.10_cinnamon_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl/archive/Armbian_24.11.3_Mba8mpxl_bookworm_current_6.12.10_cinnamon_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_noble_current_6.12.10_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_noble_current_6.12.10_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_noble_current_6.12.10_minimal, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_noble_current_6.12.10_minimal.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_noble_current_6.12.10_kde-neon_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_noble_current_6.12.10_kde-neon_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_noble_current_6.12.10_gnome_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_noble_current_6.12.10_gnome_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_noble_current_6.12.10, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_noble_current_6.12.10.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_bookworm_current_6.12.10_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_bookworm_current_6.12.10_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_bookworm_current_6.12.10_minimal, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_bookworm_current_6.12.10_minimal.img.xz"
-        },
-        {
-          "name": "24.11.3 (Mba8mpxl-ras314_bookworm_current_6.12.10_cinnamon_desktop, img.xz)",
-          "url": "/armbian-releases/mba8mpxl-ras314/archive/Armbian_24.11.3_Mba8mpxl-ras314_bookworm_current_6.12.10_cinnamon_desktop.img.xz"
         },
         {
           "name": "24.11.2 (Xiaomi-elish_noble_current_6.12.4_kde-neon_desktop.rootfs, img.xz)",
@@ -1725,138 +1853,6 @@
         {
           "name": "24.11.1 (Nanopi-m6_bookworm_vendor_6.1.75_cinnamon-backported-mesa_desktop, img.xz)",
           "url": "/armbian-releases/nanopi-m6/archive/Armbian_24.11.1_Nanopi-m6_bookworm_vendor_6.1.75_cinnamon-backported-mesa_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_vendor_6.1.75_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_vendor_6.1.75_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_vendor_6.1.75_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_vendor_6.1.75_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_vendor_6.1.75_kde-neon-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_vendor_6.1.75_kde-neon-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_vendor_6.1.75_gnome-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_vendor_6.1.75_gnome-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_vendor_6.1.75-kisak, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_vendor_6.1.75-kisak.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_current_6.12.0_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_current_6.12.0_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_current_6.12.0_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_current_6.12.0_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_current_6.12.0_kde-neon-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_current_6.12.0_kde-neon-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_current_6.12.0_gnome-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_current_6.12.0_gnome-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_current_6.12.0-kisak, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_current_6.12.0-kisak.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_noble_current_6.12.0, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_noble_current_6.12.0.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_bookworm_vendor_6.1.75_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_bookworm_vendor_6.1.75_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_bookworm_vendor_6.1.75_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_bookworm_vendor_6.1.75_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_bookworm_vendor_6.1.75_cinnamon-backported-mesa_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_bookworm_vendor_6.1.75_cinnamon-backported-mesa_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_bookworm_current_6.12.0_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_bookworm_current_6.12.0_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_bookworm_current_6.12.0_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_bookworm_current_6.12.0_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6_bookworm_current_6.12.0_cinnamon-backported-mesa_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6/archive/Armbian_24.11.1_Nanopct6_bookworm_current_6.12.0_cinnamon-backported-mesa_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_vendor_6.1.75_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_vendor_6.1.75_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_vendor_6.1.75_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_vendor_6.1.75_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_vendor_6.1.75_kde-neon-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_vendor_6.1.75_kde-neon-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_vendor_6.1.75_gnome-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_vendor_6.1.75_gnome-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_vendor_6.1.75-kisak, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_vendor_6.1.75-kisak.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_current_6.12.0_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_current_6.12.0_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_current_6.12.0_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_current_6.12.0_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_current_6.12.0_kde-neon-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_current_6.12.0_kde-neon-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_current_6.12.0_gnome-kisak_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_current_6.12.0_gnome-kisak_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_noble_current_6.12.0-kisak, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_noble_current_6.12.0-kisak.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_bookworm_vendor_6.1.75_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_bookworm_vendor_6.1.75_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_bookworm_vendor_6.1.75_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_bookworm_vendor_6.1.75_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_bookworm_vendor_6.1.75_cinnamon-backported-mesa_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_bookworm_vendor_6.1.75_cinnamon-backported-mesa_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_bookworm_current_6.12.0_xfce_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_bookworm_current_6.12.0_xfce_desktop.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_bookworm_current_6.12.0_minimal, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_bookworm_current_6.12.0_minimal.img.xz"
-        },
-        {
-          "name": "24.11.1 (Nanopct6-lts_bookworm_current_6.12.0_cinnamon-backported-mesa_desktop, img.xz)",
-          "url": "/armbian-releases/nanopct6-lts/archive/Armbian_24.11.1_Nanopct6-lts_bookworm_current_6.12.0_cinnamon-backported-mesa_desktop.img.xz"
         },
         {
           "name": "24.11.1 (Lepotato_noble_current_6.6.61_xfce_desktop, img.xz)",
@@ -3302,9 +3298,9 @@
       "cname": "anthon",
       "options_name": "anthon",
       "url": "/anthon",
-      "status": "S1739243485X1739286685",
+      "status": "S1739333273X1739376473",
       "upstream": "rsync://mirrors.bfsu.edu.cn/anthon/",
-      "size": "2.13T",
+      "size": "2.09T",
       "desc": "Anthon Linux（安同 Linux）的安装镜像和官方软件包仓库",
       "help": "/help/anthon/"
     },
@@ -3312,9 +3308,9 @@
       "cname": "archlinux",
       "options_name": "archlinux",
       "url": "/archlinux",
-      "status": "S1739279544X1739322744",
+      "status": "S1739366169X1739409369",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/archlinux/",
-      "size": "113.48G",
+      "size": "113.62G",
       "desc": "Arch Linux 的安装镜像和官方软件包仓库",
       "help": "/help/archlinux/"
     },
@@ -3322,9 +3318,9 @@
       "cname": "armbian",
       "options_name": "armbian",
       "url": "/armbian",
-      "status": "S1739276056X1739319256",
+      "status": "S1739362976X1739406176",
       "upstream": "rsync://mirrors.bfsu.edu.cn/armbian/",
-      "size": "217.46G",
+      "size": "216.97G",
       "desc": "Armbian（面向 ARM 单板机的发行版）的软件源",
       "help": "/help/armbian/"
     },
@@ -3332,16 +3328,16 @@
       "cname": "armbian-releases",
       "options_name": "armbian-releases",
       "url": "/armbian-releases",
-      "status": "S1739265368X1739308568",
+      "status": "S1739352314X1739395514",
       "upstream": "rsync://mirrors.bfsu.edu.cn/armbian-releases/",
-      "size": "597.11G",
+      "size": "596.50G",
       "desc": "Armbian 的安装镜像"
     },
     {
       "cname": "bmclapi",
       "options_name": "bmclapi",
       "url": "/bmclapi",
-      "status": "S1739253166X1739296366",
+      "status": "S1739339587X1739382787",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/bmclapi/",
       "size": "92.21G"
     },
@@ -3349,7 +3345,7 @@
       "cname": "centos",
       "options_name": "centos",
       "url": "/centos",
-      "status": "S1739271741X1739314941",
+      "status": "S1739358151X1739401351",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/centos/",
       "size": "unknown",
       "desc": "CentOS 的安装镜像和官方软件包仓库",
@@ -3359,7 +3355,7 @@
       "cname": "centos-stream",
       "options_name": "centos-stream",
       "url": "/centos-stream",
-      "status": "S1739274159X1739317359",
+      "status": "S1739360768X1739403968",
       "upstream": "rsync://mirrors.bfsu.edu.cn/centos-stream/",
       "size": "3.77T",
       "help": "/help/centos-stream/"
@@ -3368,7 +3364,7 @@
       "cname": "ceph",
       "options_name": "ceph",
       "url": "/ceph",
-      "status": "S1739265569X1739308769",
+      "status": "S1739351979X1739395179",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/ceph/",
       "size": "382.07G",
       "desc": "高性能对象存储和文件系统",
@@ -3378,9 +3374,9 @@
       "cname": "CRAN",
       "options_name": "CRAN",
       "url": "/CRAN",
-      "status": "S1739242577X1739285777",
+      "status": "S1739329606X1739372806",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/CRAN/",
-      "size": "528.84G",
+      "size": "528.74G",
       "desc": "R 语言的可执行文件、源代码和说明文件，也收录了各种用户撰写的软件包",
       "help": "/help/CRAN/"
     },
@@ -3388,9 +3384,9 @@
       "cname": "CTAN",
       "options_name": "CTAN",
       "url": "/CTAN",
-      "status": "S1739268582X1739311782",
+      "status": "S1739355143X1739398343",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CTAN/",
-      "size": "61.16G",
+      "size": "61.17G",
       "desc": "TeX 的各种发行版、软件包和文档",
       "help": "/help/CTAN/"
     },
@@ -3398,9 +3394,9 @@
       "cname": "debian",
       "options_name": "debian",
       "url": "/debian",
-      "status": "S1739260796X1739303996",
+      "status": "S1739347540X1739390740",
       "upstream": "rsync://mirrors.bfsu.edu.cn/debian/",
-      "size": "2.10T",
+      "size": "2.09T",
       "desc": "Debian Linux 的官方软件包仓库",
       "help": "/help/debian/"
     },
@@ -3408,7 +3404,7 @@
       "cname": "debian-cd",
       "options_name": "debian-cd",
       "url": "/debian-cd",
-      "status": "S1739268317X1739311517",
+      "status": "S1739354727X1739397927",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/debian-cd/",
       "size": "235.49G",
       "desc": "Debian Linux 的安装镜像"
@@ -3417,7 +3413,7 @@
       "cname": "deepin",
       "options_name": "deepin",
       "url": "/deepin",
-      "status": "S1739274302X1739317502",
+      "status": "S1739360767X1739403967",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/deepin/",
       "size": "934.50G",
       "desc": "Deepin Linux 的官方软件包仓库"
@@ -3426,7 +3422,7 @@
       "cname": "deepin-cd",
       "options_name": "deepin-cd",
       "url": "/deepin-cd",
-      "status": "S1739246222X1739289422",
+      "status": "S1739332632X1739375832",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/deepin-cd/",
       "size": "117.83G",
       "desc": "Deepin Linux 的安装镜像"
@@ -3435,9 +3431,9 @@
       "cname": "epel",
       "options_name": "epel",
       "url": "/epel",
-      "status": "S1739274453X1739317653",
+      "status": "S1739361267X1739404467",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/epel/",
-      "size": "494.37G",
+      "size": "496.51G",
       "desc": "企业版 Linux 附加软件包",
       "help": "/help/epel/"
     },
@@ -3445,7 +3441,7 @@
       "cname": "fedora",
       "options_name": "fedora",
       "url": "/fedora",
-      "status": "S1739246547X1739289747",
+      "status": "S1739333005X1739376205",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
       "size": "1.88T",
       "desc": "Fedora Linux 的安装镜像和官方软件包仓库",
@@ -3455,9 +3451,9 @@
       "cname": "kali",
       "options_name": "kali",
       "url": "/kali",
-      "status": "S1739252717X1739295917",
+      "status": "S1739339281X1739382481",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/kali/",
-      "size": "698.04G",
+      "size": "701.96G",
       "desc": "Kali Linux 的官方软件包仓库",
       "help": "/help/kali/"
     },
@@ -3465,7 +3461,7 @@
       "cname": "kali-images",
       "options_name": "kali-images",
       "url": "/kali-images",
-      "status": "S1739269237X1739312437",
+      "status": "S1739355647X1739398847",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/kali-images/",
       "size": "160.57G",
       "desc": "Kali Linux 的安装镜像"
@@ -3474,7 +3470,7 @@
       "cname": "kernel",
       "options_name": "kernel",
       "url": "/kernel",
-      "status": "S1739276318X1739319518",
+      "status": "S1739362777X1739405977",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/kernel.org/",
       "size": "1.60T",
       "desc": "各个版本的 Linux 内核源代码压缩包和补丁"
@@ -3483,18 +3479,18 @@
       "cname": "loongson",
       "options_name": "loongson",
       "url": "/loongson",
-      "status": "S1739272502X1739315702",
+      "status": "S1739358912X1739402112",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/loongson/",
-      "size": "22.40G",
+      "size": "22.41G",
       "desc": "用于龙芯电脑的软件包"
     },
     {
       "cname": "msys2",
       "options_name": "msys2",
       "url": "/msys2",
-      "status": "S1739252982X1739296182",
+      "status": "S1739339420X1739382620",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/msys2/",
-      "size": "959.89G",
+      "size": "960.06G",
       "desc": "用于编译原生 Windows 程序的类 Linux 开发环境",
       "help": "/help/msys2/"
     },
@@ -3502,7 +3498,7 @@
       "cname": "openwrt",
       "options_name": "openwrt",
       "url": "/openwrt",
-      "status": "Y1739280366O1739237164",
+      "status": "S1739328566X1739371766",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openwrt/",
       "size": "3.20T",
       "desc": "OpenWrt/LEDE 软件包镜像源",
@@ -3512,7 +3508,7 @@
       "cname": "pypi",
       "options_name": "pypi",
       "url": "/pypi",
-      "status": "S1739261247X1739304447",
+      "status": "S1739349697X1739392897",
       "upstream": "https://pypi.python.org/",
       "size": "unknown",
       "desc": "Python 软件包索引源",
@@ -3522,7 +3518,7 @@
       "cname": "rocky",
       "options_name": "rocky",
       "url": "/rocky",
-      "status": "S1739271037X1739314237",
+      "status": "S1739357467X1739400667",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/rocky/",
       "size": "1.87T"
     },
@@ -3530,7 +3526,7 @@
       "cname": "ros",
       "options_name": "ros",
       "url": "/ros",
-      "status": "S1739248854X1739292054",
+      "status": "S1739335274X1739378474",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/ros/",
       "size": "106.00G",
       "desc": "ROS 提供一系列程序库和工具以帮助软件开发者创建机器人应用软件",
@@ -3540,9 +3536,9 @@
       "cname": "ros2",
       "options_name": "ros2",
       "url": "/ros2",
-      "status": "S1739253405X1739296605",
+      "status": "S1739339844X1739383044",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ros2/",
-      "size": "111.69G",
+      "size": "111.75G",
       "desc": "ROS (Robot Operating System) 2.0 版本",
       "help": "/help/ros2/"
     },
@@ -3556,9 +3552,9 @@
       "cname": "ubuntu",
       "options_name": "ubuntu",
       "url": "/ubuntu",
-      "status": "S1739252946X1739296146",
+      "status": "S1739340223X1739383423",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/",
-      "size": "3.15T",
+      "size": "3.17T",
       "desc": "流行的 Linux 发行版 Ubuntu 的安装镜像和官方软件包仓库",
       "help": "/help/ubuntu/"
     },
@@ -3566,16 +3562,16 @@
       "cname": "ubuntu-cdimage",
       "options_name": "ubuntu-cdimage",
       "url": "/ubuntu-cdimage",
-      "status": "S1739252027X1739295227",
+      "status": "S1739338603X1739381803",
       "upstream": "rsync://mirrors.bfsu.edu.cn/ubuntu-cdimage/",
-      "size": "887.53G",
+      "size": "884.91G",
       "desc": "Ubuntu 及 Ubuntu 衍生版各版本安装镜像"
     },
     {
       "cname": "ubuntu-releases",
       "options_name": "ubuntu-releases",
       "url": "/ubuntu-releases",
-      "status": "S1739264662X1739307862",
+      "status": "S1739351073X1739394273",
       "upstream": "rsync://mirrors.bfsu.edu.cn/ubuntu-releases/",
       "size": "42.57G",
       "desc": "包含近几年发行的 Ubuntu 的镜像"
