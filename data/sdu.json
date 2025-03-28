@@ -496,64 +496,82 @@
   ],
   "mirrors": [
     {
+      "cname": "alpine",
+      "desc": "Alpine",
+      "url": "/alpine",
+      "status": "Y0",
+      "help": "https://help.mirrors.cernet.edu.cn/alpine/?mirror=SDU",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/alpine/",
+      "size": "0M"
+    },
+    {
       "cname": "anthon",
       "desc": "AOSC OS",
       "url": "/anthon",
-      "status": "S1743080296",
+      "status": "S1743161334",
       "help": "https://help.mirrors.cernet.edu.cn/anthon/?mirror=SDU",
       "upstream": "rsync://repo.aosc.io/anthon/",
-      "size": "2496151M"
+      "size": "2520807M"
     },
     {
       "cname": "archlinux",
       "desc": "Arch Linux",
       "url": "/archlinux",
-      "status": "S1743076082",
+      "status": "S1743163102",
       "help": "/help/archlinux",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinux",
-      "size": "106998M"
+      "size": "106150M"
     },
     {
       "cname": "armbian",
       "desc": "Armbian",
       "url": "/armbian",
-      "status": "S1743059182",
+      "status": "S1743161801",
       "help": "https://help.mirrors.cernet.edu.cn/armbian/?mirror=SDU",
       "upstream": "rsync://rsync.armbian.com/apt/",
-      "size": "96962M"
+      "size": "97450M"
     },
     {
       "cname": "bioarchlinux",
       "desc": "BioArchLinux",
       "url": "/bioarchlinux",
-      "status": "S1743078490",
+      "status": "S1743165094",
       "help": "",
       "upstream": "bioarchlinux.org::sync",
-      "size": "36418M"
+      "size": "36434M"
+    },
+    {
+      "cname": "CRAN",
+      "desc": "The Comprehensive R Archive Network",
+      "url": "/CRAN",
+      "status": "S1743157534",
+      "help": "https://help.mirrors.cernet.edu.cn/CRAN/?mirror=SDU",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CRAN/",
+      "size": "514363M"
     },
     {
       "cname": "CTAN",
       "desc": "Comprehensive TEX Archive Network",
       "url": "/CTAN",
-      "status": "S1743067652",
+      "status": "S1743155280",
       "help": "https://help.mirrorz.org/CTAN/?mirror=SDU",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/CTAN",
-      "size": "60665M"
+      "size": "60666M"
     },
     {
       "cname": "debian",
       "desc": "Debian",
       "url": "/debian",
-      "status": "S1743074204",
+      "status": "S1743161245",
       "help": "/help/debian",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian",
-      "size": "1434069M"
+      "size": "1438074M"
     },
     {
       "cname": "debian-iso",
       "desc": "Debian - CD Images",
       "url": "/debian-iso",
-      "status": "S1743075482",
+      "status": "S1743162501",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd",
       "size": "224884M"
@@ -562,16 +580,34 @@
       "cname": "debian-security",
       "desc": "Debian - Security Updates",
       "url": "/debian-security",
-      "status": "S1743074204",
+      "status": "S1743161245",
       "help": "/help/debian",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-security",
-      "size": "264718M"
+      "size": "264708M"
+    },
+    {
+      "cname": "fedora",
+      "desc": "Fedora",
+      "url": "/fedora",
+      "status": "Y0",
+      "help": "https://help.mirrors.cernet.edu.cn/fedora/?mirror=SDU",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/fedora/",
+      "size": "0M"
+    },
+    {
+      "cname": "gentoo",
+      "desc": "Gentoo",
+      "url": "/gentoo",
+      "status": "S1743155280",
+      "help": "https://help.mirrors.cernet.edu.cn/gentoo/?mirror=SDU",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/gentoo/",
+      "size": "843028M"
     },
     {
       "cname": "github-release",
       "desc": "常用 GitHub 软件",
       "url": "/github-release",
-      "status": "S1743079692",
+      "status": "S1743166912",
       "help": "https://github.com/SDU-Mirrors/wonderful-github-releases",
       "upstream": "",
       "size": "26833M"
@@ -580,25 +616,25 @@
       "cname": "GXDE",
       "desc": "GXDE-OS",
       "url": "/GXDE",
-      "status": "S1743079692",
+      "status": "S1743166912",
       "help": "https://www.gxde.top/",
-      "upstream": "https://www.gxde.top/",
-      "size": "1M"
+      "upstream": "rsync://gxde-rsync@142.171.166.49/repo",
+      "size": "23888M"
     },
     {
       "cname": "kali",
       "desc": "Kali Linux",
       "url": "/kali",
-      "status": "S1743076678",
+      "status": "S1743154680",
       "help": "https://help.mirrors.cernet.edu.cn/kali/?mirror=SDU",
       "upstream": "rsync://archive-4.kali.org/kali/",
-      "size": "590397M"
+      "size": "602679M"
     },
     {
       "cname": "kali-images",
       "desc": "Kali Linux  - CD Images",
       "url": "/kali-images",
-      "status": "S1743078490",
+      "status": "S1743165708",
       "help": "",
       "upstream": "rsync://archive-4.kali.org/kali-images/",
       "size": "139694M"
@@ -607,34 +643,43 @@
       "cname": "lxc-images-auto",
       "desc": "LXC Images",
       "url": "/lxc-images-auto",
-      "status": "S1743074876",
+      "status": "S1743162681",
       "help": "/help/lxc-images",
       "upstream": "",
-      "size": "0M"
+      "size": "50605M"
     },
     {
       "cname": "manjaro",
       "desc": "Manjaro Linux",
       "url": "/manjaro",
-      "status": "S1743070064",
+      "status": "Y1743149491",
       "help": "https://help.mirrors.cernet.edu.cn/manjaro/?mirror=SDU",
       "upstream": "rsync://ftp.halifax.rwth-aachen.de/manjaro/",
-      "size": "245239M"
+      "size": "248272M"
+    },
+    {
+      "cname": "opensuse",
+      "desc": "openSUSE",
+      "url": "/opensuse",
+      "status": "Y0",
+      "help": "https://help.mirrors.cernet.edu.cn/opensuse/?mirror=SDU",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/opensuse/",
+      "size": "0M"
     },
     {
       "cname": "openwrt",
       "desc": "OpenWRT",
       "url": "/openwrt",
-      "status": "S1743069401",
+      "status": "S1743157427",
       "help": "https://help.mirrors.cernet.edu.cn/openwrt/?mirror=SDU",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/openwrt/",
-      "size": "3071878M"
+      "size": "3071873M"
     },
     {
       "cname": "python",
       "desc": "Python-Release",
       "url": "/python-release",
-      "status": "S1743077719",
+      "status": "S1743167809",
       "help": "https://help.mirrors.cernet.edu.cn/python-release/?mirror=SDU",
       "upstream": "rsync://mirrors.nju.edu.cn/python/",
       "size": "112369M"
@@ -643,46 +688,46 @@
       "cname": "rocky",
       "desc": "Rocky Linux",
       "url": "/rocky",
-      "status": "S1743074664",
+      "status": "S1743161520",
       "help": "https://help.mirrors.cernet.edu.cn/rocky/?mirror=SDU",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/rocky/",
-      "size": "1138305M"
+      "size": "1138913M"
     },
     {
       "cname": "termux",
       "desc": "Termux",
       "url": "/termux",
-      "status": "S1743073674",
+      "status": "S1743161334",
       "help": "https://help.mirrorz.org/termux/?mirror=SDU",
       "upstream": "rsync://packages.termux.dev/termux",
-      "size": "31319M"
+      "size": "31473M"
     },
     {
       "cname": "ubuntu",
       "desc": "Ubuntu",
       "url": "/ubuntu",
-      "status": "S1743070518",
+      "status": "S1743157614",
       "help": "https://help.mirrors.cernet.edu.cn/ubuntu/?mirror=SDU",
       "upstream": "rsync://archive.ubuntu.com/ubuntu/",
-      "size": "3143632M"
+      "size": "3145122M"
     },
     {
       "cname": "ubuntu-ports",
       "desc": "Ubuntu Ports",
       "url": "/ubuntu-ports",
-      "status": "S1743069230",
+      "status": "S1743156064",
       "help": "",
       "upstream": "rsync://ports.ubuntu.com/ubuntu-ports/",
-      "size": "3708916M"
+      "size": "3712207M"
     },
     {
       "cname": "ubuntu-releases",
       "desc": "Ubuntu - CD Images",
       "url": "/ubuntu-releases",
-      "status": "S1743076082",
+      "status": "S1743163102",
       "help": "",
       "upstream": "rsync://releases.ubuntu.com/releases/",
-      "size": "41598M"
+      "size": "50144M"
     }
   ],
   "extension": "D",
