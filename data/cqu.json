@@ -65,12 +65,12 @@
           "url": "/alpine/latest-stable/releases/loongarch64/alpine-standard-3.22.1-loongarch64.iso"
         },
         {
-          "name": "3.22.1 (ppc64le, standard)",
-          "url": "/alpine/latest-stable/releases/ppc64le/alpine-standard-3.22.1-ppc64le.iso"
-        },
-        {
           "name": "3.22.1 (s390x, standard)",
           "url": "/alpine/latest-stable/releases/s390x/alpine-standard-3.22.1-s390x.iso"
+        },
+        {
+          "name": "3.22.1 (ppc64le, standard)",
+          "url": "/alpine/latest-stable/releases/ppc64le/alpine-standard-3.22.1-ppc64le.iso"
         }
       ]
     },
@@ -79,8 +79,8 @@
       "category": "os",
       "urls": [
         {
-          "name": "2025.09.01 (x86_64, CLI-only)",
-          "url": "/archlinux/iso/latest/archlinux-2025.09.01-x86_64.iso"
+          "name": "2025.10.01 (x86_64, CLI-only)",
+          "url": "/archlinux/iso/latest/archlinux-2025.10.01-x86_64.iso"
         }
       ]
     },
@@ -337,6 +337,10 @@
       "category": "app",
       "urls": [
         {
+          "name": "9.0.5 (macOS, universal)",
+          "url": "/kicad/osx/stable/kicad-unified-universal-9.0.5.dmg"
+        },
+        {
           "name": "9.0.4 (Windows, x86_64)",
           "url": "/kicad/windows/stable/kicad-9.0.4-x86_64.exe"
         },
@@ -363,10 +367,6 @@
         {
           "name": "9.0.2 (macOS, universal)",
           "url": "/kicad/osx/stable/kicad-unified-universal-9.0.2.dmg"
-        },
-        {
-          "name": "9.0.1 (macOS, universal)",
-          "url": "/kicad/osx/stable/kicad-unified-universal-9.0.1.dmg"
         },
         {
           "name": "6.0.11-0 (macOS, x86_64)",
@@ -502,7 +502,7 @@
       "cname": "alpine",
       "options_name": "alpine",
       "url": "/alpine",
-      "status": "S1758626592X1758631932",
+      "status": "S1759400207X1759405547",
       "upstream": "rsync://rsync.alpinelinux.org/alpine/",
       "size": "2.42T"
     },
@@ -510,15 +510,15 @@
       "cname": "archlinux",
       "options_name": "archlinux",
       "url": "/archlinux",
-      "status": "F1758625766O1758605739X1758631106",
+      "status": "S1759405441X1759410781",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/archlinux/",
-      "size": "128.89G"
+      "size": "125.14G"
     },
     {
       "cname": "archlinuxcn",
       "options_name": "archlinuxcn",
       "url": "/archlinuxcn",
-      "status": "S1758621652X1758626992",
+      "status": "S1759397055X1759402395",
       "upstream": "rsync://sync.repo.archlinuxcn.org/repo/",
       "size": "unknown"
     },
@@ -526,7 +526,7 @@
       "cname": "centos",
       "options_name": "centos",
       "url": "/centos",
-      "status": "S1758616124X1758621464",
+      "status": "S1759404777X1759410117",
       "upstream": "rsync://ftp.osuosl.org/centos/",
       "size": "unknown"
     },
@@ -534,15 +534,15 @@
       "cname": "CPAN",
       "options_name": "CPAN",
       "url": "/CPAN",
-      "status": "F1758631742O1758602062X1758637082",
+      "status": "F1759400495O1759262501X1759405835",
       "upstream": "rsync://cpan-rsync.perl.org/CPAN/",
-      "size": "35.32G"
+      "size": "34.98G"
     },
     {
       "cname": "CRAN",
       "options_name": "CRAN",
       "url": "/CRAN",
-      "status": "F1758617857O1758604476X1758623197",
+      "status": "S1759402675X1759408015",
       "upstream": "https://cran.r-project.org",
       "size": "unknown"
     },
@@ -550,7 +550,7 @@
       "cname": "crates.io-index",
       "options_name": "crates.io-index",
       "url": "/crates.io-index",
-      "status": "S1758621954X1758627294",
+      "status": "S1759397282X1759402622",
       "upstream": "https://github.com/rust-lang/crates.io-index.git",
       "size": "unknown"
     },
@@ -558,39 +558,39 @@
       "cname": "CTAN",
       "options_name": "CTAN",
       "url": "/CTAN",
-      "status": "S1758630741X1758636081",
+      "status": "S1759405427X1759410767",
       "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
-      "size": "63.75G"
+      "size": "63.79G"
     },
     {
       "cname": "cygwin",
       "options_name": "cygwin",
       "url": "/cygwin",
-      "status": "S1758630788X1758636128",
+      "status": "S1759403055X1759408395",
       "upstream": "rsync://rsync.osuosl.org/cygwin/",
-      "size": "125.16G"
+      "size": "125.38G"
     },
     {
       "cname": "deb-multimedia",
       "options_name": "debian-multimedia",
       "url": "/debian-multimedia",
-      "status": "S1758630886X1758636226",
+      "status": "S1759405281X1759410621",
       "upstream": "rsync://mirror.mephi.ru/debian-multimedia/",
-      "size": "16.48G"
+      "size": "17.38G"
     },
     {
       "cname": "debian",
       "options_name": "debian",
       "url": "/debian",
-      "status": "Y1758630896O1758610523",
+      "status": "Y1759397055O1759375673",
       "upstream": "rsync://mirrors.ustc.edu.cn/debian/",
-      "size": "1.38T"
+      "size": "1.42T"
     },
     {
       "cname": "debian-cd",
       "options_name": "debian-cd",
       "url": "/debian-cd",
-      "status": "S1758621194X1758626534",
+      "status": "S1759404720X1759410060",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd/",
       "size": "254.15G"
     },
@@ -598,15 +598,15 @@
       "cname": "debian-security",
       "options_name": "debian-security",
       "url": "/debian-security",
-      "status": "S1758616174X1758621514",
+      "status": "S1759402942X1759408282",
       "upstream": "rsync://rsync.security.debian.org/debian-security/",
-      "size": "210.45G"
+      "size": "211.68G"
     },
     {
       "cname": "deepin",
       "options_name": "deepin",
       "url": "/deepin",
-      "status": "S1758616348X1758621688",
+      "status": "S1759404719X1759410059",
       "upstream": "rsync://rsync.deepin.com/deepin/",
       "size": "1.49T"
     },
@@ -614,7 +614,7 @@
       "cname": "deepin-cd",
       "options_name": "deepin-cd",
       "url": "/deepin-cd",
-      "status": "S1758616178X1758621518",
+      "status": "S1759403151X1759408491",
       "upstream": "rsync://rsync.deepin.com/releases/",
       "size": "unknown"
     },
@@ -622,7 +622,7 @@
       "cname": "epel",
       "options_name": "epel",
       "url": "/epel",
-      "status": "Y1758457876O1757189568",
+      "status": "Y1759377979O1759370498",
       "upstream": "rsync://dl.fedoraproject.org/fedora-epel",
       "size": "unknown"
     },
@@ -630,7 +630,7 @@
       "cname": "fedora",
       "options_name": "fedora",
       "url": "/fedora",
-      "status": "S1758621190X1758626530",
+      "status": "S1759398598X1759403938",
       "upstream": "rsync://ftp.linux.cz/pub/linux/fedora/linux/",
       "size": "unknown"
     },
@@ -638,7 +638,7 @@
       "cname": "gentoo-portage.git",
       "options_name": "gentoo-portage.git",
       "url": "/git/gentoo-portage.git",
-      "status": "S1758621827X1758627167",
+      "status": "S1759405216X1759410556",
       "upstream": "rsync://rsync.jp.gentoo.org/gentoo-portage/",
       "size": "unknown"
     },
@@ -646,7 +646,7 @@
       "cname": "gentoo-zh",
       "options_name": "gentoo-zh",
       "url": "/gentoo-zh",
-      "status": "S1758625584X1758630924",
+      "status": "S1759396749X1759402089",
       "upstream": "rsync://distfiles.gentoocn.org/gentoo-zh/",
       "size": "unknown"
     },
@@ -654,7 +654,7 @@
       "cname": "gentoo-zh.git",
       "options_name": "gentoo-zh.git",
       "url": "/git/gentoo-zh.git",
-      "status": "S1758621852X1758627192",
+      "status": "S1759396990X1759402330",
       "upstream": "https://github.com/microcai/gentoo-zh",
       "size": "unknown"
     },
@@ -662,23 +662,23 @@
       "cname": "gnu",
       "options_name": "gnu",
       "url": "/gnu",
-      "status": "F1758625777O1758605872X1758631117",
+      "status": "F1759400231O1759255973X1759405571",
       "upstream": "rsync://mirrors.ocf.berkeley.edu/gnu/",
-      "size": "211.42G"
+      "size": "211.44G"
     },
     {
       "cname": "hackage",
       "options_name": "hackage",
       "url": "/hackage",
-      "status": "S1758625160X1758630500",
+      "status": "S1759396980X1759402320",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/hackage/",
-      "size": "18.99G"
+      "size": "19.04G"
     },
     {
       "cname": "homebrew",
       "options_name": "homebrew",
       "url": "/homebrew",
-      "status": "S1758625139X1758630479",
+      "status": "F1759400302O1759378004X1759405642",
       "upstream": "https://github.com/Homebrew/homebrew-core.git",
       "size": "unknown"
     },
@@ -686,23 +686,23 @@
       "cname": "kali",
       "options_name": "kali",
       "url": "/kali",
-      "status": "F1758622670O1758605703X1758628010",
+      "status": "S1759404244X1759409584",
       "upstream": "rsync://archive-4.kali.org/kali/",
-      "size": "643.77G"
+      "size": "644.10G"
     },
     {
       "cname": "kali-images",
       "options_name": "kali-images",
       "url": "/kali-images",
-      "status": "S1758630896X1758636236",
+      "status": "S1759399158X1759404498",
       "upstream": "rsync://archive-4.kali.org/kali-images/",
-      "size": "151.07G"
+      "size": "139.42G"
     },
     {
       "cname": "kernel",
       "options_name": "kernel",
       "url": "/kernel",
-      "status": "S1758616124X1758621464",
+      "status": "S1759403149X1759408489",
       "upstream": "rsync://rsync.kernel.org/pub/linux/kernel/",
       "size": "1.16T"
     },
@@ -710,7 +710,7 @@
       "cname": "kicad",
       "options_name": "kicad",
       "url": "/kicad",
-      "status": "S1758616085X1758621425",
+      "status": "S1759403144X1759408485",
       "upstream": "",
       "size": "unknown"
     },
@@ -718,7 +718,7 @@
       "cname": "linux-stable.git",
       "options_name": "linux-stable.git",
       "url": "/git/linux-stable.git",
-      "status": "Y1758633331O1758614213",
+      "status": "S1759401518X1759406858",
       "upstream": "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git",
       "size": "unknown"
     },
@@ -726,7 +726,7 @@
       "cname": "linux.git",
       "options_name": "linux.git",
       "url": "/git/linux.git",
-      "status": "S1758620613X1758625953",
+      "status": "S1759400009X1759405349",
       "upstream": "git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git",
       "size": "unknown"
     },
@@ -734,7 +734,7 @@
       "cname": "linuxmint",
       "options_name": "linuxmint",
       "url": "/linuxmint",
-      "status": "S1758621868X1758627208",
+      "status": "S1759396914X1759402254",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/linuxmint/",
       "size": "43.96G"
     },
@@ -742,15 +742,15 @@
       "cname": "manjaro",
       "options_name": "manjaro",
       "url": "/manjaro",
-      "status": "F1758630611O1758606653X1758635951",
+      "status": "S1759400656X1759405996",
       "upstream": "rsync://mirrors.ocf.berkeley.edu/manjaro/",
-      "size": "257.28G"
+      "size": "247.27G"
     },
     {
       "cname": "opensuse",
       "options_name": "opensuse",
       "url": "/opensuse",
-      "status": "Y1758478484O1755318678",
+      "status": "Y1759377959O1755318678",
       "upstream": "rsync://ftp.gwdg.de/pub/opensuse/",
       "size": "2.80T"
     },
@@ -758,15 +758,15 @@
       "cname": "raspbian",
       "options_name": "raspbian",
       "url": "/raspbian",
-      "status": "S1758616555X1758621895",
+      "status": "S1759399145X1759404485",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/raspbian/",
-      "size": "666.82G"
+      "size": "666.83G"
     },
     {
       "cname": "rocky",
       "options_name": "rockylinux",
       "url": "/rockylinux",
-      "status": "S1758631159X1758636499",
+      "status": "S1759399993X1759405333",
       "upstream": "msync.rockylinux.org",
       "size": "unknown"
     },
@@ -774,7 +774,7 @@
       "cname": "ros",
       "options_name": "ros",
       "url": "/ros",
-      "status": "Y1758631742O1758608110",
+      "status": "Y1759401518O1759375013",
       "upstream": "https://packages.ros.org/ros/",
       "size": "102.32G"
     },
@@ -782,31 +782,31 @@
       "cname": "ros2",
       "options_name": "ros2",
       "url": "/ros2",
-      "status": "S1758633331X1758644071",
+      "status": "S1759395019X1759405759",
       "upstream": "https://packages.ros.org/ros2/",
-      "size": "138.70G"
+      "size": "139.25G"
     },
     {
       "cname": "ubuntu",
       "options_name": "ubuntu",
       "url": "/ubuntu",
-      "status": "F1758616062O1758601234X1758621402",
+      "status": "Y1759405441O1759396716",
       "upstream": "rsync://archive.ubuntu.com/ubuntu/",
-      "size": "3.81T"
+      "size": "3.84T"
     },
     {
       "cname": "ubuntu-releases",
       "options_name": "ubuntu-releases",
       "url": "/ubuntu-releases",
-      "status": "F1758621709O1758601900X1758627049",
+      "status": "S1759396756X1759402096",
       "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
-      "size": "44.57G"
+      "size": "53.76G"
     },
     {
       "cname": "ubuntukylin",
       "options_name": "UbuntuKylin_release",
       "url": "/UbuntuKylin_release",
-      "status": "S1758616178X1758621518",
+      "status": "S1759403149X1759408489",
       "upstream": "rsync://cdimage.ubuntukylin.com/releases/basic/",
       "size": "unknown"
     }
