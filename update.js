@@ -2,11 +2,11 @@ const fs = require("fs");
 
 const config = require("./config/config.json");
 
-const { init, load } = require("./parser/node");
+const { init, load } = require("./config/parser/node");
 init(config, "mirrorz-json-legacy"); // global.fetch, global.DOMParser, global.Timeout, global.timeout
-const parsers = require("./parser/parsers");
+const parsers = require("./config/parser/parsers");
 
-const custom = require("./mirrorz-d-extension/custom");
+const custom = require("./config/d-extension/custom");
 
 const { cernet } = require("./cernet");
 
