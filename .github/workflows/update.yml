@@ -27,7 +27,7 @@ jobs:
         run: |
           git config user.name "Mirrorz Bot"
           git config user.email "bot@mirrorz.org"
-          pushd parser && yarn && popd
+          pushd config && yarn && popd
           printf "legacy: update json\n\n" > commit-msg
           node update.js | tee -a commit-msg | grep -e ': update$' && (git add data/ ; git commit -aF commit-msg)
           rm commit-msg
