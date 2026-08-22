@@ -4,7 +4,7 @@
     "logo": "https://mirrors.wsyu.edu.cn/.mirrorz/wsyu-logo.png",
     "abbr": "WSYU",
     "name": "武昌首义学院开源软件镜像站",
-    "disk": "1.4T / 10T (15%)",
+    "disk": "3.2T / 10T (34%)",
     "note": "WSYU 镜像提供特别的 LoongArch 支持",
     "big": "https://mirrors.wsyu.edu.cn/archriscv/images/archriscv-20210601.tar.zst"
   },
@@ -97,25 +97,25 @@
       "cname": "archlinux",
       "desc": "Arch Linux 的安装镜像和官方软件包仓库",
       "url": "/archlinux",
-      "status": "U",
+      "status": "S1787405767",
       "upstream": "rsync://mirrors.pkgbuild.com/packages",
-      "size": "99G"
+      "size": "134G"
     },
     {
       "cname": "archlinuxcn",
       "desc": "由 Arch Linux 中文社区驱动的非官方用户仓库，包含中文用户常用软件、工具、字体/美化包等",
       "url": "/archlinuxcn",
-      "status": "U",
+      "status": "S1787405775",
       "upstream": "rsync://mirrors.bfsu.edu.cn/archlinuxcn",
-      "size": "137G"
+      "size": "144G"
     },
     {
       "cname": "archriscv",
       "desc": "Arch Linux RISC-V 移植项目",
       "url": "/archriscv",
-      "status": "U",
+      "status": "S1787405782",
       "upstream": "rsync://archriscv.felixc.at/archriscv",
-      "size": "67G"
+      "size": "91G"
     },
     {
       "cname": "loongarch",
@@ -128,8 +128,8 @@
       "cname": "proxmox",
       "desc": "Proxmox",
       "url": "/proxmox",
-      "status": "U",
-      "size": "215G"
+      "status": "S1787392742",
+      "size": "306G"
     },
     {
       "cname": "slackwareloong",
@@ -138,5 +138,27 @@
       "status": "U",
       "size": "46G"
     }
-  ]
+  ],
+  "endpoints": [
+    {
+      "label": "wsyu",
+      "public": true,
+      "resolve": "mirrors.wsyu.edu.cn",
+      "filter": [
+        "V4",
+        "V6",
+        "SSL",
+        "NOSSL"
+      ],
+      "range": [
+        "COUNTRY:CN",
+        "REGION:HB",
+        "ISP:CERNET",
+        "218.199.144.0/20",
+        "219.140.64.128/28",
+        "2001:da8:303c::/48"
+      ]
+    }
+  ],
+  "extension": "D"
 }
