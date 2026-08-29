@@ -6,23 +6,10 @@ const { init, load } = require("./config/parser/node");
 init(config, "mirrorz-json-legacy"); // global.fetch, global.DOMParser, global.Timeout, global.timeout
 const parsers = require("./config/parser/parsers");
 
-const custom = require("./config/d-extension/custom");
-
 const { cernet } = require("./cernet");
 
-function parsers_customized(e) {
-  if (e in custom) {
-    return async () => custom[e](await load(parsers[e]));
-  }
-  else {
-    return parsers[e];
-  }
-}
-
 const LIST = {
-  // FIXME: should also patch config.mirrors with config.d_mirrors
-  ...config.mirrors,
-  ...Object.fromEntries(config.upstream_parser.map((e) => [e, parsers_customized(e)])),
+  ...Object.fromEntries(config.mirrors.map((e) => [e, parsers[e]])),
   // Special update function for cernet
   // must be the last one
   "cernet": cernet,

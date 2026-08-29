@@ -6,24 +6,13 @@ async function cernet() {
 
   let sites = [];
 
-  config.mirrors_legacy.forEach((abbr) => {
-    try {
-      sites.push(require(`./data/${abbr}.json`));
-    } catch (e) {
-      console.log(`Error: ${abbr} not found`);
-    }
-  });
-  for (const abbr in config.mirrors) {
+  for (const abbr of config.mirrors) {
     try {
       sites.push(require(`./data/${abbr}.json`));
     } catch (e) {
       console.log(`Error: ${abbr} not found`);
     }
   }
-
-  // extra
-  sites.push(require(`./data/nano.json`));
-  sites.push(require(`./data/neo.json`));
 
   cnames = []
   note = []
