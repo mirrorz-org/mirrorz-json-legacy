@@ -31,15 +31,6 @@ async function cernet() {
   cnames = []
   note = []
 
-  cnames_noredir = [
-    "AOSP",
-    "CocoaPods",
-    "homebrew",
-    "pybombs",
-    "anaconda",
-    "gentoo",
-  ]
-
   const configuredAbbrs = redirectAbbrs();
   for (const site of sites) {
     if (!configuredAbbrs.has(site.site.abbr)) {
@@ -47,9 +38,6 @@ async function cernet() {
     }
     note.push(site.site.abbr);
     for (const mirror of site.mirrors) {
-      if (cnames_noredir.includes(mirror.cname)) {
-        continue;
-      }
       if (!cnames.includes(mirror.cname)) {
         cnames.push(mirror.cname);
       }
