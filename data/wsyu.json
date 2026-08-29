@@ -4,7 +4,7 @@
     "logo": "https://mirrors.wsyu.edu.cn/.mirrorz/wsyu-logo.png",
     "abbr": "WSYU",
     "name": "武昌首义学院开源软件镜像站",
-    "disk": "3.2T / 10T (34%)",
+    "disk": "4.3T / 10T (46%)",
     "note": "WSYU 镜像提供特别的 LoongArch 支持",
     "big": "https://mirrors.wsyu.edu.cn/archriscv/images/archriscv-20210601.tar.zst"
   },
@@ -26,6 +26,10 @@
         {
           "name": "latest (riscv64gc)",
           "url": "/archriscv/images/archriscv-latest.tar.zst"
+        },
+        {
+          "name": "2026-08-27 (riscv64gc)",
+          "url": "/archriscv/images/archriscv-2026-08-27.tar.zst"
         },
         {
           "name": "2026-05-24 (riscv64gc)",
@@ -94,71 +98,67 @@
   ],
   "mirrors": [
     {
+      "cname": "archboot",
+      "desc": "Archboot 安装介质与项目站点镜像",
+      "url": "/archboot",
+      "status": "U",
+      "size": "62G",
+      "upstream": "https://archboot.com/"
+    },
+    {
       "cname": "archlinux",
       "desc": "Arch Linux 的安装镜像和官方软件包仓库",
       "url": "/archlinux",
-      "status": "S1787405767",
-      "upstream": "rsync://mirrors.pkgbuild.com/packages",
-      "size": "134G"
+      "status": "S1788028226",
+      "upstream": "rsync://mirror.pkgbuild.com/packages",
+      "size": "127G"
     },
     {
       "cname": "archlinuxcn",
-      "desc": "由 Arch Linux 中文社区驱动的非官方用户仓库，包含中文用户常用软件、工具、字体/美化包等",
+      "desc": "Arch Linux 中文社区仓库，包含中文用户常用软件、工具、字体和美化包等",
       "url": "/archlinuxcn",
-      "status": "S1787405775",
-      "upstream": "rsync://mirrors.bfsu.edu.cn/archlinuxcn",
-      "size": "144G"
+      "status": "S1788028233",
+      "upstream": "rsync://sync.repo.archlinuxcn.org/repo",
+      "size": "147G"
     },
     {
       "cname": "archriscv",
-      "desc": "Arch Linux RISC-V 移植项目",
+      "desc": "Arch Linux RISC-V 移植项目的安装镜像和软件包仓库",
       "url": "/archriscv",
-      "status": "S1787405782",
+      "status": "S1788028262",
       "upstream": "rsync://archriscv.felixc.at/archriscv",
-      "size": "91G"
+      "size": "94G"
+    },
+    {
+      "cname": "eweos",
+      "desc": "eweOS 软件包仓库",
+      "url": "/eweos",
+      "status": "F1788028218",
+      "upstream": "rsync://os-repo-rsync.ewe.moe/eweos",
+      "size": "77G"
     },
     {
       "cname": "loongarch",
-      "desc": "Loong Arch Linux 移植项目",
+      "desc": "Loong Arch Linux 的安装镜像和软件包仓库",
       "url": "/loongarch",
-      "status": "U",
-      "size": "61G"
+      "status": "S1788027727",
+      "size": "89G"
     },
     {
       "cname": "proxmox",
-      "desc": "Proxmox",
+      "desc": "Proxmox 软件包、ISO 与模板镜像",
       "url": "/proxmox",
-      "status": "S1787392742",
-      "size": "306G"
+      "status": "S1787996647",
+      "size": "313G",
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/proxmox"
     },
     {
       "cname": "slackwareloong",
-      "desc": "Slackware Loong 移植项目",
+      "desc": "Slackware Loong 软件包仓库",
       "url": "/slackwareloong",
-      "status": "U",
-      "size": "46G"
+      "status": "S1787993028",
+      "size": "17G",
+      "upstream": "rsync://slackware.uk/slackwareloong"
     }
-  ],
-  "endpoints": [
-    {
-      "label": "wsyu",
-      "public": true,
-      "resolve": "mirrors.wsyu.edu.cn",
-      "filter": [
-        "V4",
-        "V6",
-        "SSL",
-        "NOSSL"
-      ],
-      "range": [
-        "COUNTRY:CN",
-        "REGION:HB",
-        "ISP:CERNET",
-        "218.199.144.0/20",
-        "219.140.64.128/28",
-        "2001:da8:303c::/48"
-      ]
-    }
-  ],
-  "extension": "D"
+  ]
 }
