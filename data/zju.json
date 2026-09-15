@@ -16,9 +16,32 @@
   "info": [],
   "mirrors": [
     {
+      "cname": "almalinux",
+      "url": "https://mirrors.zju.edu.cn/almalinux",
+      "status": "S1789490407X1789501207N1789468370",
+      "desc": "AlmaLinux 发行版与软件仓库（8/9/10 全版本）",
+      "upstream": "rsync://rsync.repo.almalinux.org/almalinux/"
+    },
+    {
+      "cname": "alpine",
+      "url": "https://mirrors.zju.edu.cn/alpine",
+      "status": "Y1789493420O1789471820N1789471363",
+      "desc": "Alpine Linux 发行版与软件仓库（v3.0–v3.22 + edge 全量）",
+      "upstream": "rsync://rsync.alpinelinux.org/alpine/",
+      "size": "5.17T"
+    },
+    {
+      "cname": "anaconda",
+      "url": "https://mirrors.zju.edu.cn/anaconda",
+      "status": "S1789472450X1789494051N1789471912",
+      "desc": "Anaconda 主仓库（archive/pkgs）",
+      "upstream": "rsync://mirrors.nju.edu.cn/anaconda/",
+      "size": "27.47T"
+    },
+    {
       "cname": "anthon",
       "url": "https://mirrors.zju.edu.cn/anthon",
-      "status": "S1789396976X1789418576N1789307844",
+      "status": "S1789476334X1789497934N1789307844",
       "desc": "anthon mirror",
       "upstream": "rsync://mirrors.ustc.edu.cn/anthon/",
       "size": "2.35T"
@@ -26,43 +49,101 @@
     {
       "cname": "archlinux",
       "url": "https://mirrors.zju.edu.cn/archlinux",
-      "status": "S1789407556X1789411156N1789389106",
+      "status": "S1789492420X1789496020N1789389106",
       "desc": "Arch Linux 发行版与软件仓库",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/archlinux/"
     },
     {
+      "cname": "archlinuxcn",
+      "url": "https://mirrors.zju.edu.cn/archlinuxcn",
+      "status": "S1789475107X1789496707N1789475092",
+      "desc": "Arch Linux CN Community Repository（中文社区仓库）",
+      "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/",
+      "size": "137.11G"
+    },
+    {
+      "cname": "armbian",
+      "url": "https://mirrors.zju.edu.cn/armbian",
+      "status": "S1789493589X1789515189N1789493570",
+      "desc": "Armbian 发行版与软件仓库（apt）",
+      "upstream": "rsync://rsync.armbian.com/apt"
+    },
+    {
+      "cname": "CPAN",
+      "url": "https://mirrors.zju.edu.cn/cpan",
+      "status": "S1789492865X1789536065N1789492545",
+      "desc": "CPAN（Comprehensive Perl Archive Network）",
+      "upstream": "rsync://cpan-rsync.perl.org/CPAN"
+    },
+    {
+      "cname": "CTAN",
+      "url": "https://mirrors.zju.edu.cn/ctan",
+      "status": "S1789492794X1789514394N1789492545",
+      "desc": "CTAN（Comprehensive TeX Archive Network）",
+      "upstream": "rsync://rsync.dante.ctan.org/CTAN"
+    },
+    {
       "cname": "debian",
       "url": "https://mirrors.zju.edu.cn/debian",
-      "status": "S1789392505X1789414105N1789307844",
+      "status": "S1789478222X1789499822N1789307844",
       "desc": "Debian 发行版软件包镜像",
-      "upstream": "rsync://mirrors.ustc.edu.cn/debian/",
-      "size": "2.37T"
+      "upstream": "rsync://mirrors.ustc.edu.cn/debian/"
+    },
+    {
+      "cname": "debian-cd",
+      "url": "https://mirrors.zju.edu.cn/debian-cd",
+      "status": "S1789471378X1789557778N1789471363",
+      "desc": "Debian CD/DVD 安装介质",
+      "upstream": "rsync://cdimage.debian.org/debian-cd/",
+      "size": "235.99G"
     },
     {
       "cname": "debian-cdimage",
       "url": "https://mirrors.zju.edu.cn/debian-cdimage",
-      "status": "S1789403084X1789424685N1789307844",
+      "status": "S1789477101X1789498701N1789307844",
       "desc": "debian-cdimage mirror",
       "upstream": "rsync://mirrors.ustc.edu.cn/debian-cdimage/"
     },
     {
+      "cname": "debian-security",
+      "url": "https://mirrors.zju.edu.cn/debian-security",
+      "status": "S1789475127X1789496727N1789475093",
+      "desc": "Debian 安全更新仓库",
+      "upstream": "rsync://rsync.security.debian.org/debian-security/",
+      "size": "169.88G"
+    },
+    {
+      "cname": "fedora",
+      "url": "https://mirrors.zju.edu.cn/fedora",
+      "status": "S1789490555X1789494155N1789476074",
+      "desc": "Fedora 发行版与软件仓库",
+      "upstream": "rsync://dl.fedoraproject.org/fedora-enchilada/"
+    },
+    {
       "cname": "homebrew",
       "url": "https://mirrors.zju.edu.cn/homebrew",
-      "status": "S1789409984X1789413585N1789307845",
+      "status": "S1789490796X1789494396N1789307845",
       "desc": "Homebrew 主仓库与官方 tap 的 git 镜像",
       "upstream": "https://github.com/Homebrew"
     },
     {
       "cname": "homebrew-bottles",
       "url": "https://mirrors.zju.edu.cn/homebrew-bottles",
-      "status": "S1789409081X1789412681N1789307845",
+      "status": "S1789493318X1789496919N1789307845",
       "desc": "Homebrew bottles 与 formula/cask 元数据镜像",
       "upstream": "https://ghcr.io/v2/homebrew/"
     },
     {
+      "cname": "openeuler",
+      "url": "https://mirrors.zju.edu.cn/openeuler",
+      "status": "S1789479167X1789500767N1789478863",
+      "desc": "openEuler 发行版与软件仓库（全版本历史）",
+      "upstream": "rsync://repo.openeuler.openatom.cn/openeuler/"
+    },
+    {
       "cname": "openkylin",
       "url": "https://mirrors.zju.edu.cn/openkylin",
-      "status": "S1789396909X1789440109N1789307846",
+      "status": "S1789476070X1789519270N1789307846",
       "desc": "openKylin 操作系统软件源（huanghe/nile 等系列）",
       "upstream": "rsync://openkylin@archive.openkylin.top/openkylin/",
       "size": "294.01G"
@@ -70,7 +151,7 @@
     {
       "cname": "openkylin-cdimage",
       "url": "https://mirrors.zju.edu.cn/openkylin-cdimage",
-      "status": "S1789396923X1789440123N1789307846",
+      "status": "S1789475717X1789518917N1789307846",
       "desc": "openKylin 发行版安装镜像",
       "upstream": "rsync://openkylin@archive.openkylin.top/releases/",
       "size": "261.52G"
@@ -78,15 +159,21 @@
     {
       "cname": "pypi",
       "url": "https://mirrors.zju.edu.cn/pypi",
-      "status": "Y1789410560O1789381562N1789307846",
+      "status": "Y1789492240O1789490367N1789307846",
       "desc": "Python 第三方软件包索引",
-      "upstream": "https://pypi.org",
-      "size": "45.94T"
+      "upstream": "https://pypi.org"
+    },
+    {
+      "cname": "rosdistro",
+      "url": "https://mirrors.zju.edu.cn/rosdistro",
+      "status": "S1789491286X1789512886N1789491276",
+      "desc": "ROS 发行版定义文件（git 仓库，rosdep/bloom 数据源）",
+      "upstream": "https://github.com/ros/rosdistro.git"
     },
     {
       "cname": "ubuntu",
       "url": "https://mirrors.zju.edu.cn/ubuntu",
-      "status": "S1789393743X1789415343N1789393603",
+      "status": "Y1789493061O1789471460N1789393603",
       "desc": "Ubuntu 主仓库（archive，amd64/i386）",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/ubuntu/",
       "size": "4.87T"
@@ -94,24 +181,24 @@
     {
       "cname": "ubuntu-cloud-images",
       "url": "https://mirrors.zju.edu.cn/ubuntu-cloud-images",
-      "status": "S1789398726X1789420327N1789307846",
+      "status": "S1789478316X1789499916N1789307846",
       "desc": "ubuntu-cloud-images mirror",
       "upstream": "rsync://mirrors.ustc.edu.cn/ubuntu-cloud-images/"
     },
     {
       "cname": "ubuntu-ports",
       "url": "https://mirrors.zju.edu.cn/ubuntu-ports",
-      "status": "S1789396398X1789417998N1789396252",
+      "status": "S1789484109X1789505710N1789396252",
       "desc": "Ubuntu Ports（arm64 等非 amd64 架构仓库）",
-      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/ubuntu-ports/",
-      "size": "5.48T"
+      "upstream": "rsync://rsync.mirrors.ustc.edu.cn/ubuntu-ports/"
     },
     {
       "cname": "ubuntu-releases",
       "url": "https://mirrors.zju.edu.cn/ubuntu-releases",
-      "status": "S1789409096X1789430696N1789386772",
+      "status": "S1789476083X1789497683N1789386772",
       "desc": "Ubuntu 安装介质（原版 ISO）",
-      "upstream": "rsync://rsync.releases.ubuntu.com/releases/"
+      "upstream": "rsync://rsync.releases.ubuntu.com/releases/",
+      "size": "68.44G"
     }
   ]
 }
