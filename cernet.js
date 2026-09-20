@@ -48,7 +48,7 @@ async function cernet() {
     site: {
       abbr: "CERNET",
       url: config.url,
-      name: "校园网联合镜像站（mirrorz-302 智能选择）",
+      name: "教育网联合镜像站（mirrorz-302 智能选择）",
       note: note.toString(),
     },
     info: [],
