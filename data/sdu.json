@@ -86,6 +86,22 @@
       "category": "os",
       "urls": [
         {
+          "name": "20261017 (riscv64, desktop)",
+          "url": "/anthon/aosc-os/os-riscv64/desktop/aosc-os_desktop_20261017_riscv64.tar.xz"
+        },
+        {
+          "name": "20261017 (riscv64, container)",
+          "url": "/anthon/aosc-os/os-riscv64/container/aosc-os_container_20261017_riscv64.tar.xz"
+        },
+        {
+          "name": "20261017 (riscv64, buildkit)",
+          "url": "/anthon/aosc-os/os-riscv64/buildkit/aosc-os_buildkit_20261017_riscv64.tar.xz"
+        },
+        {
+          "name": "20261017 (riscv64, base)",
+          "url": "/anthon/aosc-os/os-riscv64/base/aosc-os_base_20261017_riscv64.tar.xz"
+        },
+        {
           "name": "20261017 (ppc64el, desktop)",
           "url": "/anthon/aosc-os/os-ppc64el/desktop/aosc-os_desktop_20261017_ppc64el.tar.xz"
         },
@@ -100,6 +116,10 @@
         {
           "name": "20261017 (ppc64el, base)",
           "url": "/anthon/aosc-os/os-ppc64el/base/aosc-os_base_20261017_ppc64el.tar.xz"
+        },
+        {
+          "name": "20261017 (loongson3, desktop)",
+          "url": "/anthon/aosc-os/os-loongson3/desktop/aosc-os_desktop_20261017_loongson3.tar.xz"
         },
         {
           "name": "20261017 (loongson3, container)",
@@ -160,26 +180,6 @@
         {
           "name": "20261017 (amd64, base)",
           "url": "/anthon/aosc-os/os-amd64/base/aosc-os_base_20261017_amd64.tar.xz"
-        },
-        {
-          "name": "20260909 (riscv64, container)",
-          "url": "/anthon/aosc-os/os-riscv64/container/aosc-os_container_20260909_riscv64.tar.xz"
-        },
-        {
-          "name": "20260909 (riscv64, buildkit)",
-          "url": "/anthon/aosc-os/os-riscv64/buildkit/aosc-os_buildkit_20260909_riscv64.tar.xz"
-        },
-        {
-          "name": "20260621 (riscv64, desktop)",
-          "url": "/anthon/aosc-os/os-riscv64/desktop/aosc-os_desktop_20260621_riscv64.tar.xz"
-        },
-        {
-          "name": "20260621 (riscv64, base)",
-          "url": "/anthon/aosc-os/os-riscv64/base/aosc-os_base_20260621_riscv64.tar.xz"
-        },
-        {
-          "name": "20260621 (loongson3, desktop)",
-          "url": "/anthon/aosc-os/os-loongson3/desktop/aosc-os_desktop_20260621_loongson3.tar.xz"
         },
         {
           "name": "20260312 (amd64, emukit)",
@@ -533,70 +533,70 @@
       "cname": "alpine",
       "desc": "Alpine",
       "url": "/alpine",
-      "status": "S1792246780",
+      "status": "S1792333848",
       "help": "https://help.mirrors.cernet.edu.cn/alpine/?mirror=SDU",
       "upstream": "rsync://rsync.alpinelinux.org/alpine/",
-      "size": "5798026M"
+      "size": "5798033M"
     },
     {
       "cname": "anthon",
       "desc": "AOSC OS",
       "url": "/anthon",
-      "status": "S1792248625",
+      "status": "S1792335650",
       "help": "https://help.mirrors.cernet.edu.cn/anthon/?mirror=SDU",
       "upstream": "rsync://repo-hk.aosc.io/anthon",
-      "size": "1982464M"
+      "size": "2020484M"
     },
     {
       "cname": "archlinux",
       "desc": "Arch Linux",
       "url": "/archlinux",
-      "status": "S1792246875",
+      "status": "S1792333925",
       "help": "/help/archlinux",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/archlinux/",
-      "size": "138446M"
+      "size": "136496M"
     },
     {
       "cname": "bioarchlinux",
       "desc": "BioArchLinux",
       "url": "/bioarchlinux",
-      "status": "S1792241947",
+      "status": "S1792328994",
       "help": "",
       "upstream": "bioarchlinux.org::sync",
-      "size": "38158M"
+      "size": "38154M"
     },
     {
       "cname": "CRAN",
       "desc": "The Comprehensive R Archive Network",
       "url": "/CRAN",
-      "status": "Y1791890318",
+      "status": "S1792330815",
       "help": "https://help.mirrors.cernet.edu.cn/CRAN/?mirror=SDU",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/CRAN/",
-      "size": "687878M"
+      "size": "690235M"
     },
     {
       "cname": "CTAN",
       "desc": "Comprehensive TEX Archive Network",
       "url": "/CTAN",
-      "status": "S1792241947",
+      "status": "S1792328994",
       "help": "https://help.mirrorz.org/CTAN/?mirror=SDU",
       "upstream": "rsync://rsync.dante.ctan.org/CTAN/",
-      "size": "66958M"
+      "size": "66998M"
     },
     {
       "cname": "debian",
       "desc": "Debian",
       "url": "/debian",
-      "status": "S1792249279",
+      "status": "S1792336329",
       "help": "/help/debian",
       "upstream": "rsync://mirrors4.tuna.tsinghua.edu.cn/debian",
-      "size": "1595360M"
+      "size": "1601199M"
     },
     {
       "cname": "debian-iso",
       "desc": "Debian - CD Images",
       "url": "/debian-iso",
-      "status": "S1792243272",
+      "status": "S1792330320",
       "help": "",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/debian-cd/",
       "size": "242056M"
@@ -605,79 +605,79 @@
       "cname": "debian-security",
       "desc": "Debian - Security Updates",
       "url": "/debian-security",
-      "status": "S1792252320",
+      "status": "S1792339378",
       "help": "/help/debian",
       "upstream": "rsync://mirrors4.tuna.tsinghua.edu.cn/debian-security",
-      "size": "150111M"
+      "size": "149407M"
     },
     {
       "cname": "gentoo",
       "desc": "Gentoo",
       "url": "/gentoo",
-      "status": "S1792241947",
+      "status": "S1792328994",
       "help": "https://help.mirrors.cernet.edu.cn/gentoo/?mirror=SDU",
       "upstream": "rsync://mirrors.nju.edu.cn/gentoo/",
-      "size": "1491166M"
+      "size": "1501305M"
     },
     {
       "cname": "github-release",
       "desc": "常用 GitHub 软件",
       "url": "/github-release",
-      "status": "S1792249830",
+      "status": "S1792336896",
       "help": "https://github.com/SDU-Mirrors/wonderful-github-releases",
       "upstream": "",
-      "size": "30835M"
+      "size": "30840M"
     },
     {
       "cname": "GXDE",
       "desc": "GXDE-OS",
       "url": "/GXDE",
-      "status": "S1792244377",
+      "status": "S1792331417",
       "help": "https://www.gxde.top/",
       "upstream": "rsync://gxde-rsync@rbq3.spark-app.store/repo",
-      "size": "100723M"
+      "size": "100692M"
     },
     {
       "cname": "kali",
       "desc": "Kali Linux",
       "url": "/kali",
-      "status": "S1792243770",
+      "status": "S1792330815",
       "help": "https://help.mirrors.cernet.edu.cn/kali/?mirror=SDU",
       "upstream": "rsync://archive-4.kali.org/kali/",
-      "size": "666650M"
+      "size": "678355M"
     },
     {
       "cname": "kali-images",
       "desc": "Kali Linux  - CD Images",
       "url": "/kali-images",
-      "status": "S1792241947",
+      "status": "S1792328994",
       "help": "",
       "upstream": "rsync://archive-4.kali.org/kali-images/",
-      "size": "86992M"
+      "size": "115611M"
     },
     {
       "cname": "lxc-images-auto",
       "desc": "LXC Images",
       "url": "/lxc-images-auto",
-      "status": "S1792240743",
+      "status": "Y1792313288",
       "help": "/help/lxc-images",
       "upstream": "",
-      "size": "292300M"
+      "size": "185633M"
     },
     {
       "cname": "manjaro",
       "desc": "Manjaro Linux",
       "url": "/manjaro",
-      "status": "S1792241947",
+      "status": "S1792328994",
       "help": "https://help.mirrors.cernet.edu.cn/manjaro/?mirror=SDU",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/manjaro/",
-      "size": "297323M"
+      "size": "301874M"
     },
     {
       "cname": "radxa-deb",
       "desc": "Radxa-deb",
       "url": "/radxa-deb",
-      "status": "S1792245288",
+      "status": "S1792332427",
       "help": "",
       "upstream": "rsync://[2001:df1:801:a022::221:a]/radxa/radxa-deb/",
       "size": "29307M"
@@ -686,7 +686,7 @@
       "cname": "rocky",
       "desc": "Rocky Linux",
       "url": "/rocky",
-      "status": "S1792244669",
+      "status": "S1792331743",
       "help": "https://help.mirrors.cernet.edu.cn/rocky/?mirror=SDU",
       "upstream": "rsync://rsync.mirrors.ustc.edu.cn/rocky/",
       "size": "4151803M"
@@ -695,34 +695,34 @@
       "cname": "termux",
       "desc": "Termux",
       "url": "/termux",
-      "status": "S1792243770",
+      "status": "S1792330815",
       "help": "https://help.mirrorz.org/termux/?mirror=SDU",
       "upstream": "rsync://packages.termux.dev/termux",
-      "size": "49449M"
+      "size": "50130M"
     },
     {
       "cname": "ubuntu",
       "desc": "Ubuntu",
       "url": "/ubuntu",
-      "status": "S1792249279",
+      "status": "S1792336329",
       "help": "https://help.mirrors.cernet.edu.cn/ubuntu/?mirror=SDU",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/",
-      "size": "5292175M"
+      "size": "5293507M"
     },
     {
       "cname": "ubuntu-ports",
       "desc": "Ubuntu Ports",
       "url": "/ubuntu-ports",
-      "status": "S1792244669",
+      "status": "S1792331743",
       "help": "",
       "upstream": "rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/",
-      "size": "5973257M"
+      "size": "5974598M"
     },
     {
       "cname": "ubuntu-releases",
       "desc": "Ubuntu - CD Images",
       "url": "/ubuntu-releases",
-      "status": "S1792244473",
+      "status": "S1792331522",
       "help": "",
       "upstream": "rsync://mirrors.nyist.edu.cn/ubuntu-releases/",
       "size": "95628M"
