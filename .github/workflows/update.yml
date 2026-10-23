@@ -29,7 +29,9 @@ jobs:
           git config user.email "bot@mirrorz.org"
           pushd config && yarn && popd
           printf "legacy: update json\n\n" > commit-msg
-          node update.js | tee -a commit-msg | grep -e ': update$' && (git add data/ ; git commit -aF commit-msg)
+          set -o pipefail
+          node update.js | tee -a commit-msg
+          grep -e ': update$' commit-msg && (git add data/ ; git commit -aF commit-msg)
           rm commit-msg
       - name: Push to master
         run: |
